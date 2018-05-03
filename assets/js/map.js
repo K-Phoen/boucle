@@ -21,7 +21,7 @@ const transports = {
         'label': 'Avion'
     },
     'boat': {
-        'color': '#33C0FF',
+        'color': '#6a4c93',
         'dashed': true,
         'label': 'Bateau'
     },

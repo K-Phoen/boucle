@@ -1,129 +1,107 @@
 boucle:
     title: Europe – 2018
 
+    start: Clermont-Ferrand, France
+
     steps:
         -
-            from: Clermont-Ferrand, France
             to: Lyon, France
             with: bus
             date: '2018-05-09'
         -
-            from: Lyon, France
             to: Dublin, Ireland
             with: plane
             date: '2018-05-10'
         -
-            from: Dublin, Ireland
             to: Letterfrack, Ireland
             with: car
             date: '2018-05-11'
         -
-            from: Letterfrack, Ireland
             to: Dublin, Ireland
             with: car
             date: '2018-05-13'
         -
-            from: Dublin, Ireland
             to: Bergen, Norway
             with: plane
             date: '2018-05-15'
         -
-            from: Bergen, Norway
             to: Oslo, Norway
             with: train
             date: '2018-05-20'
         -
-            from: Oslo, Norway
             to: Bergen, Sweden
             with: train
             date: '2018-05-25'
         -
-            from: Bergen, Sweden
             to: Stockholm, Sweden
             with: train
             date: '2018-05-30'
         -
-            from: Stockholm, Sweden
             to: Helsinki, Finland
             with: boat
             date: '2018-06-04'
         -
-            from: Helsinki, Finland
             to: Tallinn, Estonia
             with: boat
             date: '2018-06-10'
         -
-            from: Tallinn, Estonia
             to: Riga, Latvia
             with: bus
             date: '2018-06-15'
         -
-            from: Riga, Latvia
             to: Vilnius, Lithuania
             with: bus
             date: '2018-06-20'
         -
-            from: Vilnius, Lithuania
             to: Warsaw, Poland
             with: bus
             date: '2018-06-25'
         -
-            from: Warsaw, Poland
             to: Cracow, Poland
             with: bus
             date: '2018-06-29'
         -
-            from: Cracow, Poland
             to: Berlin, Germany
             with: bus
             date: '2018-07-02'
         -
-            from: Berlin, Germany
             to: Prague, Czech Republic
             with: train
             date: '2018-07-06'
         -
-            from: Prague, Czech Republic
             to: Vienna, Austria
             with: bus
             date: '2018-07-10'
         -
-            from: Vienna, Austria
             to: Bratislava, Slovakia
             with: bus
             date: '2018-07-15'
         -
-            from: Bratislava, Slovakia
             to: Budapest, Hungary
             with: bus
             date: '2018-07-18'
         -
-            from: Budapest, Hungary
             to: Lviv, Ukraine
             with: train
             date: '2018-07-23'
         -
-            from: Lviv, Ukraine
             to: Kiev, Ukraine
             with: bus
             date: '2018-07-25'
         -
-            from: Kiev, Ukraine
             to: Tchernobyl, Ukraine
             with: bus
             date: '2018-07-27'
         -
-            from: Tchernobyl, Ukraine
             to: Kiev, Ukraine
             with: bus
             date: '2018-07-27'
         -
-            from: Kiev, Ukraine
             to: Bucarest, Romania
             with: plane
             date: '2018-07-30'
         -
-            from: Bucarest, Romania
             to: Sofia, Bulgaria
             with: train
             date: '2018-08-04'
+

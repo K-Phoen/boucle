@@ -27,10 +27,11 @@ class BoucleConfiguration implements ConfigurationInterface
                 ->end()
                 ->scalarNode('map_api_key')->cannotBeEmpty()->defaultValue('')->end()
 
+                ->scalarNode('start')->isRequired()->cannotBeEmpty()->end()
+
                 ->arrayNode('steps')
                     ->arrayPrototype()
                         ->children()
-                            ->scalarNode('from')->isRequired()->cannotBeEmpty()->end()
                             ->scalarNode('to')->isRequired()->cannotBeEmpty()->end()
                             ->scalarNode('date')->isRequired()->cannotBeEmpty()->end()
                             ->enumNode('with')

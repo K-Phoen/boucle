@@ -35,18 +35,39 @@ class BoucleParser
             throw InvalidConfiguration::inFile($path, $e->getMessage(), $e);
         }
 
+        $steps = $this->readSteps($config);
+
         return new Boucle(
             $config['title'],
             $config['map_provider'],
             $config['map_api_key'],
-            array_map([$this, 'buildStep'], $config['steps'])
+            $steps
         );
     }
 
-    private function buildStep(array $stepConfig): Step
+    /**
+     * @return iterable|Step[]
+     */
+    private function readSteps(array $config): iterable
     {
+        $steps = [];
+        $start = new Place($config['start'], $this->geocode($config['start']));
+
+        foreach ($config['steps'] as $i => $stepConfig) {
+            $steps[] = $this->buildStep($stepConfig, $i === 0 ? $start : $steps[$i-1]->to());
+        }
+
+        return $steps;
+    }
+
+    private function buildStep(array $stepConfig, Place $previous): Step
+    {
+        if (empty($stepConfig['from']) && $previous === null) {
+            throw new InvalidConfiguration('Missing origin for step');
+        }
+
         return new Step(
-            new Place($stepConfig['from'], $this->geocode($stepConfig['from'])),
+            $previous,
             new Place($stepConfig['to'], $this->geocode($stepConfig['to'])),
             \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']),
             new Transport($stepConfig['with'])
