@@ -1,0 +1,109 @@
+boucle:
+    title: Europe – 2018
+
+    map_provider: mapbox
+    map_api_key: pk.eyJ1Ijoiay1waG9lbiIsImEiOiJjamZmbjl0dzMzejB1MzNucm92MzhiYWlwIn0.zPborWgq1bj6PEaZgJRiEA
+
+    start: Clermont-Ferrand, France
+
+    steps:
+        -
+            to: Lyon, France
+            with: bus
+            date: '2018-05-09'
+        -
+            to: Dublin, Ireland
+            with: plane
+            date: '2018-05-10'
+        -
+            to: Letterfrack, Ireland
+            with: car
+            date: '2018-05-11'
+        -
+            to: Dublin, Ireland
+            with: car
+            date: '2018-05-13'
+        -
+            to: Bergen, Norway
+            with: plane
+            date: '2018-05-15'
+        -
+            to: Oslo, Norway
+            with: train
+            date: '2018-05-20'
+        -
+            to: Bergen, Sweden
+            with: train
+            date: '2018-05-25'
+        -
+            to: Stockholm, Sweden
+            with: train
+            date: '2018-05-30'
+        -
+            to: Helsinki, Finland
+            with: boat
+            date: '2018-06-04'
+        -
+            to: Tallinn, Estonia
+            with: boat
+            date: '2018-06-10'
+        -
+            to: Riga, Latvia
+            with: bus
+            date: '2018-06-15'
+        -
+            to: Vilnius, Lithuania
+            with: bus
+            date: '2018-06-20'
+        -
+            to: Warsaw, Poland
+            with: bus
+            date: '2018-06-25'
+        -
+            to: Cracow, Poland
+            with: bus
+            date: '2018-06-29'
+        -
+            to: Berlin, Germany
+            with: bus
+            date: '2018-07-02'
+        -
+            to: Prague, Czech Republic
+            with: train
+            date: '2018-07-06'
+        -
+            to: Vienna, Austria
+            with: bus
+            date: '2018-07-10'
+        -
+            to: Bratislava, Slovakia
+            with: bus
+            date: '2018-07-15'
+        -
+            to: Budapest, Hungary
+            with: bus
+            date: '2018-07-18'
+        -
+            to: Lviv, Ukraine
+            with: train
+            date: '2018-07-23'
+        -
+            to: Kiev, Ukraine
+            with: bus
+            date: '2018-07-25'
+        -
+            to: Tchernobyl, Ukraine
+            with: bus
+            date: '2018-07-27'
+        -
+            to: Kiev, Ukraine
+            with: bus
+            date: '2018-07-27'
+        -
+            to: Bucarest, Romania
+            with: plane
+            date: '2018-07-30'
+        -
+            to: Sofia, Bulgaria
+            with: train
+            date: '2018-08-04'
