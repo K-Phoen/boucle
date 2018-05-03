@@ -16,24 +16,29 @@ let legend = L.control({position: 'bottomleft'});
 
 const transports = {
     'plane': {
-        'color': '#3388ff',
-        'label': 'Avion',
+        'color': '#2e5266',
+        'dashed': true,
+        'label': 'Avion'
     },
     'boat': {
         'color': '#33C0FF',
-        'label': 'Bateau',
+        'dashed': true,
+        'label': 'Bateau'
     },
     'car': {
-        'color': '#000080',
-        'label': 'Voiture',
+        'color': '#e94f37',
+        'dashed': false,
+        'label': 'Voiture'
     },
     'bus': {
-        'color': '#00BA42',
-        'label': 'Bus',
+        'color': '#039960',
+        'dashed': false,
+        'label': 'Bus'
     },
     'train': {
-        'color': '#B450C5',
-        'label': 'Train',
+        'color': '#f49d37',
+        'dashed': false,
+        'label': 'Train'
     }
 };
 
@@ -67,13 +72,19 @@ xhr({
         }
 
         boucle.steps[transport].forEach(function (step) {
-            L.swoopyArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
+            const arrow = L.swoopyArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
                 color: transports[transport]['color'],
                 weight: 2,
                 factor: 0.3,
 
                 arrowFilled: true,
-            }).addTo(map);
+            });
+
+            arrow.addTo(map);
+
+            if (transports[transport]['dashed']) {
+                arrow._currentPath.setAttribute('stroke-dasharray', '10 10');
+            }
         });
     }
 });
