@@ -16,9 +16,17 @@ boucle:
             with: plane
             date: '2018-05-10'
         -
-            to: Letterfrack, Ireland
+            to: Galway, Ireland
             with: car
             date: '2018-05-11'
+        -
+            to: Inis Meáin, Ireland
+            with: boat
+            date: '2018-05-12'
+        -
+            to: Galway, Ireland
+            with: boat
+            date: '2018-05-13'
         -
             to: Dublin, Ireland
             with: car

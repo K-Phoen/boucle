@@ -166,17 +166,17 @@
                     "long": -6.2602732
                 },
                 "to": {
-                    "name": "Letterfrack, Ireland",
-                    "lat": 53.553524,
-                    "long": -9.9483002
+                    "name": "Galway, Ireland",
+                    "lat": 53.2744122,
+                    "long": -9.0490632
                 },
                 "date": "2018-05-11"
             },
             {
                 "from": {
-                    "name": "Letterfrack, Ireland",
-                    "lat": 53.553524,
-                    "long": -9.9483002
+                    "name": "Galway, Ireland",
+                    "lat": 53.2744122,
+                    "long": -9.0490632
                 },
                 "to": {
                     "name": "Dublin, Ireland",
@@ -228,6 +228,32 @@
             }
         ],
         "boat": [
+            {
+                "from": {
+                    "name": "Galway, Ireland",
+                    "lat": 53.2744122,
+                    "long": -9.0490632
+                },
+                "to": {
+                    "name": "Inis Me\u00e1in, Ireland",
+                    "lat": 53.0837285,
+                    "long": -9.58919368266271
+                },
+                "date": "2018-05-12"
+            },
+            {
+                "from": {
+                    "name": "Inis Me\u00e1in, Ireland",
+                    "lat": 53.0837285,
+                    "long": -9.58919368266271
+                },
+                "to": {
+                    "name": "Galway, Ireland",
+                    "lat": 53.2744122,
+                    "long": -9.0490632
+                },
+                "date": "2018-05-13"
+            },
             {
                 "from": {
                     "name": "Stockholm, Sweden",
