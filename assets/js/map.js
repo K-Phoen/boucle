@@ -80,9 +80,7 @@ const transportLayers = {
     'train': trains,
 };
 
-
 const addLinesDecorations = function() {
-
     L.polylineDecorator(boats, {
         patterns: [
             // displays an arrow at the end of the line
