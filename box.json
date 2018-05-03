@@ -1,0 +1,9 @@
+{
+    "main": "bin/boucle",
+    "output": "boucle.phar",
+    "chmod": "0755",
+    "directories": ["dist", "views", "src", "vendor"],
+    "git-version": "package_version",
+    "stub": true,
+    "web": false
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ title }}</title>
+
+    <link href="dist/map.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="./">{{ title }}</a>
+    </nav>
+
+    <div id="map"></div>
+
+    <script>
+        const MAP_TILE_LAYER_URL = '{{ map_tile_layer_url }}';
+        const MAP_API_KEY = '{{ map_api_key }}';
+    </script>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>

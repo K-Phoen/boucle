@@ -1,0 +1,39 @@
+boucle:
+    title: Europe – 2018
+
+    steps:
+        -
+            from: Clermont-Ferrand, France
+            to: Lyon, France
+            with: bus
+            date: '2018-05-09'
+        -
+            from: Lyon, France
+            to: Dublin, Ireland
+            with: plane
+            date: '2018-05-10'
+        -
+            from: Dublin, Ireland
+            to: Letterfrack, Ireland
+            with: car
+            date: '2018-05-11'
+        -
+            from: Letterfrack, Ireland
+            to: Dublin, Ireland
+            with: car
+            date: '2018-05-13'
+        -
+            from: Dublin, Ireland
+            to: Bergen, Norway
+            with: plane
+            date: '2018-05-15'
+        -
+            from: Bergen, Norway
+            to: Reykjavik, Iceland
+            with: boat
+            date: '2018-05-17'
+        -
+            from: Bergen, Norway
+            to: Oslo, Norway
+            with: train
+            date: '2018-05-20'

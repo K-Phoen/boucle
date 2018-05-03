@@ -1,0 +1,54 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~leaflet/dist/leaflet.css';
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.legend-item:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+.legend-item {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.legend-item-color {
+    width: 18px;
+    height: 3px;
+    margin-right: 5px;
+    display: inline-block;
+}

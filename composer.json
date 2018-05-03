@@ -1,0 +1,36 @@
+{
+    "name": "kphoen/boucle",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kévin Gomez",
+            "email": "contact@kevingomez.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Boucle\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+
+        "mnapoli/silly": "^1.7",
+        "symfony/yaml": "^4.0",
+        "symfony/config": "^4.0",
+        "pimple/pimple": "^3.2",
+        "twig/twig": "^2.4",
+        "geocoder-php/nominatim-provider": "^4.1",
+        "php-http/guzzle6-adapter": "^1.1",
+        "php-http/message": "^1.6",
+        "myclabs/php-enum": "^1.5"
+    },
+    "require-dev": {
+        "kherge/box": "^2.7",
+        "phpunit/phpunit": "^7.0",
+        "mikey179/vfsStream": "^1.6",
+        "friendsofphp/php-cs-fixer": "^2.11",
+        "liip/rmt": "^1.3"
+    }
+}
