@@ -1,0 +1,339 @@
+{
+    "steps": {
+        "bus": [
+            {
+                "from": {
+                    "name": "Clermont-Ferrand, France",
+                    "lat": 45.7774551,
+                    "long": 3.0819427
+                },
+                "to": {
+                    "name": "Lyon, France",
+                    "lat": 45.7578137,
+                    "long": 4.8320114
+                },
+                "date": "2018-05-09"
+            },
+            {
+                "from": {
+                    "name": "Tallinn, Estonia",
+                    "lat": 59.4372155,
+                    "long": 24.7453688
+                },
+                "to": {
+                    "name": "Riga, Latvia",
+                    "lat": 56.9493977,
+                    "long": 24.1051846
+                },
+                "date": "2018-06-15"
+            },
+            {
+                "from": {
+                    "name": "Riga, Latvia",
+                    "lat": 56.9493977,
+                    "long": 24.1051846
+                },
+                "to": {
+                    "name": "Vilnius, Lithuania",
+                    "lat": 54.6870458,
+                    "long": 25.2829111
+                },
+                "date": "2018-06-20"
+            },
+            {
+                "from": {
+                    "name": "Vilnius, Lithuania",
+                    "lat": 54.6870458,
+                    "long": 25.2829111
+                },
+                "to": {
+                    "name": "Warsaw, Poland",
+                    "lat": 52.2319237,
+                    "long": 21.0067265
+                },
+                "date": "2018-06-25"
+            },
+            {
+                "from": {
+                    "name": "Warsaw, Poland",
+                    "lat": 52.2319237,
+                    "long": 21.0067265
+                },
+                "to": {
+                    "name": "Cracow, Poland",
+                    "lat": 50.0606742,
+                    "long": 19.9371393
+                },
+                "date": "2018-06-29"
+            },
+            {
+                "from": {
+                    "name": "Cracow, Poland",
+                    "lat": 50.0606742,
+                    "long": 19.9371393
+                },
+                "to": {
+                    "name": "Berlin, Germany",
+                    "lat": 52.5170365,
+                    "long": 13.3888599
+                },
+                "date": "2018-07-02"
+            },
+            {
+                "from": {
+                    "name": "Prague, Czech Republic",
+                    "lat": 50.0874654,
+                    "long": 14.4212535
+                },
+                "to": {
+                    "name": "Vienna, Austria",
+                    "lat": 48.2083537,
+                    "long": 16.3725042
+                },
+                "date": "2018-07-10"
+            },
+            {
+                "from": {
+                    "name": "Vienna, Austria",
+                    "lat": 48.2083537,
+                    "long": 16.3725042
+                },
+                "to": {
+                    "name": "Bratislava, Slovakia",
+                    "lat": 48.1359085,
+                    "long": 17.1597440625
+                },
+                "date": "2018-07-15"
+            },
+            {
+                "from": {
+                    "name": "Bratislava, Slovakia",
+                    "lat": 48.1359085,
+                    "long": 17.1597440625
+                },
+                "to": {
+                    "name": "Budapest, Hungary",
+                    "lat": 47.4983815,
+                    "long": 19.0404707
+                },
+                "date": "2018-07-18"
+            },
+            {
+                "from": {
+                    "name": "Lviv, Ukraine",
+                    "lat": 49.841952,
+                    "long": 24.0315921
+                },
+                "to": {
+                    "name": "Kiev, Ukraine",
+                    "lat": 50.4501071,
+                    "long": 30.5240501
+                },
+                "date": "2018-07-25"
+            },
+            {
+                "from": {
+                    "name": "Kiev, Ukraine",
+                    "lat": 50.4501071,
+                    "long": 30.5240501
+                },
+                "to": {
+                    "name": "Tchernobyl, Ukraine",
+                    "lat": 51.2705259,
+                    "long": 30.2194322
+                },
+                "date": "2018-07-27"
+            },
+            {
+                "from": {
+                    "name": "Tchernobyl, Ukraine",
+                    "lat": 51.2705259,
+                    "long": 30.2194322
+                },
+                "to": {
+                    "name": "Kiev, Ukraine",
+                    "lat": 50.4501071,
+                    "long": 30.5240501
+                },
+                "date": "2018-07-27"
+            }
+        ],
+        "car": [
+            {
+                "from": {
+                    "name": "Dublin, Ireland",
+                    "lat": 53.3497645,
+                    "long": -6.2602732
+                },
+                "to": {
+                    "name": "Letterfrack, Ireland",
+                    "lat": 53.553524,
+                    "long": -9.9483002
+                },
+                "date": "2018-05-11"
+            },
+            {
+                "from": {
+                    "name": "Letterfrack, Ireland",
+                    "lat": 53.553524,
+                    "long": -9.9483002
+                },
+                "to": {
+                    "name": "Dublin, Ireland",
+                    "lat": 53.3497645,
+                    "long": -6.2602732
+                },
+                "date": "2018-05-13"
+            }
+        ],
+        "plane": [
+            {
+                "from": {
+                    "name": "Lyon, France",
+                    "lat": 45.7578137,
+                    "long": 4.8320114
+                },
+                "to": {
+                    "name": "Dublin, Ireland",
+                    "lat": 53.3497645,
+                    "long": -6.2602732
+                },
+                "date": "2018-05-10"
+            },
+            {
+                "from": {
+                    "name": "Dublin, Ireland",
+                    "lat": 53.3497645,
+                    "long": -6.2602732
+                },
+                "to": {
+                    "name": "Bergen, Norway",
+                    "lat": 60.3943034,
+                    "long": 5.3258117
+                },
+                "date": "2018-05-15"
+            },
+            {
+                "from": {
+                    "name": "Kiev, Ukraine",
+                    "lat": 50.4501071,
+                    "long": 30.5240501
+                },
+                "to": {
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
+                },
+                "date": "2018-07-30"
+            }
+        ],
+        "boat": [
+            {
+                "from": {
+                    "name": "Stockholm, Sweden",
+                    "lat": 59.3251172,
+                    "long": 18.0710935
+                },
+                "to": {
+                    "name": "Helsinki, Finland",
+                    "lat": 60.1674086,
+                    "long": 24.9425683
+                },
+                "date": "2018-06-04"
+            },
+            {
+                "from": {
+                    "name": "Helsinki, Finland",
+                    "lat": 60.1674086,
+                    "long": 24.9425683
+                },
+                "to": {
+                    "name": "Tallinn, Estonia",
+                    "lat": 59.4372155,
+                    "long": 24.7453688
+                },
+                "date": "2018-06-10"
+            }
+        ],
+        "train": [
+            {
+                "from": {
+                    "name": "Bergen, Norway",
+                    "lat": 60.3943034,
+                    "long": 5.3258117
+                },
+                "to": {
+                    "name": "Oslo, Norway",
+                    "lat": 59.9132694,
+                    "long": 10.7391112
+                },
+                "date": "2018-05-20"
+            },
+            {
+                "from": {
+                    "name": "Oslo, Norway",
+                    "lat": 59.9132694,
+                    "long": 10.7391112
+                },
+                "to": {
+                    "name": "Bergen, Sweden",
+                    "lat": 58.3776228,
+                    "long": 11.8636715
+                },
+                "date": "2018-05-25"
+            },
+            {
+                "from": {
+                    "name": "Bergen, Sweden",
+                    "lat": 58.3776228,
+                    "long": 11.8636715
+                },
+                "to": {
+                    "name": "Stockholm, Sweden",
+                    "lat": 59.3251172,
+                    "long": 18.0710935
+                },
+                "date": "2018-05-30"
+            },
+            {
+                "from": {
+                    "name": "Berlin, Germany",
+                    "lat": 52.5170365,
+                    "long": 13.3888599
+                },
+                "to": {
+                    "name": "Prague, Czech Republic",
+                    "lat": 50.0874654,
+                    "long": 14.4212535
+                },
+                "date": "2018-07-06"
+            },
+            {
+                "from": {
+                    "name": "Budapest, Hungary",
+                    "lat": 47.4983815,
+                    "long": 19.0404707
+                },
+                "to": {
+                    "name": "Lviv, Ukraine",
+                    "lat": 49.841952,
+                    "long": 24.0315921
+                },
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
+                },
+                "to": {
+                    "name": "Sofia, Bulgaria",
+                    "lat": 42.6978634,
+                    "long": 23.3221789
+                },
+                "date": "2018-08-04"
+            }
+        ]
+    }
+}
