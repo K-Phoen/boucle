@@ -1,4 +1,4 @@
-# Boucle ![PHP7 ready](https://img.shields.io/badge/PHP7-ready-green.svg)
+# Boucle ![PHP7 ready](https://img.shields.io/badge/PHP7-ready-green.svg) [![Build Status](https://travis-ci.org/K-Phoen/boucle.svg?branch=master)](https://travis-ci.org/K-Phoen/boucle) [![Coverage Status](https://coveralls.io/repos/github/K-Phoen/boucle/badge.svg?branch=master)](https://coveralls.io/github/K-Phoen/boucle?branch=master)
 
 *Boucle* is a static travel map generator.
 
