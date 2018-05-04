@@ -87,4 +87,11 @@ xhr({
             }
         });
     }
+
+    // add the "start" marker
+    const markerIcon = L.divIcon({
+        className: 'start-marker-icon',
+        html: '<span style="background-color: '+transports[boucle.start.with]['color']+'"></span>',
+    });
+    L.marker([boucle.start.from.lat, boucle.start.from.long], {icon: markerIcon}).addTo(map);
 });

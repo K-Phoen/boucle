@@ -22,6 +22,10 @@ class BoucleToJson
     public function compile(Boucle $boucle, string $webRoot): void
     {
         $data = [
+            'start' => [
+                'from' => $this->compilePlace($boucle->startFrom()),
+                'with' => (string) $boucle->startBy(),
+            ],
             'steps' => array_fill_keys(Transport::consts(), []),
         ];
 

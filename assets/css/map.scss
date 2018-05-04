@@ -52,3 +52,11 @@ html, body {
     margin-right: 5px;
     display: inline-block;
 }
+
+.start-marker-icon span {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  display: inline-block;
+  height: inherit;
+  width: inherit;
+}

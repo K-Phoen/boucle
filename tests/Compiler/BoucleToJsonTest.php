@@ -54,6 +54,14 @@ class BoucleToJsonTest extends TestCase
         $this->fs->expects($this->once())
             ->method('dumpFile')
             ->with('/webroot/boucle.json', json_encode([
+                'start' => [
+                    'from' => [
+                        'name' => 'from-first',
+                        'lat' => 1,
+                        'long' => 1,
+                    ],
+                    'with' => 'bus',
+                ],
                 'steps' => [
                     'bus' => [
                         [

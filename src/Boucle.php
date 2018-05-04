@@ -43,6 +43,24 @@ final class Boucle
         return $this->title;
     }
 
+    public function startBy(): Transport
+    {
+        if (empty($this->steps)) {
+            throw new \LogicException('Could not get the start of the boucle: no steps registered');
+        }
+
+        return $this->steps[0]->transport();
+    }
+
+    public function startFrom(): Place
+    {
+        if (empty($this->steps)) {
+            throw new \LogicException('Could not get the start of the boucle: no steps registered');
+        }
+
+        return $this->steps[0]->from();
+    }
+
     public function mapTileLayerUrl(): string
     {
         switch ($this->mapProvider) {
