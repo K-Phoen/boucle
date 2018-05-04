@@ -54,7 +54,7 @@ class BoucleParser
         $start = new Place($config['start'], $this->geocode($config['start']));
 
         foreach ($config['steps'] as $i => $stepConfig) {
-            $steps[] = $this->buildStep($stepConfig, $i === 0 ? $start : $steps[$i-1]->to());
+            $steps[] = $this->buildStep($stepConfig, $i === 0 ? $start : $steps[$i - 1]->to());
         }
 
         return $steps;

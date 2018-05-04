@@ -10,7 +10,6 @@ use Symfony\Component\Config\Definition\Dumper\YamlReferenceDumper;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Pimple\Psr11\Container as Psr11Container;
-use Boucle\Cli\Command;
 
 class Application extends Silly
 {

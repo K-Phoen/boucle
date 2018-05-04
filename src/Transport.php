@@ -9,9 +9,13 @@ use MyCLabs\Enum\Enum;
 final class Transport extends Enum
 {
     public const BUS = 'bus';
+
     public const CAR = 'car';
+
     public const PLANE = 'plane';
+
     public const BOAT = 'boat';
+
     public const TRAIN = 'train';
 
     /**
