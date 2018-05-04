@@ -37,12 +37,12 @@ boucle:
             with: train
             date: '2018-05-20'
         -
-            to: Bergen, Sweden
-            with: train
+            to: Göteborg, Sweden
+            with: bus
             date: '2018-05-25'
         -
             to: Stockholm, Sweden
-            with: train
+            with: bus
             date: '2018-05-30'
         -
             to: Helsinki, Finland
