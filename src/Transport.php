@@ -19,8 +19,8 @@ final class Transport extends Enum
      */
     public static function consts(): array
     {
-        return array_map(function (Transport $transport) {
+        return array_values(array_map(function (Transport $transport) {
             return $transport->getValue();
-        }, static::values());
+        }, static::values()));
     }
 }
