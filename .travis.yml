@@ -1,0 +1,27 @@
+language: php
+sudo: false
+
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+php:
+  - 7.1
+  - 7.2
+
+matrix:
+  fast_finish: true
+
+env:
+  - COMPOSER_OPTS="--optimize-autoloader --no-interaction"
+
+install:
+    - composer install $COMPOSER_OPTS
+    - if [ "$TRAVIS_PHP_VERSION" = "7.1" ]; then composer require $COMPOSER_OPTS satooshi/php-coveralls '^1.0'; fi
+
+script:
+  - make tests
+
+after_script:
+  - if [ "$TRAVIS_PHP_VERSION" = "7.1" ]; then php vendor/bin/coveralls -v; fi

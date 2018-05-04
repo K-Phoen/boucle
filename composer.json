@@ -11,6 +11,9 @@
     "autoload": {
         "psr-4": {
             "Boucle\\": "src/"
+        },
+        "autoload-dev": {
+            "psr-4": { "Tests\\Boucle\\": "tests/" }
         }
     },
     "require": {

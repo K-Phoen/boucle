@@ -1,9 +1,12 @@
-.PHONY: cs
+.PHONY: cs tests
 
 deps: vendor/autoload.php npm
 
 cs:
 	./vendor/bin/php-cs-fixer fix
+
+tests:
+	./vendor/bin/phpunit
 
 # we only do `install`, as composer.json may change
 # without wanting to update dependencies.
