@@ -1,6 +1,8 @@
 import L from 'leaflet';
 import xhr from 'xhr';
 import './leaflet.boucle-arrow';
+import {points as turfPoints} from '@turf/helpers';
+import turfBbox from '@turf/bbox';
 
 class MapView {
     constructor(config = {}) {
@@ -58,7 +60,29 @@ class MapView {
 
             this.drawStart(boucle);
             this.drawSteps(boucle);
+            this.centerMap(boucle);
         });
+    }
+
+    centerMap(boucle) {
+        let points = [
+            [boucle.start.from.lat, boucle.start.from.long],
+        ];
+
+        for (let transport in boucle.steps) {
+            if (!boucle.steps.hasOwnProperty(transport)) {
+                continue;
+            }
+
+            boucle.steps[transport].forEach(step => points.push([step.to.lat, step.to.long]));
+        }
+
+        const bbox = turfBbox(turfPoints(points));
+
+        this.map.fitBounds([
+            [bbox[0], bbox[1]],
+            [bbox[2], bbox[3]]
+        ]);
     }
 
     drawStart(boucle) {
