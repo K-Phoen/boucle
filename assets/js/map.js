@@ -29,13 +29,12 @@ class MapView {
 
     mountLegend() {
         const legend = L.control({position: 'bottomleft'});
-        const transports = this.config.transports;
 
-        legend.onAdd = function () {
+        legend.onAdd = () => {
             const div = L.DomUtil.create('div', 'info legend');
             let legendItems = [];
 
-            for (let transport of Object.values(transports)) {
+            for (let transport of Object.values(this.config.transports)) {
                 legendItems.push('<div class="legend-item"><span class="legend-item-color" style="background:' + transport['color'] + '"></span> <span>' + transport['label'] + '</span></div>');
             }
 
@@ -43,50 +42,54 @@ class MapView {
 
             return div;
         };
+
         legend.addTo(this.map);
 
         return legend;
     }
 
     loadSteps() {
-        const map = this.map;
-        const transports = this.config.transports;
-
-        xhr({
-            method: 'GET',
-            uri: './boucle.json'
-        }, function (err, response, body) {
+        xhr({method: 'GET', uri: './boucle.json'}, (err, response, body) => {
             if (err || response.statusCode !== 200) {
                 return;
             }
 
             const boucle = JSON.parse(body);
 
-            for (let transport in boucle.steps) {
-                if (!boucle.steps.hasOwnProperty(transport)) {
-                    continue;
-                }
+            this.drawStart(boucle);
+            this.drawSteps(boucle);
+        });
+    }
 
-                boucle.steps[transport].forEach(function (step) {
-                    const arrow = L.boucleArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
-                        color: transports[transport]['color'],
-                        dashArray: transports[transport]['dashed'] ? '10 10': '',
-                        weight: 2,
-                    });
+    drawStart(boucle) {
+        const markerIcon = L.divIcon({
+            className: 'start-marker-icon',
+            html: '<span style="background-color: ' + this.config.transports[boucle.start.with]['color'] + '"></span>',
+        });
 
-                    arrow.addTo(map);
+        L.marker([boucle.start.from.lat, boucle.start.from.long], {icon: markerIcon}).addTo(this.map);
+    }
 
-                    arrow.getCurve().bindPopup(step.from.name + ' → ' + step.to.name + ' – ' + step.date);
-                });
+    drawSteps(boucle) {
+        for (let transport in boucle.steps) {
+            if (!boucle.steps.hasOwnProperty(transport)) {
+                continue;
             }
 
-            // add the "start" marker
-            const markerIcon = L.divIcon({
-                className: 'start-marker-icon',
-                html: '<span style="background-color: ' + transports[boucle.start.with]['color'] + '"></span>',
-            });
-            L.marker([boucle.start.from.lat, boucle.start.from.long], {icon: markerIcon}).addTo(map);
+            boucle.steps[transport].forEach(step => this.drawStep(transport, step));
+        }
+    }
+
+    drawStep(transport, step) {
+        const arrow = L.boucleArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
+            color: this.config.transports[transport]['color'],
+            dashArray: this.config.transports[transport]['dashed'] ? '10 10': '',
+            weight: 2,
         });
+
+        arrow.addTo(this.map);
+
+        arrow.getCurve().bindPopup(step.from.name + ' → ' + step.to.name + ' – ' + step.date);
     }
 }
 
