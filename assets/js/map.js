@@ -108,7 +108,7 @@ class MapView {
         const arrow = L.boucleArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
             color: this.config.transports[transport]['color'],
             dashArray: this.config.transports[transport]['dashed'] ? '10 10': '',
-            weight: 2,
+            weight: 3,
         });
 
         arrow.addTo(this.map);
