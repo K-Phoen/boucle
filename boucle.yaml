@@ -41,16 +41,12 @@ boucle:
             date: '2018-05-18'
         -
             to: Göteborg, Sweden
-            with: train
+            with: bus
             date: '2018-05-25'
         -
             to: Stockholm, Sweden
-            with: train
+            with: bus
             date: '2018-05-30'
-        -
-            to: Helsinki, Finland
-            with: boat
-            date: '2018-06-04'
         -
             to: Tallinn, Estonia
             with: boat

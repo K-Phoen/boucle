@@ -24,6 +24,32 @@
             },
             {
                 "from": {
+                    "name": "Oslo, Norway",
+                    "lat": 59.9132694,
+                    "long": 10.7391112
+                },
+                "to": {
+                    "name": "G\u00f6teborg, Sweden",
+                    "lat": 57.7072326,
+                    "long": 11.9670171
+                },
+                "date": "2018-05-25"
+            },
+            {
+                "from": {
+                    "name": "G\u00f6teborg, Sweden",
+                    "lat": 57.7072326,
+                    "long": 11.9670171
+                },
+                "to": {
+                    "name": "Stockholm, Sweden",
+                    "lat": 59.3251172,
+                    "long": 18.0710935
+                },
+                "date": "2018-05-30"
+            },
+            {
+                "from": {
                     "name": "Tallinn, Estonia",
                     "lat": 59.4372155,
                     "long": 24.7453688
@@ -269,19 +295,6 @@
                     "long": 18.0710935
                 },
                 "to": {
-                    "name": "Helsinki, Finland",
-                    "lat": 60.1674086,
-                    "long": 24.9425683
-                },
-                "date": "2018-06-04"
-            },
-            {
-                "from": {
-                    "name": "Helsinki, Finland",
-                    "lat": 60.1674086,
-                    "long": 24.9425683
-                },
-                "to": {
                     "name": "Tallinn, Estonia",
                     "lat": 59.4372155,
                     "long": 24.7453688
@@ -302,32 +315,6 @@
                     "long": 10.7391112
                 },
                 "date": "2018-05-18"
-            },
-            {
-                "from": {
-                    "name": "Oslo, Norway",
-                    "lat": 59.9132694,
-                    "long": 10.7391112
-                },
-                "to": {
-                    "name": "G\u00f6teborg, Sweden",
-                    "lat": 57.7072326,
-                    "long": 11.9670171
-                },
-                "date": "2018-05-25"
-            },
-            {
-                "from": {
-                    "name": "G\u00f6teborg, Sweden",
-                    "lat": 57.7072326,
-                    "long": 11.9670171
-                },
-                "to": {
-                    "name": "Stockholm, Sweden",
-                    "lat": 59.3251172,
-                    "long": 18.0710935
-                },
-                "date": "2018-05-30"
             },
             {
                 "from": {
