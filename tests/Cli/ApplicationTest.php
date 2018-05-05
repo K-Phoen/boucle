@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Tests\Boucle\Cli;
 
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Boucle\Cli\Application;
 use Boucle\Cli\Container;
@@ -38,5 +40,12 @@ class ApplicationTest extends TestCase
 
         $this->assertTrue($this->application->has('steps:list'));
         $this->assertTrue($this->application->has('build'));
+    }
+
+    public function testItCanDumpItsReference(): void
+    {
+        $this->application->run(new ArgvInput(['app_name', 'config:dump-reference']), new NullOutput());
+
+        $this->assertTrue(true);
     }
 }

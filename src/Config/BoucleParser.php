@@ -62,10 +62,6 @@ class BoucleParser
 
     private function buildStep(array $stepConfig, Place $previous): Step
     {
-        if (empty($stepConfig['from']) && $previous === null) {
-            throw new InvalidConfiguration('Missing origin for step');
-        }
-
         return new Step(
             $previous,
             new Place($stepConfig['to'], $this->geocode($stepConfig['to'])),
