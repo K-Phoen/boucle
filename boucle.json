@@ -1,4 +1,12 @@
 {
+    "start": {
+        "from": {
+            "name": "Clermont-Ferrand, France",
+            "lat": 45.7774551,
+            "long": 3.0819427
+        },
+        "with": "bus"
+    },
     "steps": {
         "bus": [
             {
@@ -293,7 +301,7 @@
                     "lat": 59.9132694,
                     "long": 10.7391112
                 },
-                "date": "2018-05-20"
+                "date": "2018-05-18"
             },
             {
                 "from": {
@@ -302,17 +310,17 @@
                     "long": 10.7391112
                 },
                 "to": {
-                    "name": "Bergen, Sweden",
-                    "lat": 58.3776228,
-                    "long": 11.8636715
+                    "name": "G\u00f6teborg, Sweden",
+                    "lat": 57.7072326,
+                    "long": 11.9670171
                 },
                 "date": "2018-05-25"
             },
             {
                 "from": {
-                    "name": "Bergen, Sweden",
-                    "lat": 58.3776228,
-                    "long": 11.8636715
+                    "name": "G\u00f6teborg, Sweden",
+                    "lat": 57.7072326,
+                    "long": 11.9670171
                 },
                 "to": {
                     "name": "Stockholm, Sweden",
