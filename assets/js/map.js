@@ -1,6 +1,6 @@
-const L = require('leaflet');
-const xhr = require('xhr');
-require('leaflet-swoopy');
+import L from 'leaflet';
+import xhr from 'xhr';
+import './leaflet.boucle-arrow';
 
 const map = L.map('map').setView([51.505, -0.09], 3);
 
@@ -72,19 +72,16 @@ xhr({
         }
 
         boucle.steps[transport].forEach(function (step) {
-            const arrow = L.swoopyArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
+            const arrow = L.boucleArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
                 color: transports[transport]['color'],
                 weight: 2,
                 factor: 0.3,
-
-                arrowFilled: true,
+                dashArray: transports[transport]['dashed'] ? '10 10': '',
             });
 
             arrow.addTo(map);
 
-            if (transports[transport]['dashed']) {
-                arrow._currentPath.setAttribute('stroke-dasharray', '10 10');
-            }
+            arrow.getCurve().bindPopup(step.from.name + ' → ' + step.to.name + ' – ' + step.date);
         });
     }
 
