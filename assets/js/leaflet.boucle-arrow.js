@@ -3,6 +3,8 @@ import 'leaflet-curve';
 import {points as turfPoints} from '@turf/helpers';
 import turfCenter from '@turf/center';
 
+let lastId = 0;
+
 const BoucleArrow = L.Class.extend({
     options: {
         factor: 0.3,
@@ -12,6 +14,8 @@ const BoucleArrow = L.Class.extend({
 
     initialize: function (fromLatlng, toLatlng, options){
         L.setOptions(this, options);
+
+        this.id = ++lastId;
 
         this.fromLatlng = L.latLng(fromLatlng);
         this.toLatlng = L.latLng(toLatlng);
@@ -24,7 +28,7 @@ const BoucleArrow = L.Class.extend({
 
         curve.addTo(map);
 
-        const arrowId = 'lala';
+        const arrowId = 'arrow-' + this.id;
         const arrow = this._createArrow(arrowId);
         curve.getPane().appendChild(arrow);
         curve._path.setAttribute('marker-end', `url(#${arrowId})`);
