@@ -38,6 +38,7 @@ boucle:
         -
             to: Oslo, Norway
             with: train
+            path: Oslo-bergen.gpx
             date: '2018-05-18'
         -
             to: Göteborg, Sweden
