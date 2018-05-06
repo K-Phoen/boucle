@@ -155,17 +155,17 @@ new MapView({
         'plane': {
             'color': '#2e5266',
             'dashed': true,
-            'label': 'Avion'
+            'label': 'Plane'
         },
         'boat': {
             'color': '#6a4c93',
             'dashed': true,
-            'label': 'Bateau'
+            'label': 'Boat'
         },
         'car': {
             'color': '#e94f37',
             'dashed': false,
-            'label': 'Voiture'
+            'label': 'Car'
         },
         'bus': {
             'color': '#039960',
