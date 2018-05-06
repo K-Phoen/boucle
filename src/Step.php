@@ -18,12 +18,16 @@ final class Step
     /** @var Transport */
     private $transport;
 
-    public function __construct(Place $from, Place $to, \DateTimeImmutable $date, Transport $transport)
+    /** @var string */
+    private $pathFilename;
+
+    public function __construct(Place $from, Place $to, \DateTimeImmutable $date, Transport $transport, string $pathFilename = '')
     {
         $this->from = $from;
         $this->to = $to;
         $this->date = $date;
         $this->transport = $transport;
+        $this->pathFilename = $pathFilename;
     }
 
     public function from(): Place
@@ -44,5 +48,10 @@ final class Step
     public function transport(): Transport
     {
         return $this->transport;
+    }
+
+    public function pathFilename(): string
+    {
+        return $this->pathFilename;
     }
 }

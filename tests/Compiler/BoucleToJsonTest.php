@@ -41,7 +41,8 @@ class BoucleToJsonTest extends TestCase
                 new Place('from-second', new Coordinates(2, 1)),
                 new Place('to-second', new Coordinates(2, 2)),
                 new \DateTimeImmutable('2018-05-05'),
-                new Transport('train')
+                new Transport('train'),
+                'bergen-oslo.gpx'
             ),
             new Step(
                 new Place('from-third', new Coordinates(3, 1)),
@@ -75,6 +76,7 @@ class BoucleToJsonTest extends TestCase
                                 'lat' => 1,
                                 'long' => 2,
                             ],
+                            'path' => '',
                             'date' => '2018-05-04',
                         ],
                         [
@@ -88,6 +90,7 @@ class BoucleToJsonTest extends TestCase
                                 'lat' => 3,
                                 'long' => 2,
                             ],
+                            'path' => '',
                             'date' => '2018-05-06',
                         ],
                     ],
@@ -106,6 +109,7 @@ class BoucleToJsonTest extends TestCase
                                 'lat' => 2,
                                 'long' => 2,
                             ],
+                            'path' => 'bergen-oslo.gpx',
                             'date' => '2018-05-05',
                         ],
                     ],

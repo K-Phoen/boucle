@@ -33,6 +33,7 @@ class BoucleToJson
             $data['steps'][(string) $step->transport()][] = [
                 'from' => $this->compilePlace($step->from()),
                 'to' => $this->compilePlace($step->to()),
+                'path' => $step->pathFilename(),
                 'date' => $step->date()->format('Y-m-d'),
             ];
         }

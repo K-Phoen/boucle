@@ -9,6 +9,7 @@
     "package": "encore production"
   },
   "dependencies": {
+    "@mapbox/leaflet-omnivore": "^0.3.4",
     "@turf/bbox": "^6.0.1",
     "@turf/center": "^6.0.1",
     "@turf/helpers": "^6.1.3",

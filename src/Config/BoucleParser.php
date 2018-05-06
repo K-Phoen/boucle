@@ -66,7 +66,8 @@ class BoucleParser
             $previous,
             new Place($stepConfig['to'], $this->geocode($stepConfig['to'])),
             \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']),
-            new Transport($stepConfig['with'])
+            new Transport($stepConfig['with']),
+            $stepConfig['path']
         );
     }
 

@@ -34,6 +34,7 @@ boucle:
             date: '2018-05-15'
         -
             to: Oslo, Norway
+            path: Oslo-bergen.gpx
             with: train
             date: '2018-05-20'
         -

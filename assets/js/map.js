@@ -3,6 +3,7 @@ import xhr from 'xhr';
 import './leaflet.boucle-arrow';
 import {points as turfPoints} from '@turf/helpers';
 import turfBbox from '@turf/bbox';
+import omnivore from '@mapbox/leaflet-omnivore';
 
 class MapView {
     constructor(config = {}) {
@@ -100,11 +101,34 @@ class MapView {
                 continue;
             }
 
-            boucle.steps[transport].forEach(step => this.drawStep(transport, step));
+            boucle.steps[transport].forEach(step => {
+                if (step.path) {
+                    this.drawPath(transport, step);
+                } else {
+                    this.drawArrow(transport, step);
+                }
+            });
         }
     }
 
-    drawStep(transport, step) {
+    drawPath(transport, step) {
+        const customLayer = L.geoJson(null, {
+            // http://leafletjs.com/reference.html#geojson-style
+            style: () => {
+                return {
+                    color: this.config.transports[transport]['color'],
+                    dashArray: this.config.transports[transport]['dashed'] ? '10 10': '',
+                    weight: 3,
+                };
+            },
+        });
+
+        customLayer.bindPopup(this.popupContent(step));
+
+        omnivore.gpx(step.path, null, customLayer).addTo(this.map);
+    }
+
+    drawArrow(transport, step) {
         const arrow = L.boucleArrow([step.from.lat, step.from.long], [step.to.lat, step.to.long], {
             color: this.config.transports[transport]['color'],
             dashArray: this.config.transports[transport]['dashed'] ? '10 10': '',
@@ -113,7 +137,11 @@ class MapView {
 
         arrow.addTo(this.map);
 
-        arrow.getCurve().bindPopup(step.from.name + ' → ' + step.to.name + ' – ' + step.date);
+        arrow.getCurve().bindPopup(this.popupContent(step));
+    }
+
+    popupContent(step) {
+        return step.from.name + ' → ' + step.to.name + ' – ' + step.date;
     }
 }
 
