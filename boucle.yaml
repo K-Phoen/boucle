@@ -20,11 +20,15 @@ boucle:
             with: car
             date: '2018-05-11'
         -
+            to: Rossaveel, Ireland
+            with: car
+            date: '2018-05-12'
+        -
             to: Inis Meáin, Ireland
             with: boat
             date: '2018-05-12'
         -
-            to: Galway, Ireland
+            to: Rossaveel, Ireland
             with: boat
             date: '2018-05-13'
         -
