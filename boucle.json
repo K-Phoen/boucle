@@ -228,6 +228,20 @@
                     "long": -9.0490632
                 },
                 "to": {
+                    "name": "Rossaveel, Ireland",
+                    "lat": 53.26707895,
+                    "long": -9.54161164390595
+                },
+                "path": "",
+                "date": "2018-05-12"
+            },
+            {
+                "from": {
+                    "name": "Rossaveel, Ireland",
+                    "lat": 53.26707895,
+                    "long": -9.54161164390595
+                },
+                "to": {
                     "name": "Dublin, Ireland",
                     "lat": 53.3497645,
                     "long": -6.2602732
@@ -283,9 +297,9 @@
         "boat": [
             {
                 "from": {
-                    "name": "Galway, Ireland",
-                    "lat": 53.2744122,
-                    "long": -9.0490632
+                    "name": "Rossaveel, Ireland",
+                    "lat": 53.26707895,
+                    "long": -9.54161164390595
                 },
                 "to": {
                     "name": "Inis Me\u00e1in, Ireland",
@@ -302,9 +316,9 @@
                     "long": -9.58919368266271
                 },
                 "to": {
-                    "name": "Galway, Ireland",
-                    "lat": 53.2744122,
-                    "long": -9.0490632
+                    "name": "Rossaveel, Ireland",
+                    "lat": 53.26707895,
+                    "long": -9.54161164390595
                 },
                 "path": "",
                 "date": "2018-05-13"
