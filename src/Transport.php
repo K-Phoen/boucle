@@ -18,6 +18,8 @@ final class Transport extends Enum
 
     public const TRAIN = 'train';
 
+    public const WALKING = 'walking';
+
     /**
      * @return string[]
      */

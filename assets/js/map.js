@@ -152,6 +152,11 @@ new MapView({
     tileLayerApiKey: MAP_API_KEY,
 
     transports: {
+        'walking': {
+            'color': '#37392e',
+            'dashed': false,
+            'label': 'Walking'
+        },
         'plane': {
             'color': '#2e5266',
             'dashed': true,
