@@ -35,7 +35,7 @@
                     "long": 11.9670171
                 },
                 "path": "",
-                "date": "2018-05-25"
+                "date": "2018-05-22"
             },
             {
                 "from": {
@@ -394,6 +394,22 @@
                 },
                 "path": "",
                 "date": "2018-08-04"
+            }
+        ],
+        "walking": [
+            {
+                "from": {
+                    "name": "Bergen, Norway",
+                    "lat": 60.3943034,
+                    "long": 5.3258117
+                },
+                "to": {
+                    "name": "Bergen, Norway",
+                    "lat": 60.3943034,
+                    "long": 5.3258117
+                },
+                "path": "Ulriken-Floyen.gpx",
+                "date": "2018-05-17"
             }
         ]
     }

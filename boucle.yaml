@@ -40,6 +40,11 @@ boucle:
             with: plane
             date: '2018-05-15'
         -
+            to: Bergen, Norway
+            with: walking
+            path: Ulriken-Floyen.gpx
+            date: '2018-05-17'
+        -
             to: Oslo, Norway
             with: train
             path: Oslo-bergen.gpx
