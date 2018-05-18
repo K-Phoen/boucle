@@ -113,6 +113,7 @@ class BoucleToJsonTest extends TestCase
                             'date' => '2018-05-05',
                         ],
                     ],
+                    'walking' => [],
                 ],
             ], JSON_PRETTY_PRINT));
 

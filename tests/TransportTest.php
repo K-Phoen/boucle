@@ -11,6 +11,6 @@ class TransportTest extends TestCase
 {
     public function testItCanListItsConstants(): void
     {
-        $this->assertSame(['bus', 'car', 'plane', 'boat', 'train'], Transport::consts());
+        $this->assertSame(['bus', 'car', 'plane', 'boat', 'train', 'walking'], Transport::consts());
     }
 }
