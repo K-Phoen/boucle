@@ -63,7 +63,7 @@
                     "long": 24.1051846
                 },
                 "path": "",
-                "date": "2018-06-03"
+                "date": "2018-06-04"
             },
             {
                 "from": {
@@ -281,6 +281,20 @@
             },
             {
                 "from": {
+                    "name": "Stockholm, Sweden",
+                    "lat": 59.3251172,
+                    "long": 18.0710935
+                },
+                "to": {
+                    "name": "Tallinn, Estonia",
+                    "lat": 59.4372155,
+                    "long": 24.7453688
+                },
+                "path": "",
+                "date": "2018-05-31"
+            },
+            {
+                "from": {
                     "name": "Kiev, Ukraine",
                     "lat": 50.4501071,
                     "long": 30.5240501
@@ -322,20 +336,6 @@
                 },
                 "path": "",
                 "date": "2018-05-13"
-            },
-            {
-                "from": {
-                    "name": "Stockholm, Sweden",
-                    "lat": 59.3251172,
-                    "long": 18.0710935
-                },
-                "to": {
-                    "name": "Tallinn, Estonia",
-                    "lat": 59.4372155,
-                    "long": 24.7453688
-                },
-                "path": "",
-                "date": "2018-05-31"
             }
         ],
         "train": [

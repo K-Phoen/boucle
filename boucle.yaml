@@ -59,12 +59,12 @@ boucle:
             date: '2018-05-24'
         -
             to: Tallinn, Estonia
-            with: boat
+            with: plane
             date: '2018-05-31'
         -
             to: Riga, Latvia
             with: bus
-            date: '2018-06-03'
+            date: '2018-06-04'
         -
             to: Vilnius, Lithuania
             with: bus
