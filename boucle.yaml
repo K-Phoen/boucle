@@ -68,56 +68,56 @@ boucle:
         -
             to: Vilnius, Lithuania
             with: bus
-            date: '2018-06-07'
+            date: '2018-06-08'
         -
             to: Warsaw, Poland
             with: bus
-            date: '2018-06-10'
+            date: '2018-06-11'
         -
             to: Cracow, Poland
             with: bus
-            date: '2018-06-13'
+            date: '2018-06-15'
         -
             to: Berlin, Germany
             with: bus
-            date: '2018-06-16'
+            date: '2018-06-19'
         -
             to: Prague, Czech Republic
             with: train
-            date: '2018-06-21'
+            date: '2018-06-23'
         -
             to: Vienna, Austria
             with: bus
-            date: '2018-06-24'
+            date: '2018-06-27'
         -
             to: Bratislava, Slovakia
             with: bus
-            date: '2018-06-27'
+            date: '2018-06-01'
         -
             to: Budapest, Hungary
             with: bus
-            date: '2018-07-01'
+            date: '2018-07-05'
         -
             to: Lviv, Ukraine
             with: train
-            date: '2018-07-05'
+            date: '2018-07-10'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-09'
+            date: '2018-07-14'
         -
             to: Tchernobyl, Ukraine
             with: bus
-            date: '2018-07-11'
+            date: '2018-07-16'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-11'
+            date: '2018-07-16'
         -
             to: Bucarest, Romania
             with: plane
-            date: '2018-07-14'
+            date: '2018-07-19'
         -
             to: Sofia, Bulgaria
             with: train
-            date: '2018-07-18'
+            date: '2018-07-23'
