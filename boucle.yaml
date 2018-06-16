@@ -72,19 +72,19 @@ boucle:
         -
             to: Warsaw, Poland
             with: bus
-            date: '2018-06-11'
+            date: '2018-06-12'
         -
             to: Cracow, Poland
             with: bus
-            date: '2018-06-15'
+            date: '2018-06-16'
         -
             to: Berlin, Germany
             with: bus
-            date: '2018-06-19'
+            date: '2018-06-20'
         -
             to: Prague, Czech Republic
             with: train
-            date: '2018-06-23'
+            date: '2018-06-24'
         -
             to: Vienna, Austria
             with: bus
