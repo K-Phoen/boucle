@@ -86,17 +86,21 @@ boucle:
             with: train
             date: '2018-06-24'
         -
-            to: Vienna, Austria
-            with: bus
-            date: '2018-06-27'
-        -
             to: Bratislava, Slovakia
             with: bus
-            date: '2018-07-01'
+            date: '2018-06-28'
         -
             to: Budapest, Hungary
             with: bus
-            date: '2018-07-05'
+            date: '2018-07-02'
+        -
+            to: Poprad, Slovakia
+            with: bus
+            date: '2018-07-06'
+        -
+            to: Ždiar, Slovakia
+            with: bus
+            date: '2018-07-08'
         -
             to: Lviv, Ukraine
             with: train

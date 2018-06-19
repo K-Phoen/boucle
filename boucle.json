@@ -128,26 +128,12 @@
                     "long": 14.4212535
                 },
                 "to": {
-                    "name": "Vienna, Austria",
-                    "lat": 48.2083537,
-                    "long": 16.3725042
-                },
-                "path": "",
-                "date": "2018-06-27"
-            },
-            {
-                "from": {
-                    "name": "Vienna, Austria",
-                    "lat": 48.2083537,
-                    "long": 16.3725042
-                },
-                "to": {
                     "name": "Bratislava, Slovakia",
                     "lat": 48.1359085,
                     "long": 17.1597440625
                 },
                 "path": "",
-                "date": "2018-07-01"
+                "date": "2018-06-28"
             },
             {
                 "from": {
@@ -161,7 +147,35 @@
                     "long": 19.0404707
                 },
                 "path": "",
-                "date": "2018-07-05"
+                "date": "2018-07-02"
+            },
+            {
+                "from": {
+                    "name": "Budapest, Hungary",
+                    "lat": 47.4983815,
+                    "long": 19.0404707
+                },
+                "to": {
+                    "name": "Poprad, Slovakia",
+                    "lat": 49.2817886,
+                    "long": 20.6026152
+                },
+                "path": "",
+                "date": "2018-07-06"
+            },
+            {
+                "from": {
+                    "name": "Poprad, Slovakia",
+                    "lat": 49.2817886,
+                    "long": 20.6026152
+                },
+                "to": {
+                    "name": "\u017ddiar, Slovakia",
+                    "lat": 48.7313261,
+                    "long": 20.3646569
+                },
+                "path": "",
+                "date": "2018-07-08"
             },
             {
                 "from": {
@@ -369,9 +383,9 @@
             },
             {
                 "from": {
-                    "name": "Budapest, Hungary",
-                    "lat": 47.4983815,
-                    "long": 19.0404707
+                    "name": "\u017ddiar, Slovakia",
+                    "lat": 48.7313261,
+                    "long": 20.3646569
                 },
                 "to": {
                     "name": "Lviv, Ukraine",
