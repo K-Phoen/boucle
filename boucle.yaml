@@ -84,11 +84,11 @@ boucle:
         -
             to: Prague, Czech Republic
             with: train
-            date: '2018-06-24'
+            date: '2018-06-25'
         -
             to: Bratislava, Slovakia
             with: bus
-            date: '2018-06-28'
+            date: '2018-06-29'
         -
             to: Budapest, Hungary
             with: bus
