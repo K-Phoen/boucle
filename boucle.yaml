@@ -96,27 +96,31 @@ boucle:
         -
             to: Poprad, Slovakia
             with: bus
-            date: '2018-07-06'
+            date: '2018-07-07'
         -
             to: Ždiar, Slovakia
             with: bus
             date: '2018-07-08'
         -
+            to: Poprad, Slovakia
+            with: bus
+            date: '2018-07-11'
+        -
             to: Lviv, Ukraine
             with: train
-            date: '2018-07-10'
+            date: '2018-07-12'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-14'
+            date: '2018-07-16'
         -
             to: Tchernobyl, Ukraine
             with: bus
-            date: '2018-07-16'
+            date: '2018-07-17'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-16'
+            date: '2018-07-17'
         -
             to: Bucarest, Romania
             with: plane
