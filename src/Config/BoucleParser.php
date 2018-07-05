@@ -10,6 +10,7 @@ use Boucle\Step;
 use Boucle\Transport;
 use Geocoder\Geocoder;
 use Geocoder\Query\GeocodeQuery;
+use Geocoder\Exception\CollectionIsEmpty as NoGeocodingResult;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Yaml\Yaml;
@@ -75,9 +76,13 @@ class BoucleParser
     {
         $result = $this->geocoder->geocodeQuery(GeocodeQuery::create($location));
 
-        return new Coordinates(
-            $result->first()->getCoordinates()->getLatitude(),
-            $result->first()->getCoordinates()->getLongitude()
-        );
+        try {
+            return new Coordinates(
+                $result->first()->getCoordinates()->getLatitude(),
+                $result->first()->getCoordinates()->getLongitude()
+            );
+        } catch (NoGeocodingResult $e) {
+            throw UnknownLocation::fromName($location, $e);
+        }
     }
 }

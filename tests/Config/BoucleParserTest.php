@@ -7,6 +7,7 @@ namespace Tests\Boucle\Config;
 use Boucle\Boucle;
 use Boucle\Config\BoucleParser;
 use Boucle\Config\InvalidConfiguration;
+use Boucle\Config\UnknownLocation;
 use Boucle\Place;
 use Boucle\Transport;
 use Geocoder\Geocoder;
@@ -98,6 +99,16 @@ boucle:
 
         $this->assertSame('Lyon, France', $boucle->steps()[0]->to()->name());
         $this->assertSame('Dublin, Ireland', $boucle->steps()[1]->to()->name());
+    }
+
+    public function testItThrowsASpecificErrorForUnknownLocations()
+    {
+        $geocodingResults = new AddressCollection([]);
+        $this->geocoder->method('geocodeQuery')->willReturn($geocodingResults);
+
+        $this->expectException(UnknownLocation::class);
+
+        $this->parser->read($this->root->url().'/full_config_file.yaml');
     }
 
     public function testItThrowsAnErrorIfTheStartIsNotSpecified(): void
