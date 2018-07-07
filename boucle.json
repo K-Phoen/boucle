@@ -123,6 +123,20 @@
             },
             {
                 "from": {
+                    "name": "Berlin, Germany",
+                    "lat": 52.5170365,
+                    "long": 13.3888599
+                },
+                "to": {
+                    "name": "Prague, Czech Republic",
+                    "lat": 50.0874654,
+                    "long": 14.4212535
+                },
+                "path": "",
+                "date": "2018-06-25"
+            },
+            {
+                "from": {
                     "name": "Prague, Czech Republic",
                     "lat": 50.0874654,
                     "long": 14.4212535
@@ -232,6 +246,356 @@
                 },
                 "path": "",
                 "date": "2018-07-17"
+            },
+            {
+                "from": {
+                    "name": "Kiev, Ukraine",
+                    "lat": 50.4501071,
+                    "long": 30.5240501
+                },
+                "to": {
+                    "name": "Chisinau, Moldova",
+                    "lat": 47.0122737,
+                    "long": 28.8605936
+                },
+                "path": "",
+                "date": "2018-07-19"
+            },
+            {
+                "from": {
+                    "name": "Chisinau, Moldova",
+                    "lat": 47.0122737,
+                    "long": 28.8605936
+                },
+                "to": {
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
+                },
+                "path": "",
+                "date": "2018-07-19"
+            },
+            {
+                "from": {
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
+                },
+                "to": {
+                    "name": "Sofia, Bulgaria",
+                    "lat": 42.6978634,
+                    "long": 23.3221789
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Sofia, Bulgaria",
+                    "lat": 42.6978634,
+                    "long": 23.3221789
+                },
+                "to": {
+                    "name": "Thessaloniki, Greece",
+                    "lat": 40.6403167,
+                    "long": 22.9352716
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Thessaloniki, Greece",
+                    "lat": 40.6403167,
+                    "long": 22.9352716
+                },
+                "to": {
+                    "name": "Athens, Greece",
+                    "lat": 38.2636612,
+                    "long": 22.0576191
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Athens, Greece",
+                    "lat": 38.2636612,
+                    "long": 22.0576191
+                },
+                "to": {
+                    "name": "Tirana, Albania",
+                    "lat": 41.3279457,
+                    "long": 19.8185323
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Tirana, Albania",
+                    "lat": 41.3279457,
+                    "long": 19.8185323
+                },
+                "to": {
+                    "name": "Skopje, Macedonia",
+                    "lat": 41.9960924,
+                    "long": 21.4316495
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Skopje, Macedonia",
+                    "lat": 41.9960924,
+                    "long": 21.4316495
+                },
+                "to": {
+                    "name": "Canyon Matka, Macedonia",
+                    "lat": 41.961308,
+                    "long": 21.292864
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Canyon Matka, Macedonia",
+                    "lat": 41.961308,
+                    "long": 21.292864
+                },
+                "to": {
+                    "name": "Skopje, Macedonia",
+                    "lat": 41.9960924,
+                    "long": 21.4316495
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Skopje, Macedonia",
+                    "lat": 41.9960924,
+                    "long": 21.4316495
+                },
+                "to": {
+                    "name": "Pristina, Kosovo",
+                    "lat": 42.6638771,
+                    "long": 21.1640849
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Pristina, Kosovo",
+                    "lat": 42.6638771,
+                    "long": 21.1640849
+                },
+                "to": {
+                    "name": "Prokletije, Albania",
+                    "lat": 42.44,
+                    "long": 19.812
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Prokletije, Albania",
+                    "lat": 42.44,
+                    "long": 19.812
+                },
+                "to": {
+                    "name": "Podgorica, Montenegro",
+                    "lat": 42.4415238,
+                    "long": 19.2621081
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Podgorica, Montenegro",
+                    "lat": 42.4415238,
+                    "long": 19.2621081
+                },
+                "to": {
+                    "name": "Kotor, Montenegro",
+                    "lat": 42.4242488,
+                    "long": 18.771267
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Kotor, Montenegro",
+                    "lat": 42.4242488,
+                    "long": 18.771267
+                },
+                "to": {
+                    "name": "Dubrovnik, Croatia",
+                    "lat": 42.6500417,
+                    "long": 18.0899176
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Dubrovnik, Croatia",
+                    "lat": 42.6500417,
+                    "long": 18.0899176
+                },
+                "to": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "to": {
+                    "name": "Split, Croatia",
+                    "lat": 43.5115555,
+                    "long": 16.4396801
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Split, Croatia",
+                    "lat": 43.5115555,
+                    "long": 16.4396801
+                },
+                "to": {
+                    "name": "Blagaj, Bosnia",
+                    "lat": 43.2575855,
+                    "long": 17.8904391
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Blagaj, Bosnia",
+                    "lat": 43.2575855,
+                    "long": 17.8904391
+                },
+                "to": {
+                    "name": "Kravica Waterfall, Bosnia",
+                    "lat": 43.1561371,
+                    "long": 17.6079286
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Kravica Waterfall, Bosnia",
+                    "lat": 43.1561371,
+                    "long": 17.6079286
+                },
+                "to": {
+                    "name": "Sarajevo, Bosnia",
+                    "lat": 43.8519774,
+                    "long": 18.3866868
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Sarajevo, Bosnia",
+                    "lat": 43.8519774,
+                    "long": 18.3866868
+                },
+                "to": {
+                    "name": "Belgrade, Serbia",
+                    "lat": 44.8178131,
+                    "long": 20.4568974
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Belgrade, Serbia",
+                    "lat": 44.8178131,
+                    "long": 20.4568974
+                },
+                "to": {
+                    "name": "Zagreb, Croatia",
+                    "lat": 45.813177,
+                    "long": 15.977048
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Zagreb, Croatia",
+                    "lat": 45.813177,
+                    "long": 15.977048
+                },
+                "to": {
+                    "name": "Northern Velebit, Croatia",
+                    "lat": 44.77368665,
+                    "long": 14.9745738031763
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Northern Velebit, Croatia",
+                    "lat": 44.77368665,
+                    "long": 14.9745738031763
+                },
+                "to": {
+                    "name": "Ljubljana, Slovenia",
+                    "lat": 46.049865,
+                    "long": 14.5068921
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Ljubljana, Slovenia",
+                    "lat": 46.049865,
+                    "long": 14.5068921
+                },
+                "to": {
+                    "name": "Lake Bled, Slovenia",
+                    "lat": 46.36391325,
+                    "long": 14.0938068713415
+                },
+                "path": "",
+                "date": "2018-07-23"
+            },
+            {
+                "from": {
+                    "name": "Lake Bled, Slovenia",
+                    "lat": 46.36391325,
+                    "long": 14.0938068713415
+                },
+                "to": {
+                    "name": "Vintgar Gorge, Slovenia",
+                    "lat": 46.398082,
+                    "long": 14.0890324
+                },
+                "path": "",
+                "date": "2018-07-23"
             }
         ],
         "car": [
@@ -320,20 +684,6 @@
                 },
                 "path": "",
                 "date": "2018-05-31"
-            },
-            {
-                "from": {
-                    "name": "Kiev, Ukraine",
-                    "lat": 50.4501071,
-                    "long": 30.5240501
-                },
-                "to": {
-                    "name": "Bucarest, Romania",
-                    "lat": 44.4361414,
-                    "long": 26.1027202
-                },
-                "path": "",
-                "date": "2018-07-19"
             }
         ],
         "boat": [
@@ -383,20 +733,6 @@
             },
             {
                 "from": {
-                    "name": "Berlin, Germany",
-                    "lat": 52.5170365,
-                    "long": 13.3888599
-                },
-                "to": {
-                    "name": "Prague, Czech Republic",
-                    "lat": 50.0874654,
-                    "long": 14.4212535
-                },
-                "path": "",
-                "date": "2018-06-25"
-            },
-            {
-                "from": {
                     "name": "Poprad, Slovakia",
                     "lat": 49.2817886,
                     "long": 20.6026152
@@ -408,20 +744,6 @@
                 },
                 "path": "",
                 "date": "2018-07-12"
-            },
-            {
-                "from": {
-                    "name": "Bucarest, Romania",
-                    "lat": 44.4361414,
-                    "long": 26.1027202
-                },
-                "to": {
-                    "name": "Sofia, Bulgaria",
-                    "lat": 42.6978634,
-                    "long": 23.3221789
-                },
-                "path": "",
-                "date": "2018-07-23"
             }
         ],
         "walking": [

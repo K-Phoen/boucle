@@ -83,7 +83,7 @@ boucle:
             date: '2018-06-20'
         -
             to: Prague, Czech Republic
-            with: train
+            with: bus
             date: '2018-06-25'
         -
             to: Bratislava, Slovakia
@@ -122,10 +122,102 @@ boucle:
             with: bus
             date: '2018-07-17'
         -
+            to: Chisinau, Moldova
+            with: bus
+            date: '2018-07-19'
+        -
             to: Bucarest, Romania
-            with: plane
+            with: bus
             date: '2018-07-19'
         -
             to: Sofia, Bulgaria
-            with: train
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Thessaloniki, Greece
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Athens, Greece
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Tirana, Albania
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Skopje, Macedonia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Canyon Matka, Macedonia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Skopje, Macedonia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Pristina, Kosovo
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Prokletije, Albania
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Podgorica, Montenegro
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Kotor, Montenegro
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Dubrovnik, Croatia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Split, Croatia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Blagaj, Bosnia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Kravica Waterfall, Bosnia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Sarajevo, Bosnia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Belgrade, Serbia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Zagreb, Croatia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Northern Velebit, Croatia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Ljubljana, Slovenia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Lake Bled, Slovenia
+            with: bus
+            date: '2018-07-23'
+        -
+            to: Vintgar Gorge, Slovenia
+            with: bus
             date: '2018-07-23'
