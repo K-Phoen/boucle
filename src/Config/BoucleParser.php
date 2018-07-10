@@ -63,9 +63,18 @@ class BoucleParser
 
     private function buildStep(array $stepConfig, Place $previous): Step
     {
+        if (!empty($stepConfig['latitude']) && !empty($stepConfig['longitude'])) {
+            $coordinates = new Coordinates(
+                $stepConfig['latitude'],
+                $stepConfig['longitude']
+            );
+        } else {
+            $coordinates = $this->geocode($stepConfig['to']);
+        }
+
         return new Step(
             $previous,
-            new Place($stepConfig['to'], $this->geocode($stepConfig['to'])),
+            new Place($stepConfig['to'], $coordinates),
             \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']),
             new Transport($stepConfig['with']),
             $stepConfig['path']

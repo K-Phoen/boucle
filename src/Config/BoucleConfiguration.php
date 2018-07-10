@@ -33,6 +33,8 @@ class BoucleConfiguration implements ConfigurationInterface
                     ->arrayPrototype()
                         ->children()
                             ->scalarNode('to')->isRequired()->cannotBeEmpty()->end()
+                            ->floatNode('latitude')->defaultNull()->end()
+                            ->floatNode('longitude')->defaultNull()->end()
                             ->scalarNode('path')
                                 ->info('GPX file describing the path, relative the the web directory.')
                                 ->cannotBeEmpty()

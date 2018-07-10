@@ -51,6 +51,12 @@ boucle:
             to: Dublin, Ireland
             with: bus
             date: \'2018-05-10\'
+        -
+            to: Ždiar, Slovakia
+            latitude: 49.2680295
+            longitude: 20.1786975
+            with: bus
+            date: \'2018-05-11\'
 ',
             'invalid_no_start.yaml' => '
 boucle:
@@ -95,10 +101,11 @@ boucle:
         $this->assertSame(Transport::BUS, (string) $boucle->startBy());
         $this->assertSame('Clermont-Ferrand, France', $boucle->startFrom()->name());
 
-        $this->assertCount(2, $boucle->steps());
+        $this->assertCount(3, $boucle->steps());
 
         $this->assertSame('Lyon, France', $boucle->steps()[0]->to()->name());
         $this->assertSame('Dublin, Ireland', $boucle->steps()[1]->to()->name());
+        $this->assertSame('Ždiar, Slovakia', $boucle->steps()[2]->to()->name());
     }
 
     public function testItThrowsASpecificErrorForUnknownLocations()
