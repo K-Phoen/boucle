@@ -113,11 +113,11 @@ boucle:
         -
             to: Lviv, Ukraine
             with: train
-            date: '2018-07-12'
+            date: '2018-07-11'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-16'
+            date: '2018-07-15'
         -
             to: Tchernobyl, Ukraine
             with: bus
