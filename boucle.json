@@ -728,7 +728,7 @@
                     "lat": 59.9132694,
                     "long": 10.7391112
                 },
-                "path": "Oslo-bergen.gpx",
+                "path": "data\/Oslo-bergen.gpx",
                 "date": "2018-05-18"
             },
             {
@@ -758,8 +758,22 @@
                     "lat": 60.3943034,
                     "long": 5.3258117
                 },
-                "path": "Ulriken-Floyen.gpx",
+                "path": "data\/Ulriken-Floyen.gpx",
                 "date": "2018-05-17"
+            },
+            {
+                "from": {
+                    "name": "\u017ddiar, Slovakia",
+                    "lat": 48.7313261,
+                    "long": 20.3646569
+                },
+                "to": {
+                    "name": "\u017ddiar, Slovakia",
+                    "lat": 48.7313261,
+                    "long": 20.3646569
+                },
+                "path": "data\/the-saddle.gpx",
+                "date": "2018-07-09"
             }
         ]
     }
