@@ -171,8 +171,8 @@
                 },
                 "to": {
                     "name": "Poprad, Slovakia",
-                    "lat": 49.2817886,
-                    "long": 20.6026152
+                    "lat": 49.059719,
+                    "long": 20.2930651
                 },
                 "path": "",
                 "date": "2018-07-07"
@@ -180,13 +180,13 @@
             {
                 "from": {
                     "name": "Poprad, Slovakia",
-                    "lat": 49.2817886,
-                    "long": 20.6026152
+                    "lat": 49.059719,
+                    "long": 20.2930651
                 },
                 "to": {
                     "name": "\u017ddiar, Slovakia",
-                    "lat": 48.7313261,
-                    "long": 20.3646569
+                    "lat": 49.2695199,
+                    "long": 20.2645742
                 },
                 "path": "",
                 "date": "2018-07-08"
@@ -194,13 +194,13 @@
             {
                 "from": {
                     "name": "\u017ddiar, Slovakia",
-                    "lat": 48.7313261,
-                    "long": 20.3646569
+                    "lat": 49.2695199,
+                    "long": 20.2645742
                 },
                 "to": {
                     "name": "Poprad, Slovakia",
-                    "lat": 49.2817886,
-                    "long": 20.6026152
+                    "lat": 49.059719,
+                    "long": 20.2930651
                 },
                 "path": "",
                 "date": "2018-07-10"
@@ -734,8 +734,8 @@
             {
                 "from": {
                     "name": "Poprad, Slovakia",
-                    "lat": 49.2817886,
-                    "long": 20.6026152
+                    "lat": 49.059719,
+                    "long": 20.2930651
                 },
                 "to": {
                     "name": "Lviv, Ukraine",
@@ -764,13 +764,13 @@
             {
                 "from": {
                     "name": "\u017ddiar, Slovakia",
-                    "lat": 48.7313261,
-                    "long": 20.3646569
+                    "lat": 49.2695199,
+                    "long": 20.2645742
                 },
                 "to": {
                     "name": "\u017ddiar, Slovakia",
-                    "lat": 48.7313261,
-                    "long": 20.3646569
+                    "lat": 49.2695199,
+                    "long": 20.2645742
                 },
                 "path": "data\/the-saddle.gpx",
                 "date": "2018-07-09"

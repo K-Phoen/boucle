@@ -95,19 +95,27 @@ boucle:
             date: '2018-07-02'
         -
             to: Poprad, Slovakia
+            latitude: 49.059719
+            longitude: 20.2930651
             with: bus
             date: '2018-07-07'
         -
             to: Ždiar, Slovakia
+            latitude: 49.2695199
+            longitude: 20.2645742
             with: bus
             date: '2018-07-08'
         -
             to: Ždiar, Slovakia
+            latitude: 49.2695199
+            longitude: 20.2645742
             with: walking
             path: data/the-saddle.gpx
             date: '2018-07-09'
         -
             to: Poprad, Slovakia
+            latitude: 49.059719
+            longitude: 20.2930651
             with: bus
             date: '2018-07-10'
         -
