@@ -129,19 +129,19 @@ boucle:
         -
             to: Tchernobyl, Ukraine
             with: bus
-            date: '2018-07-17'
+            date: '2018-07-18'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-17'
+            date: '2018-07-18'
         -
             to: Chisinau, Moldova
             with: bus
-            date: '2018-07-19'
+            date: '2018-07-20'
         -
             to: Bucarest, Romania
             with: bus
-            date: '2018-07-19'
+            date: '2018-07-24'
         -
             to: Sofia, Bulgaria
             with: bus
@@ -149,7 +149,7 @@ boucle:
         -
             to: Thessaloniki, Greece
             with: bus
-            date: '2018-07-23'
+            date: '2018-07-28'
         -
             to: Athens, Greece
             with: bus
