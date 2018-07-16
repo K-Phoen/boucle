@@ -21,7 +21,8 @@
                     "long": 4.8320114
                 },
                 "path": "",
-                "date": "2018-05-09"
+                "arrival_date": "2018-05-09",
+                "departure_date": "2018-05-10"
             },
             {
                 "from": {
@@ -35,7 +36,8 @@
                     "long": 11.9670171
                 },
                 "path": "",
-                "date": "2018-05-22"
+                "arrival_date": "2018-05-22",
+                "departure_date": "2018-05-24"
             },
             {
                 "from": {
@@ -49,7 +51,8 @@
                     "long": 18.0710935
                 },
                 "path": "",
-                "date": "2018-05-24"
+                "arrival_date": "2018-05-24",
+                "departure_date": "2018-05-31"
             },
             {
                 "from": {
@@ -63,7 +66,8 @@
                     "long": 24.1051846
                 },
                 "path": "",
-                "date": "2018-06-04"
+                "arrival_date": "2018-06-04",
+                "departure_date": "2018-06-08"
             },
             {
                 "from": {
@@ -77,7 +81,8 @@
                     "long": 25.2829111
                 },
                 "path": "",
-                "date": "2018-06-08"
+                "arrival_date": "2018-06-08",
+                "departure_date": "2018-06-12"
             },
             {
                 "from": {
@@ -91,7 +96,8 @@
                     "long": 21.0067265
                 },
                 "path": "",
-                "date": "2018-06-12"
+                "arrival_date": "2018-06-12",
+                "departure_date": "2018-06-16"
             },
             {
                 "from": {
@@ -105,7 +111,8 @@
                     "long": 19.9371393
                 },
                 "path": "",
-                "date": "2018-06-16"
+                "arrival_date": "2018-06-16",
+                "departure_date": "2018-06-20"
             },
             {
                 "from": {
@@ -119,7 +126,8 @@
                     "long": 13.3888599
                 },
                 "path": "",
-                "date": "2018-06-20"
+                "arrival_date": "2018-06-20",
+                "departure_date": "2018-06-25"
             },
             {
                 "from": {
@@ -133,7 +141,8 @@
                     "long": 14.4212535
                 },
                 "path": "",
-                "date": "2018-06-25"
+                "arrival_date": "2018-06-25",
+                "departure_date": "2018-06-29"
             },
             {
                 "from": {
@@ -147,7 +156,8 @@
                     "long": 17.1597440625
                 },
                 "path": "",
-                "date": "2018-06-29"
+                "arrival_date": "2018-06-29",
+                "departure_date": "2018-07-02"
             },
             {
                 "from": {
@@ -161,7 +171,8 @@
                     "long": 19.0404707
                 },
                 "path": "",
-                "date": "2018-07-02"
+                "arrival_date": "2018-07-02",
+                "departure_date": "2018-07-07"
             },
             {
                 "from": {
@@ -175,7 +186,8 @@
                     "long": 20.2930651
                 },
                 "path": "",
-                "date": "2018-07-07"
+                "arrival_date": "2018-07-07",
+                "departure_date": "2018-07-08"
             },
             {
                 "from": {
@@ -189,7 +201,8 @@
                     "long": 20.2645742
                 },
                 "path": "",
-                "date": "2018-07-08"
+                "arrival_date": "2018-07-08",
+                "departure_date": "2018-07-09"
             },
             {
                 "from": {
@@ -203,7 +216,8 @@
                     "long": 20.2930651
                 },
                 "path": "",
-                "date": "2018-07-10"
+                "arrival_date": "2018-07-10",
+                "departure_date": "2018-07-11"
             },
             {
                 "from": {
@@ -217,7 +231,8 @@
                     "long": 30.5240501
                 },
                 "path": "",
-                "date": "2018-07-15"
+                "arrival_date": "2018-07-15",
+                "departure_date": "2018-07-18"
             },
             {
                 "from": {
@@ -231,7 +246,8 @@
                     "long": 30.2194322
                 },
                 "path": "",
-                "date": "2018-07-18"
+                "arrival_date": "2018-07-18",
+                "departure_date": "2018-07-18"
             },
             {
                 "from": {
@@ -245,7 +261,8 @@
                     "long": 30.5240501
                 },
                 "path": "",
-                "date": "2018-07-18"
+                "arrival_date": "2018-07-18",
+                "departure_date": "2018-07-20"
             },
             {
                 "from": {
@@ -259,7 +276,8 @@
                     "long": 28.8605936
                 },
                 "path": "",
-                "date": "2018-07-20"
+                "arrival_date": "2018-07-20",
+                "departure_date": "2018-07-23"
             },
             {
                 "from": {
@@ -273,7 +291,8 @@
                     "long": 25.6102746
                 },
                 "path": "",
-                "date": "2018-07-27"
+                "arrival_date": "2018-07-27",
+                "departure_date": "2018-07-30"
             },
             {
                 "from": {
@@ -287,7 +306,8 @@
                     "long": 26.1027202
                 },
                 "path": "",
-                "date": "2018-07-30"
+                "arrival_date": "2018-07-30",
+                "departure_date": "2018-07-31"
             },
             {
                 "from": {
@@ -301,7 +321,8 @@
                     "long": 23.3221789
                 },
                 "path": "",
-                "date": "2018-07-31"
+                "arrival_date": "2018-07-31",
+                "departure_date": "2018-08-04"
             },
             {
                 "from": {
@@ -315,7 +336,8 @@
                     "long": 22.9352716
                 },
                 "path": "",
-                "date": "2018-08-04"
+                "arrival_date": "2018-08-04",
+                "departure_date": "2018-08-08"
             },
             {
                 "from": {
@@ -329,7 +351,8 @@
                     "long": 22.0576191
                 },
                 "path": "",
-                "date": "2018-08-08"
+                "arrival_date": "2018-08-08",
+                "departure_date": "2018-08-13"
             },
             {
                 "from": {
@@ -343,7 +366,8 @@
                     "long": 19.8185323
                 },
                 "path": "",
-                "date": "2018-08-13"
+                "arrival_date": "2018-08-13",
+                "departure_date": "2018-08-17"
             },
             {
                 "from": {
@@ -357,7 +381,8 @@
                     "long": 21.4316495
                 },
                 "path": "",
-                "date": "2018-08-17"
+                "arrival_date": "2018-08-17",
+                "departure_date": "2018-08-19"
             },
             {
                 "from": {
@@ -371,7 +396,8 @@
                     "long": 21.292864
                 },
                 "path": "",
-                "date": "2018-08-19"
+                "arrival_date": "2018-08-19",
+                "departure_date": "2018-08-19"
             },
             {
                 "from": {
@@ -385,7 +411,8 @@
                     "long": 21.4316495
                 },
                 "path": "",
-                "date": "2018-08-19"
+                "arrival_date": "2018-08-19",
+                "departure_date": "2018-08-21"
             },
             {
                 "from": {
@@ -399,7 +426,8 @@
                     "long": 21.1640849
                 },
                 "path": "",
-                "date": "2018-08-21"
+                "arrival_date": "2018-08-21",
+                "departure_date": "2018-08-24"
             },
             {
                 "from": {
@@ -413,7 +441,8 @@
                     "long": 19.812
                 },
                 "path": "",
-                "date": "2018-08-24"
+                "arrival_date": "2018-08-24",
+                "departure_date": "2018-08-28"
             },
             {
                 "from": {
@@ -427,7 +456,8 @@
                     "long": 19.2621081
                 },
                 "path": "",
-                "date": "2018-08-28"
+                "arrival_date": "2018-08-28",
+                "departure_date": "2018-08-28"
             },
             {
                 "from": {
@@ -441,7 +471,8 @@
                     "long": 18.771267
                 },
                 "path": "",
-                "date": "2018-08-28"
+                "arrival_date": "2018-08-28",
+                "departure_date": "2018-09-01"
             },
             {
                 "from": {
@@ -455,7 +486,8 @@
                     "long": 18.0899176
                 },
                 "path": "",
-                "date": "2018-09-01"
+                "arrival_date": "2018-09-01",
+                "departure_date": "2018-09-03"
             },
             {
                 "from": {
@@ -469,7 +501,8 @@
                     "long": 16.4396801
                 },
                 "path": "",
-                "date": "2018-09-03"
+                "arrival_date": "2018-09-03",
+                "departure_date": "2018-09-07"
             },
             {
                 "from": {
@@ -483,7 +516,8 @@
                     "long": 17.8030427
                 },
                 "path": "",
-                "date": "2018-09-07"
+                "arrival_date": "2018-09-07",
+                "departure_date": "2018-09-09"
             },
             {
                 "from": {
@@ -497,7 +531,8 @@
                     "long": 17.8904391
                 },
                 "path": "",
-                "date": "2018-09-09"
+                "arrival_date": "2018-09-09",
+                "departure_date": "2018-09-09"
             },
             {
                 "from": {
@@ -511,7 +546,8 @@
                     "long": 17.8030427
                 },
                 "path": "",
-                "date": "2018-09-09"
+                "arrival_date": "2018-09-09",
+                "departure_date": "2018-09-10"
             },
             {
                 "from": {
@@ -525,7 +561,8 @@
                     "long": 17.6079286
                 },
                 "path": "",
-                "date": "2018-09-10"
+                "arrival_date": "2018-09-10",
+                "departure_date": "2018-09-10"
             },
             {
                 "from": {
@@ -539,7 +576,8 @@
                     "long": 17.8030427
                 },
                 "path": "",
-                "date": "2018-09-10"
+                "arrival_date": "2018-09-10",
+                "departure_date": "2018-09-12"
             },
             {
                 "from": {
@@ -553,7 +591,8 @@
                     "long": 18.3866868
                 },
                 "path": "",
-                "date": "2018-09-12"
+                "arrival_date": "2018-09-12",
+                "departure_date": "2018-09-16"
             },
             {
                 "from": {
@@ -567,7 +606,8 @@
                     "long": 20.4568974
                 },
                 "path": "",
-                "date": "2018-09-16"
+                "arrival_date": "2018-09-16",
+                "departure_date": "2018-09-20"
             },
             {
                 "from": {
@@ -581,7 +621,8 @@
                     "long": 15.977048
                 },
                 "path": "",
-                "date": "2018-09-20"
+                "arrival_date": "2018-09-20",
+                "departure_date": "2018-09-22"
             },
             {
                 "from": {
@@ -595,7 +636,8 @@
                     "long": 14.9745738031763
                 },
                 "path": "",
-                "date": "2018-09-22"
+                "arrival_date": "2018-09-22",
+                "departure_date": "2018-09-25"
             },
             {
                 "from": {
@@ -609,7 +651,8 @@
                     "long": 15.977048
                 },
                 "path": "",
-                "date": "2018-09-25"
+                "arrival_date": "2018-09-25",
+                "departure_date": "2018-09-26"
             },
             {
                 "from": {
@@ -623,7 +666,8 @@
                     "long": 14.5068921
                 },
                 "path": "",
-                "date": "2018-09-26"
+                "arrival_date": "2018-09-26",
+                "departure_date": "2018-09-29"
             },
             {
                 "from": {
@@ -637,7 +681,8 @@
                     "long": 14.0938068713415
                 },
                 "path": "",
-                "date": "2018-09-29"
+                "arrival_date": "2018-09-29",
+                "departure_date": "2018-09-29"
             },
             {
                 "from": {
@@ -651,7 +696,8 @@
                     "long": 14.5068921
                 },
                 "path": "",
-                "date": "2018-09-30"
+                "arrival_date": "2018-09-30",
+                "departure_date": "2018-10-01"
             }
         ],
         "car": [
@@ -667,7 +713,8 @@
                     "long": -9.0490632
                 },
                 "path": "",
-                "date": "2018-05-11"
+                "arrival_date": "2018-05-11",
+                "departure_date": "2018-05-12"
             },
             {
                 "from": {
@@ -681,7 +728,8 @@
                     "long": -9.54161164390595
                 },
                 "path": "",
-                "date": "2018-05-12"
+                "arrival_date": "2018-05-12",
+                "departure_date": "2018-05-12"
             },
             {
                 "from": {
@@ -695,7 +743,8 @@
                     "long": -6.2602732
                 },
                 "path": "",
-                "date": "2018-05-13"
+                "arrival_date": "2018-05-13",
+                "departure_date": "2018-05-15"
             }
         ],
         "plane": [
@@ -711,7 +760,8 @@
                     "long": -6.2602732
                 },
                 "path": "",
-                "date": "2018-05-10"
+                "arrival_date": "2018-05-10",
+                "departure_date": "2018-05-11"
             },
             {
                 "from": {
@@ -725,7 +775,8 @@
                     "long": 5.3258117
                 },
                 "path": "",
-                "date": "2018-05-15"
+                "arrival_date": "2018-05-15",
+                "departure_date": "2018-05-17"
             },
             {
                 "from": {
@@ -739,7 +790,8 @@
                     "long": 24.7453688
                 },
                 "path": "",
-                "date": "2018-05-31"
+                "arrival_date": "2018-05-31",
+                "departure_date": "2018-06-04"
             },
             {
                 "from": {
@@ -753,7 +805,8 @@
                     "long": 4.8320114
                 },
                 "path": "",
-                "date": "2018-10-01"
+                "arrival_date": "2018-10-01",
+                "departure_date": ""
             }
         ],
         "boat": [
@@ -769,7 +822,8 @@
                     "long": -9.58919368266271
                 },
                 "path": "",
-                "date": "2018-05-12"
+                "arrival_date": "2018-05-12",
+                "departure_date": "2018-05-13"
             },
             {
                 "from": {
@@ -783,7 +837,8 @@
                     "long": -9.54161164390595
                 },
                 "path": "",
-                "date": "2018-05-13"
+                "arrival_date": "2018-05-13",
+                "departure_date": "2018-05-13"
             }
         ],
         "train": [
@@ -799,7 +854,8 @@
                     "long": 10.7391112
                 },
                 "path": "data\/Oslo-bergen.gpx",
-                "date": "2018-05-18"
+                "arrival_date": "2018-05-18",
+                "departure_date": "2018-05-22"
             },
             {
                 "from": {
@@ -813,7 +869,8 @@
                     "long": 24.0315921
                 },
                 "path": "",
-                "date": "2018-07-11"
+                "arrival_date": "2018-07-11",
+                "departure_date": "2018-07-15"
             },
             {
                 "from": {
@@ -827,7 +884,8 @@
                     "long": 26.1027202
                 },
                 "path": "",
-                "date": "2018-07-23"
+                "arrival_date": "2018-07-23",
+                "departure_date": "2018-07-27"
             }
         ],
         "walking": [
@@ -843,7 +901,8 @@
                     "long": 5.3258117
                 },
                 "path": "data\/Ulriken-Floyen.gpx",
-                "date": "2018-05-17"
+                "arrival_date": "2018-05-17",
+                "departure_date": "2018-05-18"
             },
             {
                 "from": {
@@ -857,7 +916,8 @@
                     "long": 20.2645742
                 },
                 "path": "data\/the-saddle.gpx",
-                "date": "2018-07-09"
+                "arrival_date": "2018-07-09",
+                "departure_date": "2018-07-10"
             },
             {
                 "from": {
@@ -871,7 +931,8 @@
                     "long": 14.0890324
                 },
                 "path": "",
-                "date": "2018-09-29"
+                "arrival_date": "2018-09-29",
+                "departure_date": "2018-09-30"
             }
         ]
     }
