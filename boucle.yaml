@@ -140,97 +140,126 @@ boucle:
             date: '2018-07-20'
         -
             to: Bucarest, Romania
+            with: train
+            date: '2018-07-23'
+        -
+            to: Brașov, Romania
             with: bus
-            date: '2018-07-24'
+            date: '2018-07-27'
+        -
+            to: Bucarest, Romania
+            with: bus
+            date: '2018-07-30'
         -
             to: Sofia, Bulgaria
             with: bus
-            date: '2018-07-23'
+            date: '2018-07-31'
         -
             to: Thessaloniki, Greece
             with: bus
-            date: '2018-07-28'
+            date: '2018-08-04'
         -
             to: Athens, Greece
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-08'
         -
             to: Tirana, Albania
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-13'
         -
             to: Skopje, Macedonia
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-17'
         -
             to: Canyon Matka, Macedonia
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-19'
         -
             to: Skopje, Macedonia
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-19'
         -
             to: Pristina, Kosovo
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-21'
         -
+            # hiking
             to: Prokletije, Albania
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-24'
         -
             to: Podgorica, Montenegro
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-28'
         -
             to: Kotor, Montenegro
             with: bus
-            date: '2018-07-23'
+            date: '2018-08-28'
         -
             to: Dubrovnik, Croatia
             with: bus
-            date: '2018-07-23'
-        -
-            to: Mostar, Bosnia
-            with: bus
-            date: '2018-07-23'
+            date: '2018-09-01'
         -
             to: Split, Croatia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-03'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-09-07'
         -
             to: Blagaj, Bosnia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-09'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-09-09'
         -
             to: Kravica Waterfall, Bosnia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-10'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-09-10'
         -
             to: Sarajevo, Bosnia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-12'
         -
             to: Belgrade, Serbia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-16'
         -
             to: Zagreb, Croatia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-20'
         -
             to: Northern Velebit, Croatia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-22'
+        -
+            to: Zagreb, Croatia
+            with: bus
+            date: '2018-09-25'
         -
             to: Ljubljana, Slovenia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-26'
         -
             to: Lake Bled, Slovenia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-29'
         -
             to: Vintgar Gorge, Slovenia
+            with: walking
+            date: '2018-09-29'
+        -
+            to: Ljubljana, Slovenia
             with: bus
-            date: '2018-07-23'
+            date: '2018-09-30'
+        -
+            to: Lyon, France
+            with: plane
+            date: '2018-10-01'
