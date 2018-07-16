@@ -85,4 +85,26 @@ final class Boucle
     {
         return $this->steps;
     }
+
+    /**
+     * SMELL -> if steps were stored as a (doubly) linked list, we
+     * could easily access the previous and next steps and we would
+     * not have to rely on these hacky numeric indices.
+     *
+     * @TODO refactor
+     */
+
+    public function hasStep(int $i): bool
+    {
+        return isset($this->steps[$i]);
+    }
+
+    public function step(int $i): Step
+    {
+        if (!$this->hasStep($i)) {
+            throw new \LogicException(sprintf('No step at index "%d"', $i));
+        }
+
+        return $this->steps[$i];
+    }
 }

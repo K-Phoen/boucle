@@ -5,6 +5,8 @@ import {points as turfPoints} from '@turf/helpers';
 import turfBbox from '@turf/bbox';
 import omnivore from '@mapbox/leaflet-omnivore';
 
+import me_marker_img from '../img/me-marker.png';
+
 class MapView {
     constructor(config = {}) {
         this.config = config;
@@ -62,6 +64,7 @@ class MapView {
             this.drawStart(boucle);
             this.drawSteps(boucle);
             this.centerMap(boucle);
+            this.addMeMarker(boucle);
         });
     }
 
@@ -84,6 +87,37 @@ class MapView {
             [bbox[0], bbox[1]],
             [bbox[2], bbox[3]]
         ]);
+    }
+
+    addMeMarker(boucle) {
+        const now = new Date();
+        const markerIcon = L.icon({
+            iconUrl: './dist/'+me_marker_img,
+            iconSize: [32, 32], // size of the icon
+            iconAnchor: [16, 32], // point of the icon which will correspond to marker's location
+        });
+
+        for (let transport in boucle.steps) {
+            if (!boucle.steps.hasOwnProperty(transport)) {
+                continue;
+            }
+
+            boucle.steps[transport].forEach(step => {
+                if (step.departure_date.length == 0) {
+                    return;
+                }
+
+                const arrival = new Date(step.arrival_date);
+                const departure = new Date(step.departure_date);
+
+                if (arrival <= now && departure > now) {
+                    L.marker(
+                        [step.to.lat, step.to.long],
+                        {icon: markerIcon}
+                    ).addTo(this.map);
+                }
+            });
+        }
     }
 
     drawStart(boucle) {
@@ -141,7 +175,7 @@ class MapView {
     }
 
     popupContent(step) {
-        return step.from.name + ' → ' + step.to.name + ' – ' + step.date;
+        return step.from.name + ' → ' + step.to.name + ' – ' + step.arrival_date;
     }
 }
 

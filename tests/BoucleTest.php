@@ -76,4 +76,39 @@ class BoucleTest extends TestCase
 
         $this->assertSame($start, $boucle->startFrom());
     }
+
+    public function testIndividualStepsCanBeRetrieved(): void
+    {
+        $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', [
+            $firstStep = new Step(
+                new Place('somewhere', new Coordinates(0, 0)),
+                new Place('somewhere else', new Coordinates(0, 0)),
+                new \DateTimeImmutable(),
+                Transport::PLANE()
+            ),
+            $secondStep = new Step(
+                new Place('new somewhere', new Coordinates(0, 0)),
+                new Place('new somewhere else', new Coordinates(0, 0)),
+                new \DateTimeImmutable(),
+                Transport::BUS()
+            ),
+        ]);
+
+        $this->assertTrue($boucle->hasStep(0));
+        $this->assertSame($firstStep, $boucle->step(0));
+        $this->assertTrue($boucle->hasStep(1));
+        $this->assertSame($secondStep, $boucle->step(1));
+
+        $this->assertFalse($boucle->hasStep(-1));
+        $this->assertFalse($boucle->hasStep(2));
+    }
+
+    public function testUnknownStepsCanNotBeAccessed(): void
+    {
+        $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', []);
+
+        $this->expectException(\LogicException::class);
+
+        $boucle->step(0);
+    }
 }

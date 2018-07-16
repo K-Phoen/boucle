@@ -17,11 +17,15 @@ boucle:
             with: car
             date: '2018-05-11'
         -
+            to: Rossaveel, Ireland
+            with: car
+            date: '2018-05-12'
+        -
             to: Inis Meáin, Ireland
             with: boat
             date: '2018-05-12'
         -
-            to: Galway, Ireland
+            to: Rossaveel, Ireland
             with: boat
             date: '2018-05-13'
         -
@@ -33,84 +37,226 @@ boucle:
             with: plane
             date: '2018-05-15'
         -
+            to: Bergen, Norway
+            with: walking
+            path: data/Ulriken-Floyen.gpx
+            date: '2018-05-17'
+        -
             to: Oslo, Norway
-            path: Oslo-bergen.gpx
             with: train
-            date: '2018-05-20'
+            path: data/Oslo-bergen.gpx
+            date: '2018-05-18'
         -
             to: Göteborg, Sweden
             with: bus
-            date: '2018-05-25'
+            date: '2018-05-22'
         -
             to: Stockholm, Sweden
             with: bus
-            date: '2018-05-30'
-        -
-            to: Helsinki, Finland
-            with: boat
-            date: '2018-06-04'
+            date: '2018-05-24'
         -
             to: Tallinn, Estonia
-            with: boat
-            date: '2018-06-10'
+            with: plane
+            date: '2018-05-31'
         -
             to: Riga, Latvia
             with: bus
-            date: '2018-06-15'
+            date: '2018-06-04'
         -
             to: Vilnius, Lithuania
             with: bus
-            date: '2018-06-20'
+            date: '2018-06-08'
         -
             to: Warsaw, Poland
             with: bus
-            date: '2018-06-25'
+            date: '2018-06-12'
         -
             to: Cracow, Poland
             with: bus
-            date: '2018-06-29'
+            date: '2018-06-16'
         -
             to: Berlin, Germany
             with: bus
-            date: '2018-07-02'
+            date: '2018-06-20'
         -
             to: Prague, Czech Republic
-            with: train
-            date: '2018-07-06'
-        -
-            to: Vienna, Austria
             with: bus
-            date: '2018-07-10'
+            date: '2018-06-25'
         -
             to: Bratislava, Slovakia
             with: bus
-            date: '2018-07-15'
+            date: '2018-06-29'
         -
             to: Budapest, Hungary
             with: bus
-            date: '2018-07-18'
+            date: '2018-07-02'
+        -
+            to: Poprad, Slovakia
+            latitude: 49.059719
+            longitude: 20.2930651
+            with: bus
+            date: '2018-07-07'
+        -
+            to: Ždiar, Slovakia
+            latitude: 49.2695199
+            longitude: 20.2645742
+            with: bus
+            date: '2018-07-08'
+        -
+            to: Ždiar, Slovakia
+            latitude: 49.2695199
+            longitude: 20.2645742
+            with: walking
+            path: data/the-saddle.gpx
+            date: '2018-07-09'
+        -
+            to: Poprad, Slovakia
+            latitude: 49.059719
+            longitude: 20.2930651
+            with: bus
+            date: '2018-07-10'
         -
             to: Lviv, Ukraine
             with: train
-            date: '2018-07-23'
+            date: '2018-07-11'
         -
             to: Kiev, Ukraine
             with: bus
-            date: '2018-07-25'
+            date: '2018-07-15'
         -
             to: Tchernobyl, Ukraine
             with: bus
-            date: '2018-07-27'
+            date: '2018-07-18'
         -
             to: Kiev, Ukraine
+            with: bus
+            date: '2018-07-18'
+        -
+            to: Chisinau, Moldova
+            with: bus
+            date: '2018-07-20'
+        -
+            to: Bucarest, Romania
+            with: train
+            date: '2018-07-23'
+        -
+            to: Brașov, Romania
             with: bus
             date: '2018-07-27'
         -
             to: Bucarest, Romania
-            with: plane
+            with: bus
             date: '2018-07-30'
         -
             to: Sofia, Bulgaria
-            with: train
+            with: bus
+            date: '2018-07-31'
+        -
+            to: Thessaloniki, Greece
+            with: bus
             date: '2018-08-04'
-
+        -
+            to: Athens, Greece
+            with: bus
+            date: '2018-08-08'
+        -
+            to: Tirana, Albania
+            with: bus
+            date: '2018-08-13'
+        -
+            to: Skopje, Macedonia
+            with: bus
+            date: '2018-08-17'
+        -
+            to: Canyon Matka, Macedonia
+            with: bus
+            date: '2018-08-19'
+        -
+            to: Skopje, Macedonia
+            with: bus
+            date: '2018-08-19'
+        -
+            to: Pristina, Kosovo
+            with: bus
+            date: '2018-08-21'
+        -
+            # hiking
+            to: Prokletije, Albania
+            with: bus
+            date: '2018-08-24'
+        -
+            to: Podgorica, Montenegro
+            with: bus
+            date: '2018-08-28'
+        -
+            to: Kotor, Montenegro
+            with: bus
+            date: '2018-08-28'
+        -
+            to: Dubrovnik, Croatia
+            with: bus
+            date: '2018-09-01'
+        -
+            to: Split, Croatia
+            with: bus
+            date: '2018-09-03'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-09-07'
+        -
+            to: Blagaj, Bosnia
+            with: bus
+            date: '2018-09-09'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-09-09'
+        -
+            to: Kravica Waterfall, Bosnia
+            with: bus
+            date: '2018-09-10'
+        -
+            to: Mostar, Bosnia
+            with: bus
+            date: '2018-09-10'
+        -
+            to: Sarajevo, Bosnia
+            with: bus
+            date: '2018-09-12'
+        -
+            to: Belgrade, Serbia
+            with: bus
+            date: '2018-09-16'
+        -
+            to: Zagreb, Croatia
+            with: bus
+            date: '2018-09-20'
+        -
+            to: Northern Velebit, Croatia
+            with: bus
+            date: '2018-09-22'
+        -
+            to: Zagreb, Croatia
+            with: bus
+            date: '2018-09-25'
+        -
+            to: Ljubljana, Slovenia
+            with: bus
+            date: '2018-09-26'
+        -
+            to: Lake Bled, Slovenia
+            with: bus
+            date: '2018-09-29'
+        -
+            to: Vintgar Gorge, Slovenia
+            with: walking
+            date: '2018-09-29'
+        -
+            to: Ljubljana, Slovenia
+            with: bus
+            date: '2018-09-30'
+        -
+            to: Lyon, France
+            with: plane
+            date: '2018-10-01'

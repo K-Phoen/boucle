@@ -29,12 +29,19 @@ class BoucleToJson
             'steps' => array_fill_keys(Transport::consts(), []),
         ];
 
-        foreach ($boucle->steps() as $step) {
+        foreach ($boucle->steps() as $i => $step) {
+            if (!$boucle->hasStep($i+1)) {
+                $departureDate = '';
+            } else {
+                $departureDate = $boucle->step($i+1)->date()->format('Y-m-d');
+            }
+
             $data['steps'][(string) $step->transport()][] = [
                 'from' => $this->compilePlace($step->from()),
                 'to' => $this->compilePlace($step->to()),
                 'path' => $step->pathFilename(),
-                'date' => $step->date()->format('Y-m-d'),
+                'arrival_date' => $step->date()->format('Y-m-d'),
+                'departure_date' => $departureDate,
             ];
         }
 
