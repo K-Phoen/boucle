@@ -4,6 +4,7 @@ import './leaflet.boucle-arrow';
 import {points as turfPoints} from '@turf/helpers';
 import turfBbox from '@turf/bbox';
 import omnivore from '@mapbox/leaflet-omnivore';
+import Pikaday from 'pikaday';
 
 import me_marker_img from '../img/me-marker.png';
 
@@ -12,6 +13,7 @@ class MapView {
         this.config = config;
 
         this.map = this.mountMap();
+        this.boucle = {};
 
         this.mountLegend();
         this.loadSteps();
@@ -53,32 +55,65 @@ class MapView {
         return legend;
     }
 
+    mountDatePicker() {
+        const container = L.control({position: 'bottomright'});
+        const datepicker = document.createElement('div');
+        const picker = new Pikaday({
+            firstDay: 1,
+            minDate: new Date(this.boucle.start.departure_date),
+            maxDate: new Date(this.boucle.end.arrival_date),
+            onSelect: (date) => {
+                picker.hide();
+                this.addMeMarker(date);
+            }
+        });
+
+        datepicker.setAttribute('id', 'datepicker');
+        datepicker.appendChild(picker.el);
+        picker.hide();
+
+        document.getElementById('map').appendChild(datepicker);
+
+        container.onAdd = () => {
+            const div = L.DomUtil.create('div');
+
+            div.innerHTML = '<div class="leaflet-bar"><a href="#" title="Calendar" role="button" aria-label="Calendar">📅</a></div>';
+
+            div.onclick = () => picker.show();
+
+            return div;
+        };
+
+        container.addTo(this.map);
+    }
+
     loadSteps() {
         xhr({method: 'GET', uri: './boucle.json'}, (err, response, body) => {
             if (err || response.statusCode !== 200) {
                 return;
             }
 
-            const boucle = JSON.parse(body);
+            this.boucle = JSON.parse(body);
 
-            this.drawStart(boucle);
-            this.drawSteps(boucle);
-            this.centerMap(boucle);
-            this.addMeMarker(boucle);
+            this.drawStart();
+            this.drawSteps();
+            this.centerMap();
+            this.addMeMarker(new Date());
+            this.mountDatePicker();
         });
     }
 
-    centerMap(boucle) {
+    centerMap() {
         let points = [
-            [boucle.start.from.lat, boucle.start.from.long],
+            [this.boucle.start.from.lat, this.boucle.start.from.long],
         ];
 
-        for (let transport in boucle.steps) {
-            if (!boucle.steps.hasOwnProperty(transport)) {
+        for (let transport in this.boucle.steps) {
+            if (!this.boucle.steps.hasOwnProperty(transport)) {
                 continue;
             }
 
-            boucle.steps[transport].forEach(step => points.push([step.to.lat, step.to.long]));
+            this.boucle.steps[transport].forEach(step => points.push([step.to.lat, step.to.long]));
         }
 
         const bbox = turfBbox(turfPoints(points));
@@ -89,20 +124,24 @@ class MapView {
         ]);
     }
 
-    addMeMarker(boucle) {
-        const now = new Date();
+    addMeMarker(now) {
         const markerIcon = L.icon({
             iconUrl: './dist/'+me_marker_img,
             iconSize: [32, 32], // size of the icon
             iconAnchor: [16, 32], // point of the icon which will correspond to marker's location
         });
 
-        for (let transport in boucle.steps) {
-            if (!boucle.steps.hasOwnProperty(transport)) {
+        if (this.meMarker) {
+            this.meMarker.remove();
+            this.meMarker = null;
+        }
+
+        for (let transport in this.boucle.steps) {
+            if (!this.boucle.steps.hasOwnProperty(transport)) {
                 continue;
             }
 
-            boucle.steps[transport].forEach(step => {
+            this.boucle.steps[transport].forEach(step => {
                 if (step.departure_date.length == 0) {
                     return;
                 }
@@ -111,31 +150,36 @@ class MapView {
                 const departure = new Date(step.departure_date);
 
                 if (arrival <= now && departure > now) {
-                    L.marker(
+                    this.meMarker = L.marker(
                         [step.to.lat, step.to.long],
                         {icon: markerIcon}
-                    ).addTo(this.map);
+                    );
+
+                    this.meMarker.addTo(this.map);
                 }
             });
         }
     }
 
-    drawStart(boucle) {
+    drawStart() {
         const markerIcon = L.divIcon({
             className: 'start-marker-icon',
-            html: '<span style="background-color: ' + this.config.transports[boucle.start.with]['color'] + '"></span>',
+            html: '<span style="background-color: ' + this.config.transports[this.boucle.start.with]['color'] + '"></span>',
         });
 
-        L.marker([boucle.start.from.lat, boucle.start.from.long], {icon: markerIcon}).addTo(this.map);
+        L.marker(
+            [this.boucle.start.from.lat, this.boucle.start.from.long],
+            {icon: markerIcon}
+        ).addTo(this.map);
     }
 
-    drawSteps(boucle) {
-        for (let transport in boucle.steps) {
-            if (!boucle.steps.hasOwnProperty(transport)) {
+    drawSteps() {
+        for (let transport in this.boucle.steps) {
+            if (!this.boucle.steps.hasOwnProperty(transport)) {
                 continue;
             }
 
-            boucle.steps[transport].forEach(step => {
+            this.boucle.steps[transport].forEach(step => {
                 if (step.path) {
                     this.drawPath(transport, step);
                 } else {

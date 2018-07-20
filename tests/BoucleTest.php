@@ -31,13 +31,65 @@ class BoucleTest extends TestCase
         ];
     }
 
-    public function testAnEmptyBoucleAsNoStartingTransport(): void
+    public function testAnEmptyBoucleHasNoStartingTransport(): void
     {
         $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', []);
 
         $this->expectException(\LogicException::class);
 
         $boucle->startBy();
+    }
+
+    public function testAnEmptyBoucleHasNoStart(): void
+    {
+        $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', []);
+
+        $this->expectException(\LogicException::class);
+
+        $boucle->start();
+    }
+
+    public function testAnEmptyBoucleHasNoEnd(): void
+    {
+        $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', []);
+
+        $this->expectException(\LogicException::class);
+
+        $boucle->end();
+    }
+
+    public function testTheStartingStepCanBeRetrieved(): void
+    {
+        $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', [
+            $start = new Step(
+                new Place('somewhere', new Coordinates(0, 0)),
+                new Place('somewhere else', new Coordinates(0, 0)),
+                new \DateTimeImmutable(),
+                Transport::PLANE()
+            ),
+        ]);
+
+        $this->assertSame($start, $boucle->start());
+    }
+
+    public function testTheEndingStepCanBeRetrieved(): void
+    {
+        $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', [
+            new Step(
+                new Place('somewhere', new Coordinates(0, 0)),
+                new Place('somewhere else', new Coordinates(0, 0)),
+                new \DateTimeImmutable(),
+                Transport::PLANE()
+            ),
+            $end = new Step(
+                new Place('somewhere', new Coordinates(0, 0)),
+                new Place('somewhere else', new Coordinates(0, 0)),
+                new \DateTimeImmutable(),
+                Transport::PLANE()
+            ),
+        ]);
+
+        $this->assertSame($end, $boucle->end());
     }
 
     public function testTheFirstTransportMethodCanBeRetrieved(): void
@@ -54,7 +106,7 @@ class BoucleTest extends TestCase
         $this->assertSame($transport, $boucle->startBy());
     }
 
-    public function testAnEmptyBoucleAsNoStartingStep(): void
+    public function testAnEmptyBoucleHasNoStartingStep(): void
     {
         $boucle = new Boucle('Travelr', Boucle::MAP_MAPBOX, 'api-key', []);
 

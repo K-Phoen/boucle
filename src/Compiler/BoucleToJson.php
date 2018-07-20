@@ -24,7 +24,11 @@ class BoucleToJson
         $data = [
             'start' => [
                 'from' => $this->compilePlace($boucle->startFrom()),
+                'departure_date' => $boucle->start()->date()->format('Y-m-d'),
                 'with' => (string) $boucle->startBy(),
+            ],
+            'end' => [
+                'arrival_date' => $boucle->end()->date()->format('Y-m-d'),
             ],
             'steps' => array_fill_keys(Transport::consts(), []),
         ];

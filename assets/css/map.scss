@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+@import '~pikaday/scss/pikaday';
 @import '~leaflet/dist/leaflet.css';
 
 html, body {
@@ -59,4 +60,19 @@ html, body {
   display: inline-block;
   height: inherit;
   width: inherit;
+}
+
+#datepicker {
+    width: 16rem;
+    height: 12rem;
+
+    z-index: 90000;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }

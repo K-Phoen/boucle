@@ -61,7 +61,11 @@ class BoucleToJsonTest extends TestCase
                         'lat' => 1,
                         'long' => 1,
                     ],
+                    'departure_date' => '2018-05-04',
                     'with' => 'bus',
+                ],
+                'end' => [
+                    'arrival_date' => '2018-05-06',
                 ],
                 'steps' => [
                     'bus' => [
