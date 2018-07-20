@@ -63,14 +63,14 @@ class MapView {
             minDate: new Date(this.boucle.start.departure_date),
             maxDate: new Date(this.boucle.end.arrival_date),
             onSelect: (date) => {
-                picker.hide();
+                datepicker.classList.add('hidden');
                 this.addMeMarker(date);
             }
         });
 
         datepicker.setAttribute('id', 'datepicker');
         datepicker.appendChild(picker.el);
-        picker.hide();
+        datepicker.classList.add('hidden');
 
         document.getElementById('map').appendChild(datepicker);
 
@@ -79,7 +79,7 @@ class MapView {
 
             div.innerHTML = '<div class="leaflet-bar"><a href="#" title="Calendar" role="button" aria-label="Calendar">📅</a></div>';
 
-            div.onclick = () => picker.show();
+            div.onclick = () => datepicker.classList.remove('hidden');
 
             return div;
         };
