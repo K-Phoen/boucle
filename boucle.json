@@ -5,7 +5,11 @@
             "lat": 45.7774551,
             "long": 3.0819427
         },
+        "departure_date": "2018-05-09",
         "with": "bus"
+    },
+    "end": {
+        "arrival_date": "2018-10-25"
     },
     "steps": {
         "bus": [
