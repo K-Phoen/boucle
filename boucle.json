@@ -262,7 +262,7 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-18",
-                "departure_date": "2018-07-20"
+                "departure_date": "2018-07-22"
             },
             {
                 "from": {
@@ -271,13 +271,28 @@
                     "long": 30.5240501
                 },
                 "to": {
+                    "name": "Odessa, Ukraine",
+                    "lat": 46.4846583,
+                    "long": 30.732564
+                },
+                "path": "",
+                "arrival_date": "2018-07-22",
+                "departure_date": "2018-07-25"
+            },
+            {
+                "from": {
+                    "name": "Odessa, Ukraine",
+                    "lat": 46.4846583,
+                    "long": 30.732564
+                },
+                "to": {
                     "name": "Chisinau, Moldova",
                     "lat": 47.0122737,
                     "long": 28.8605936
                 },
                 "path": "",
-                "arrival_date": "2018-07-20",
-                "departure_date": "2018-07-23"
+                "arrival_date": "2018-07-25",
+                "departure_date": "2018-07-28"
             },
             {
                 "from": {
@@ -291,49 +306,19 @@
                     "long": 25.6102746
                 },
                 "path": "",
-                "arrival_date": "2018-07-27",
-                "departure_date": "2018-07-30"
-            },
-            {
-                "from": {
-                    "name": "Bra\u0219ov, Romania",
-                    "lat": 45.6523093,
-                    "long": 25.6102746
-                },
-                "to": {
-                    "name": "Bucarest, Romania",
-                    "lat": 44.4361414,
-                    "long": 26.1027202
-                },
-                "path": "",
-                "arrival_date": "2018-07-30",
-                "departure_date": "2018-07-31"
-            },
-            {
-                "from": {
-                    "name": "Bucarest, Romania",
-                    "lat": 44.4361414,
-                    "long": 26.1027202
-                },
-                "to": {
-                    "name": "Sofia, Bulgaria",
-                    "lat": 42.6978634,
-                    "long": 23.3221789
-                },
-                "path": "",
-                "arrival_date": "2018-07-31",
+                "arrival_date": "2018-08-01",
                 "departure_date": "2018-08-04"
             },
             {
                 "from": {
-                    "name": "Sofia, Bulgaria",
-                    "lat": 42.6978634,
-                    "long": 23.3221789
+                    "name": "Bra\u0219ov, Romania",
+                    "lat": 45.6523093,
+                    "long": 25.6102746
                 },
                 "to": {
-                    "name": "Thessaloniki, Greece",
-                    "lat": 40.6403167,
-                    "long": 22.9352716
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
                 },
                 "path": "",
                 "arrival_date": "2018-08-04",
@@ -341,6 +326,36 @@
             },
             {
                 "from": {
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
+                },
+                "to": {
+                    "name": "Sofia, Bulgaria",
+                    "lat": 42.6978634,
+                    "long": 23.3221789
+                },
+                "path": "",
+                "arrival_date": "2018-08-08",
+                "departure_date": "2018-08-12"
+            },
+            {
+                "from": {
+                    "name": "Sofia, Bulgaria",
+                    "lat": 42.6978634,
+                    "long": 23.3221789
+                },
+                "to": {
+                    "name": "Thessaloniki, Greece",
+                    "lat": 40.6403167,
+                    "long": 22.9352716
+                },
+                "path": "",
+                "arrival_date": "2018-08-12",
+                "departure_date": "2018-08-17"
+            },
+            {
+                "from": {
                     "name": "Thessaloniki, Greece",
                     "lat": 40.6403167,
                     "long": 22.9352716
@@ -351,8 +366,8 @@
                     "long": 22.0576191
                 },
                 "path": "",
-                "arrival_date": "2018-08-08",
-                "departure_date": "2018-08-13"
+                "arrival_date": "2018-08-17",
+                "departure_date": "2018-08-22"
             },
             {
                 "from": {
@@ -366,8 +381,8 @@
                     "long": 19.8185323
                 },
                 "path": "",
-                "arrival_date": "2018-08-13",
-                "departure_date": "2018-08-17"
+                "arrival_date": "2018-08-22",
+                "departure_date": "2018-08-25"
             },
             {
                 "from": {
@@ -381,8 +396,8 @@
                     "long": 21.4316495
                 },
                 "path": "",
-                "arrival_date": "2018-08-17",
-                "departure_date": "2018-08-19"
+                "arrival_date": "2018-08-25",
+                "departure_date": "2018-08-27"
             },
             {
                 "from": {
@@ -396,8 +411,8 @@
                     "long": 21.292864
                 },
                 "path": "",
-                "arrival_date": "2018-08-19",
-                "departure_date": "2018-08-19"
+                "arrival_date": "2018-08-27",
+                "departure_date": "2018-08-27"
             },
             {
                 "from": {
@@ -411,8 +426,8 @@
                     "long": 21.4316495
                 },
                 "path": "",
-                "arrival_date": "2018-08-19",
-                "departure_date": "2018-08-21"
+                "arrival_date": "2018-08-27",
+                "departure_date": "2018-08-29"
             },
             {
                 "from": {
@@ -426,56 +441,56 @@
                     "long": 21.1640849
                 },
                 "path": "",
-                "arrival_date": "2018-08-21",
-                "departure_date": "2018-08-24"
-            },
-            {
-                "from": {
-                    "name": "Pristina, Kosovo",
-                    "lat": 42.6638771,
-                    "long": 21.1640849
-                },
-                "to": {
-                    "name": "Prokletije, Albania",
-                    "lat": 42.44,
-                    "long": 19.812
-                },
-                "path": "",
-                "arrival_date": "2018-08-24",
-                "departure_date": "2018-08-28"
-            },
-            {
-                "from": {
-                    "name": "Prokletije, Albania",
-                    "lat": 42.44,
-                    "long": 19.812
-                },
-                "to": {
-                    "name": "Podgorica, Montenegro",
-                    "lat": 42.4415238,
-                    "long": 19.2621081
-                },
-                "path": "",
-                "arrival_date": "2018-08-28",
-                "departure_date": "2018-08-28"
-            },
-            {
-                "from": {
-                    "name": "Podgorica, Montenegro",
-                    "lat": 42.4415238,
-                    "long": 19.2621081
-                },
-                "to": {
-                    "name": "Kotor, Montenegro",
-                    "lat": 42.4242488,
-                    "long": 18.771267
-                },
-                "path": "",
-                "arrival_date": "2018-08-28",
+                "arrival_date": "2018-08-29",
                 "departure_date": "2018-09-01"
             },
             {
                 "from": {
+                    "name": "Pristina, Kosovo",
+                    "lat": 42.6638771,
+                    "long": 21.1640849
+                },
+                "to": {
+                    "name": "Prokletije, Albania",
+                    "lat": 42.44,
+                    "long": 19.812
+                },
+                "path": "",
+                "arrival_date": "2018-09-01",
+                "departure_date": "2018-09-05"
+            },
+            {
+                "from": {
+                    "name": "Prokletije, Albania",
+                    "lat": 42.44,
+                    "long": 19.812
+                },
+                "to": {
+                    "name": "Podgorica, Montenegro",
+                    "lat": 42.4415238,
+                    "long": 19.2621081
+                },
+                "path": "",
+                "arrival_date": "2018-09-05",
+                "departure_date": "2018-09-08"
+            },
+            {
+                "from": {
+                    "name": "Podgorica, Montenegro",
+                    "lat": 42.4415238,
+                    "long": 19.2621081
+                },
+                "to": {
+                    "name": "Kotor, Montenegro",
+                    "lat": 42.4242488,
+                    "long": 18.771267
+                },
+                "path": "",
+                "arrival_date": "2018-09-08",
+                "departure_date": "2018-09-11"
+            },
+            {
+                "from": {
                     "name": "Kotor, Montenegro",
                     "lat": 42.4242488,
                     "long": 18.771267
@@ -486,8 +501,8 @@
                     "long": 18.0899176
                 },
                 "path": "",
-                "arrival_date": "2018-09-01",
-                "departure_date": "2018-09-03"
+                "arrival_date": "2018-09-11",
+                "departure_date": "2018-09-13"
             },
             {
                 "from": {
@@ -501,8 +516,8 @@
                     "long": 16.4396801
                 },
                 "path": "",
-                "arrival_date": "2018-09-03",
-                "departure_date": "2018-09-07"
+                "arrival_date": "2018-09-13",
+                "departure_date": "2018-09-17"
             },
             {
                 "from": {
@@ -516,101 +531,101 @@
                     "long": 17.8030427
                 },
                 "path": "",
-                "arrival_date": "2018-09-07",
-                "departure_date": "2018-09-09"
-            },
-            {
-                "from": {
-                    "name": "Mostar, Bosnia",
-                    "lat": 43.3416104,
-                    "long": 17.8030427
-                },
-                "to": {
-                    "name": "Blagaj, Bosnia",
-                    "lat": 43.2575855,
-                    "long": 17.8904391
-                },
-                "path": "",
-                "arrival_date": "2018-09-09",
-                "departure_date": "2018-09-09"
-            },
-            {
-                "from": {
-                    "name": "Blagaj, Bosnia",
-                    "lat": 43.2575855,
-                    "long": 17.8904391
-                },
-                "to": {
-                    "name": "Mostar, Bosnia",
-                    "lat": 43.3416104,
-                    "long": 17.8030427
-                },
-                "path": "",
-                "arrival_date": "2018-09-09",
-                "departure_date": "2018-09-10"
-            },
-            {
-                "from": {
-                    "name": "Mostar, Bosnia",
-                    "lat": 43.3416104,
-                    "long": 17.8030427
-                },
-                "to": {
-                    "name": "Kravica Waterfall, Bosnia",
-                    "lat": 43.1561371,
-                    "long": 17.6079286
-                },
-                "path": "",
-                "arrival_date": "2018-09-10",
-                "departure_date": "2018-09-10"
-            },
-            {
-                "from": {
-                    "name": "Kravica Waterfall, Bosnia",
-                    "lat": 43.1561371,
-                    "long": 17.6079286
-                },
-                "to": {
-                    "name": "Mostar, Bosnia",
-                    "lat": 43.3416104,
-                    "long": 17.8030427
-                },
-                "path": "",
-                "arrival_date": "2018-09-10",
-                "departure_date": "2018-09-12"
-            },
-            {
-                "from": {
-                    "name": "Mostar, Bosnia",
-                    "lat": 43.3416104,
-                    "long": 17.8030427
-                },
-                "to": {
-                    "name": "Sarajevo, Bosnia",
-                    "lat": 43.8519774,
-                    "long": 18.3866868
-                },
-                "path": "",
-                "arrival_date": "2018-09-12",
-                "departure_date": "2018-09-16"
-            },
-            {
-                "from": {
-                    "name": "Sarajevo, Bosnia",
-                    "lat": 43.8519774,
-                    "long": 18.3866868
-                },
-                "to": {
-                    "name": "Belgrade, Serbia",
-                    "lat": 44.8178131,
-                    "long": 20.4568974
-                },
-                "path": "",
-                "arrival_date": "2018-09-16",
+                "arrival_date": "2018-09-17",
                 "departure_date": "2018-09-20"
             },
             {
                 "from": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "to": {
+                    "name": "Blagaj, Bosnia",
+                    "lat": 43.2575855,
+                    "long": 17.8904391
+                },
+                "path": "",
+                "arrival_date": "2018-09-20",
+                "departure_date": "2018-09-23"
+            },
+            {
+                "from": {
+                    "name": "Blagaj, Bosnia",
+                    "lat": 43.2575855,
+                    "long": 17.8904391
+                },
+                "to": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "path": "",
+                "arrival_date": "2018-09-23",
+                "departure_date": "2018-09-25"
+            },
+            {
+                "from": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "to": {
+                    "name": "Kravica Waterfall, Bosnia",
+                    "lat": 43.1561371,
+                    "long": 17.6079286
+                },
+                "path": "",
+                "arrival_date": "2018-09-25",
+                "departure_date": "2018-09-25"
+            },
+            {
+                "from": {
+                    "name": "Kravica Waterfall, Bosnia",
+                    "lat": 43.1561371,
+                    "long": 17.6079286
+                },
+                "to": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "path": "",
+                "arrival_date": "2018-09-25",
+                "departure_date": "2018-10-02"
+            },
+            {
+                "from": {
+                    "name": "Mostar, Bosnia",
+                    "lat": 43.3416104,
+                    "long": 17.8030427
+                },
+                "to": {
+                    "name": "Sarajevo, Bosnia",
+                    "lat": 43.8519774,
+                    "long": 18.3866868
+                },
+                "path": "",
+                "arrival_date": "2018-10-02",
+                "departure_date": "2018-10-06"
+            },
+            {
+                "from": {
+                    "name": "Sarajevo, Bosnia",
+                    "lat": 43.8519774,
+                    "long": 18.3866868
+                },
+                "to": {
+                    "name": "Belgrade, Serbia",
+                    "lat": 44.8178131,
+                    "long": 20.4568974
+                },
+                "path": "",
+                "arrival_date": "2018-10-06",
+                "departure_date": "2018-10-10"
+            },
+            {
+                "from": {
                     "name": "Belgrade, Serbia",
                     "lat": 44.8178131,
                     "long": 20.4568974
@@ -621,8 +636,8 @@
                     "long": 15.977048
                 },
                 "path": "",
-                "arrival_date": "2018-09-20",
-                "departure_date": "2018-09-22"
+                "arrival_date": "2018-10-10",
+                "departure_date": "2018-10-14"
             },
             {
                 "from": {
@@ -636,8 +651,8 @@
                     "long": 14.9745738031763
                 },
                 "path": "",
-                "arrival_date": "2018-09-22",
-                "departure_date": "2018-09-25"
+                "arrival_date": "2018-10-14",
+                "departure_date": "2018-10-17"
             },
             {
                 "from": {
@@ -651,8 +666,8 @@
                     "long": 15.977048
                 },
                 "path": "",
-                "arrival_date": "2018-09-25",
-                "departure_date": "2018-09-26"
+                "arrival_date": "2018-10-17",
+                "departure_date": "2018-10-21"
             },
             {
                 "from": {
@@ -666,8 +681,8 @@
                     "long": 14.5068921
                 },
                 "path": "",
-                "arrival_date": "2018-09-26",
-                "departure_date": "2018-09-29"
+                "arrival_date": "2018-10-21",
+                "departure_date": "2018-10-23"
             },
             {
                 "from": {
@@ -681,8 +696,8 @@
                     "long": 14.0938068713415
                 },
                 "path": "",
-                "arrival_date": "2018-09-29",
-                "departure_date": "2018-09-29"
+                "arrival_date": "2018-10-23",
+                "departure_date": "2018-10-23"
             },
             {
                 "from": {
@@ -696,8 +711,8 @@
                     "long": 14.5068921
                 },
                 "path": "",
-                "arrival_date": "2018-09-30",
-                "departure_date": "2018-10-01"
+                "arrival_date": "2018-10-23",
+                "departure_date": "2018-10-25"
             }
         ],
         "car": [
@@ -805,7 +820,7 @@
                     "long": 4.8320114
                 },
                 "path": "",
-                "arrival_date": "2018-10-01",
+                "arrival_date": "2018-10-25",
                 "departure_date": ""
             }
         ],
@@ -884,8 +899,8 @@
                     "long": 26.1027202
                 },
                 "path": "",
-                "arrival_date": "2018-07-23",
-                "departure_date": "2018-07-27"
+                "arrival_date": "2018-07-28",
+                "departure_date": "2018-08-01"
             }
         ],
         "walking": [
@@ -931,8 +946,8 @@
                     "long": 14.0890324
                 },
                 "path": "",
-                "arrival_date": "2018-09-29",
-                "departure_date": "2018-09-30"
+                "arrival_date": "2018-10-23",
+                "departure_date": "2018-10-23"
             }
         ]
     }
