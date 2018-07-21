@@ -151,7 +151,7 @@ boucle:
         -
             to: Bucarest, Romania
             with: bus
-            duration: 2 days
+            duration: 1 days
         -
             to: Sofia, Bulgaria
             with: bus
@@ -171,58 +171,56 @@ boucle:
         -
             to: Skopje, Macedonia
             with: bus
-            duration: 4 days
+            duration: 3 days
         -
             to: Canyon Matka, Macedonia
             with: bus
-            date: '2018-08-27'
+            date: 'previous + 2 days'
             type: daytrip
         -
             to: Pristina, Kosovo
             with: bus
-            date: '2018-08-29'
+            date: 'previous + 2 days'
+            duration: 3 days
         -
             # hiking
             to: Prokletije, Albania
             with: bus
-            date: '2018-09-01'
+            duration: 3 days
         -
             to: Podgorica, Montenegro
             with: bus
-            date: '2018-09-05'
+            duration: 3 days
         -
             to: Kotor, Montenegro
             with: bus
-            date: '2018-09-08'
+            duration: 3 days
         -
             to: Dubrovnik, Croatia
             with: bus
-            date: '2018-09-11'
+            duration: 2 days
         -
             to: Split, Croatia
             with: bus
-            date: '2018-09-13'
+            duration: 3 days
         -
             to: Mostar, Bosnia
             with: bus
-            date: '2018-09-17'
+            duration: 2 days
         -
             to: Blagaj, Bosnia
             with: bus
-            date: '2018-09-20'
-        -
-            to: Mostar, Bosnia
-            with: bus
-            date: '2018-09-23'
+            date: 'previous + 2 days'
+            type: daytrip
         -
             to: Kravica Waterfall, Bosnia
             with: bus
-            date: '2018-09-25'
             type: daytrip
+            date: 'previous + 1 days'
         -
             to: Sarajevo, Bosnia
             with: bus
-            date: '2018-09-27'
+            date: 'previous + 1 days'
             duration: 4 days
         -
             to: Belgrade, Serbia
@@ -239,7 +237,7 @@ boucle:
         -
             to: Zagreb, Croatia
             with: bus
-            duration: 2 days
+            duration: 1 days
         -
             to: Ljubljana, Slovenia
             with: bus
@@ -257,7 +255,7 @@ boucle:
         -
             to: Ljubljana, Slovenia
             with: bus
-            duration: 2 days
+            duration: 3 days
         -
             to: Lyon, France
             with: plane
