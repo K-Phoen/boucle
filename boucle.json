@@ -366,8 +366,8 @@
                 },
                 "to": {
                     "name": "Athens, Greece",
-                    "lat": 38.2636612,
-                    "long": 22.0576191
+                    "lat": 37.9841493,
+                    "long": 23.7279843
                 },
                 "path": "",
                 "arrival_date": "2018-08-17",
@@ -376,8 +376,8 @@
             {
                 "from": {
                     "name": "Athens, Greece",
-                    "lat": 38.2636612,
-                    "long": 22.0576191
+                    "lat": 37.9841493,
+                    "long": 23.7279843
                 },
                 "to": {
                     "name": "Tirana, Albania",
