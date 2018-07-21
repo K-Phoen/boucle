@@ -161,10 +161,6 @@ boucle:
             with: bus
             duration: 4 days
         -
-            to: Athens, Greece
-            with: bus
-            duration: 4 days
-        -
             to: Tirana, Albania
             with: bus
             duration: 4 days
