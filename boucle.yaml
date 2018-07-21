@@ -130,10 +130,7 @@ boucle:
             to: Tchernobyl, Ukraine
             with: bus
             date: '2018-07-18'
-        -
-            to: Kiev, Ukraine
-            with: bus
-            date: '2018-07-18'
+            type: daytrip
         -
             to: Odessa, Ukraine
             with: bus
@@ -178,10 +175,7 @@ boucle:
             to: Canyon Matka, Macedonia
             with: bus
             date: '2018-08-27'
-        -
-            to: Skopje, Macedonia
-            with: bus
-            date: '2018-08-27'
+            type: daytrip
         -
             to: Pristina, Kosovo
             with: bus
@@ -223,10 +217,7 @@ boucle:
             to: Kravica Waterfall, Bosnia
             with: bus
             date: '2018-09-25'
-        -
-            to: Mostar, Bosnia
-            with: bus
-            date: '2018-09-25'
+            type: daytrip
         -
             to: Sarajevo, Bosnia
             with: bus
