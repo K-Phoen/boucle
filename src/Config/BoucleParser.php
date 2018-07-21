@@ -53,14 +53,18 @@ class BoucleParser
     private function readSteps(array $config): iterable
     {
         $start = new Place($config['start'], $this->geocode($config['start']));
+        $startStep = new Step($start, $start, new \DateTimeImmutable(), Transport::BUS());
+        $previousStepConfig = [];
         $steps = [];
 
-        foreach ($config['steps'] as $i => $stepConfig) {
-            $previousPlace = $i === 0 ? $start : end($steps)->to();
+        foreach ($config['steps'] as $stepConfig) {
+            $previousStep = empty($steps) ? $startStep : end($steps);
 
-            foreach ($this->buildStep($stepConfig, $previousPlace) as $step) {
+            foreach ($this->buildStep($stepConfig, $previousStep, $previousStepConfig) as $step) {
                 $steps[] = $step;
             }
+
+            $previousStepConfig = $stepConfig;
         }
 
         return $steps;
@@ -69,19 +73,32 @@ class BoucleParser
     /**
      * @return Step[]
      */
-    private function buildStep(array $stepConfig, Place $previous): \Generator
+    private function buildStep(array $stepConfig, Step $previousStep, array $previousStepConfig): \Generator
     {
         $coordinates = $this->coordinatesForStepConfig($stepConfig);
         $to = new Place($stepConfig['to'], $coordinates);
-        $date = \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']);
+        $date = $this->dateForStepConfig($stepConfig, $previousStep, $previousStepConfig);
         $with = new Transport($stepConfig['with']);
 
-        yield new Step($previous, $to, $date, $with, $stepConfig['path']);
+        yield new Step($previousStep->to(), $to, $date, $with, $stepConfig['path']);
 
         // the current step is a daytrip so we "artificially" create the return step
         if ($stepConfig['type'] === StepType::DAY_TRIP) {
-            yield new Step($to, $previous, $date, $with);
+            yield new Step($to, $previousStep->to(), $date, $with);
         }
+    }
+
+    private function dateForStepConfig(array $stepConfig, Step $previousStep, array $previousStepConfig): \DateTimeImmutable
+    {
+        if (!empty($previousStepConfig['duration']) && !empty($stepConfig['date'])) {
+            throw new InvalidConfiguration('Both duration and date were given for the step to '.$stepConfig['to']);
+        }
+
+        if (!empty($stepConfig['date'])) {
+            return \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']);
+        }
+
+        return $previousStep->date()->modify('+ '.$previousStepConfig['duration']);
     }
 
     private function coordinatesForStepConfig(array $stepConfig): Coordinates

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Boucle\Cli\Command;
 
 use Boucle\Config\BoucleParser;
+use Boucle\Place;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -27,13 +28,22 @@ class ListSteps
 
         foreach ($boucle->steps() as $step) {
             $table->addRow([
-                sprintf('%s (%f %f)', $step->from()->name(), $step->from()->latitude(), $step->from()->longitude()),
-                sprintf('%s (%f %f)', $step->to()->name(), $step->to()->latitude(), $step->to()->longitude()),
+                $this->placeToString($output, $step->from()),
+                $this->placeToString($output, $step->to()),
                 $step->date()->format('Y-m-d'),
                 $step->transport()->getValue(),
             ]);
         }
 
         $table->render();
+    }
+
+    private function placeToString(OutputInterface $output, Place $place): string
+    {
+        if ($output->isVerbose()) {
+            return sprintf('%s (%f %f)', $place->name(), $place->latitude(), $place->longitude());
+        }
+
+        return $place->name();
     }
 }

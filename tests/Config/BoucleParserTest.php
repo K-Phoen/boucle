@@ -50,12 +50,13 @@ boucle:
         -
             to: Dublin, Ireland
             with: bus
+            duration: 1 day
             date: \'2018-05-10\'
         -
             to: Howth, Ireland
             with: bus
             type: daytrip
-            date: \'2018-05-11\'
+            # date: \'2018-05-11\'
         -
             to: Ždiar, Slovakia
             latitude: 49.2680295
@@ -111,6 +112,7 @@ boucle:
         $this->assertSame('Lyon, France', $boucle->steps()[0]->to()->name());
         $this->assertSame('Dublin, Ireland', $boucle->steps()[1]->to()->name());
         $this->assertSame('Howth, Ireland', $boucle->steps()[2]->to()->name());
+        $this->assertSame('2018-05-11', $boucle->steps()[2]->date()->format('Y-m-d'));
         $this->assertSame('Dublin, Ireland', $boucle->steps()[3]->to()->name());
         $this->assertSame('Ždiar, Slovakia', $boucle->steps()[4]->to()->name());
     }

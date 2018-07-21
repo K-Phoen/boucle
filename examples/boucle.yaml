@@ -132,18 +132,20 @@ boucle:
             to: Chisinau, Moldova
             with: bus
             date: '2018-07-20'
+            duration: 3 days
         -
             to: Bucarest, Romania
             with: train
-            date: '2018-07-23'
+            duration: 4 days
         -
             to: Brașov, Romania
             with: bus
-            date: '2018-07-27'
+            # date: '2018-07-27'
+            duration: 3 days
         -
             to: Bucarest, Romania
             with: bus
-            date: '2018-07-30'
+            # date: '2018-07-30'
         -
             to: Sofia, Bulgaria
             with: bus
