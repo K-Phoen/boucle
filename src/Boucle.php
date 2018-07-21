@@ -58,7 +58,7 @@ final class Boucle
             throw new \LogicException('Could not get the end of the boucle: no steps registered');
         }
 
-        return $this->steps[count($this->steps)-1];
+        return $this->steps[count($this->steps) - 1];
     }
 
     public function startBy(): Transport
@@ -103,7 +103,6 @@ final class Boucle
      *
      * @TODO refactor
      */
-
     public function hasStep(int $i): bool
     {
         return isset($this->steps[$i]);
