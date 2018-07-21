@@ -135,42 +135,43 @@ boucle:
             to: Odessa, Ukraine
             with: bus
             date: '2018-07-22'
+            duration: 3 days
         -
             to: Chisinau, Moldova
             with: bus
-            date: '2018-07-25'
+            duration: 2 days
         -
             to: Bucarest, Romania
             with: train
-            date: '2018-07-28'
+            duration: 4 days
         -
             to: Brașov, Romania
             with: bus
-            date: '2018-08-01'
+            duration: 3 days
         -
             to: Bucarest, Romania
             with: bus
-            date: '2018-08-04'
+            duration: 2 days
         -
             to: Sofia, Bulgaria
             with: bus
-            date: '2018-08-08'
+            duration: 4 days
         -
             to: Thessaloniki, Greece
             with: bus
-            date: '2018-08-12'
+            duration: 4 days
         -
             to: Athens, Greece
             with: bus
-            date: '2018-08-17'
+            duration: 4 days
         -
             to: Tirana, Albania
             with: bus
-            date: '2018-08-22'
+            duration: 4 days
         -
             to: Skopje, Macedonia
             with: bus
-            date: '2018-08-25'
+            duration: 4 days
         -
             to: Canyon Matka, Macedonia
             with: bus
@@ -221,40 +222,42 @@ boucle:
         -
             to: Sarajevo, Bosnia
             with: bus
-            date: '2018-10-02'
+            date: '2018-09-27'
+            duration: 4 days
         -
             to: Belgrade, Serbia
             with: bus
-            date: '2018-10-06'
+            duration: 4 days
         -
             to: Zagreb, Croatia
             with: bus
-            date: '2018-10-10'
+            duration: 4 days
         -
             to: Northern Velebit, Croatia
             with: bus
-            date: '2018-10-14'
+            duration: 3 days
         -
             to: Zagreb, Croatia
             with: bus
-            date: '2018-10-17'
+            duration: 2 days
         -
             to: Ljubljana, Slovenia
             with: bus
-            date: '2018-10-21'
+            duration: 2 days
         -
             to: Lake Bled, Slovenia
             with: bus
-            date: '2018-10-23'
+            # same day
+            duration: 0 days
         -
             to: Vintgar Gorge, Slovenia
             with: walking
-            date: '2018-10-23'
+            # same day
+            duration: 0 days
         -
             to: Ljubljana, Slovenia
             with: bus
-            date: '2018-10-23'
+            duration: 2 days
         -
             to: Lyon, France
             with: plane
-            date: '2018-10-25'
