@@ -34,10 +34,10 @@ class BoucleToJson
         ];
 
         foreach ($boucle->steps() as $i => $step) {
-            if (!$boucle->hasStep($i+1)) {
+            if (!$boucle->hasStep($i + 1)) {
                 $departureDate = '';
             } else {
-                $departureDate = $boucle->step($i+1)->date()->format('Y-m-d');
+                $departureDate = $boucle->step($i + 1)->date()->format('Y-m-d');
             }
 
             $data['steps'][(string) $step->transport()][] = [

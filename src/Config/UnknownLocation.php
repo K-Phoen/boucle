@@ -6,7 +6,7 @@ namespace Boucle\Config;
 
 class UnknownLocation extends \RuntimeException
 {
-    public static function fromName(string $name, \Exception $previous = null): UnknownLocation
+    public static function fromName(string $name, \Exception $previous = null): self
     {
         return new static(sprintf('Unknown location "%s"', $name), 0, $previous);
     }
