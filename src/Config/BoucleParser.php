@@ -7,6 +7,7 @@ namespace Boucle\Config;
 use Boucle\Boucle;
 use Boucle\Place;
 use Boucle\Step;
+use Boucle\StepType;
 use Boucle\Transport;
 use Geocoder\Geocoder;
 use Geocoder\Query\GeocodeQuery;
@@ -51,34 +52,48 @@ class BoucleParser
      */
     private function readSteps(array $config): iterable
     {
-        $steps = [];
         $start = new Place($config['start'], $this->geocode($config['start']));
+        $steps = [];
 
         foreach ($config['steps'] as $i => $stepConfig) {
-            $steps[] = $this->buildStep($stepConfig, $i === 0 ? $start : $steps[$i - 1]->to());
+            $previousPlace = $i === 0 ? $start : end($steps)->to();
+
+            foreach ($this->buildStep($stepConfig, $previousPlace) as $step) {
+                $steps[] = $step;
+            }
         }
 
         return $steps;
     }
 
-    private function buildStep(array $stepConfig, Place $previous): Step
+    /**
+     * @return Step[]
+     */
+    private function buildStep(array $stepConfig, Place $previous): \Generator
+    {
+        $coordinates = $this->coordinatesForStepConfig($stepConfig);
+        $to = new Place($stepConfig['to'], $coordinates);
+        $date = \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']);
+        $with = new Transport($stepConfig['with']);
+
+        yield new Step($previous, $to, $date, $with, $stepConfig['path']);
+
+        // the current step is a daytrip so we "artificially" create the return step
+        if ($stepConfig['type'] === StepType::DAY_TRIP) {
+            yield new Step($to, $previous, $date, $with);
+        }
+    }
+
+    private function coordinatesForStepConfig(array $stepConfig): Coordinates
     {
         if (!empty($stepConfig['latitude']) && !empty($stepConfig['longitude'])) {
-            $coordinates = new Coordinates(
+            return new Coordinates(
                 $stepConfig['latitude'],
                 $stepConfig['longitude']
             );
-        } else {
-            $coordinates = $this->geocode($stepConfig['to']);
         }
 
-        return new Step(
-            $previous,
-            new Place($stepConfig['to'], $coordinates),
-            \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']),
-            new Transport($stepConfig['with']),
-            $stepConfig['path']
-        );
+        return $this->geocode($stepConfig['to']);
     }
 
     private function geocode(string $location): Coordinates

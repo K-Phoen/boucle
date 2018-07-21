@@ -52,11 +52,16 @@ boucle:
             with: bus
             date: \'2018-05-10\'
         -
+            to: Howth, Ireland
+            with: bus
+            type: daytrip
+            date: \'2018-05-11\'
+        -
             to: Ždiar, Slovakia
             latitude: 49.2680295
             longitude: 20.1786975
             with: bus
-            date: \'2018-05-11\'
+            date: \'2018-05-14\'
 ',
             'invalid_no_start.yaml' => '
 boucle:
@@ -85,7 +90,7 @@ boucle:
         $location->method('getCoordinates')->willReturn(new Coordinates(42.2, 24.4));
 
         $geocodingResults = new AddressCollection([$location]);
-        $this->geocoder->expects($this->exactly(3))
+        $this->geocoder->expects($this->exactly(4))
             ->method('geocodeQuery')
             ->with($this->isInstanceOf(GeocodeQuery::class))
             ->willReturn($geocodingResults);
@@ -101,11 +106,13 @@ boucle:
         $this->assertSame(Transport::BUS, (string) $boucle->startBy());
         $this->assertSame('Clermont-Ferrand, France', $boucle->startFrom()->name());
 
-        $this->assertCount(3, $boucle->steps());
+        $this->assertCount(5, $boucle->steps());
 
         $this->assertSame('Lyon, France', $boucle->steps()[0]->to()->name());
         $this->assertSame('Dublin, Ireland', $boucle->steps()[1]->to()->name());
-        $this->assertSame('Ždiar, Slovakia', $boucle->steps()[2]->to()->name());
+        $this->assertSame('Howth, Ireland', $boucle->steps()[2]->to()->name());
+        $this->assertSame('Dublin, Ireland', $boucle->steps()[3]->to()->name());
+        $this->assertSame('Ždiar, Slovakia', $boucle->steps()[4]->to()->name());
     }
 
     public function testItThrowsASpecificErrorForUnknownLocations()

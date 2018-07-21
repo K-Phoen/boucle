@@ -6,6 +6,7 @@ namespace Boucle\Config;
 
 use Boucle\Boucle;
 use Boucle\Transport;
+use Boucle\StepType;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
@@ -45,6 +46,11 @@ class BoucleConfiguration implements ConfigurationInterface
                                 ->values(Transport::consts())
                                 ->cannotBeEmpty()
                                 ->defaultValue(Transport::PLANE)
+                            ->end()
+                            ->enumNode('type')
+                                ->values(StepType::consts())
+                                ->cannotBeEmpty()
+                                ->defaultValue(StepType::TRIP)
                             ->end()
                         ->end()
                     ->end()

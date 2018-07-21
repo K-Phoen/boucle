@@ -126,10 +126,7 @@ boucle:
         -
             to: Tchernobyl, Ukraine
             with: bus
-            date: '2018-07-18'
-        -
-            to: Kiev, Ukraine
-            with: bus
+            type: daytrip
             date: '2018-07-18'
         -
             to: Chisinau, Moldova
@@ -171,10 +168,7 @@ boucle:
             to: Canyon Matka, Macedonia
             with: bus
             date: '2018-08-19'
-        -
-            to: Skopje, Macedonia
-            with: bus
-            date: '2018-08-19'
+            type: daytrip
         -
             to: Pristina, Kosovo
             with: bus
@@ -208,18 +202,12 @@ boucle:
             to: Blagaj, Bosnia
             with: bus
             date: '2018-09-09'
-        -
-            to: Mostar, Bosnia
-            with: bus
-            date: '2018-09-09'
+            type: daytrip
         -
             to: Kravica Waterfall, Bosnia
             with: bus
             date: '2018-09-10'
-        -
-            to: Mostar, Bosnia
-            with: bus
-            date: '2018-09-10'
+            type: daytrip
         -
             to: Sarajevo, Bosnia
             with: bus
