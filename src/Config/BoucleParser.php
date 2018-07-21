@@ -90,15 +90,31 @@ class BoucleParser
 
     private function dateForStepConfig(array $stepConfig, Step $previousStep, array $previousStepConfig): \DateTimeImmutable
     {
-        if (!empty($previousStepConfig['duration']) && !empty($stepConfig['date'])) {
+        if (!empty($previousStepConfig['duration']) && !empty($stepConfig['date']) && $stepConfig['type'] !== StepType::DAY_TRIP) {
             throw new InvalidConfiguration('Both duration and date were given for the step to '.$stepConfig['to']);
         }
 
         if (!empty($stepConfig['date'])) {
+            if ($this->isDateRelative($stepConfig['date'])) {
+                return $this->parseRelativeDate($previousStep->date(), $stepConfig['date']);
+            }
+
             return \DateTimeImmutable::createFromFormat('Y-m-d', $stepConfig['date']);
         }
 
         return $previousStep->date()->modify('+ '.$previousStepConfig['duration']);
+    }
+
+    private function parseRelativeDate(\DateTimeImmutable $base, string $date): \DateTimeImmutable
+    {
+        $modifier = str_replace('previous + ', '', $date);
+
+        return $base->modify('+'.$modifier);
+    }
+
+    private function isDateRelative(string $date): bool
+    {
+        return strpos($date, 'previous + ') === 0;
     }
 
     private function coordinatesForStepConfig(array $stepConfig): Coordinates

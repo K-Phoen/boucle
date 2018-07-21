@@ -126,13 +126,17 @@ boucle:
         -
             to: Tchernobyl, Ukraine
             with: bus
-            type: daytrip
             date: '2018-07-18'
+            type: daytrip
+        -
+            to: Odessa, Ukraine
+            with: bus
+            date: '2018-07-22'
+            duration: 3 days
         -
             to: Chisinau, Moldova
             with: bus
-            date: '2018-07-20'
-            duration: 3 days
+            duration: 2 days
         -
             to: Bucarest, Romania
             with: train
@@ -140,113 +144,115 @@ boucle:
         -
             to: Brașov, Romania
             with: bus
-            # date: '2018-07-27'
             duration: 3 days
         -
             to: Bucarest, Romania
             with: bus
-            # date: '2018-07-30'
+            duration: 1 days
         -
             to: Sofia, Bulgaria
             with: bus
-            date: '2018-07-31'
+            duration: 4 days
         -
             to: Thessaloniki, Greece
             with: bus
-            date: '2018-08-04'
+            duration: 4 days
         -
             to: Athens, Greece
             with: bus
-            date: '2018-08-08'
+            duration: 4 days
         -
             to: Tirana, Albania
             with: bus
-            date: '2018-08-13'
+            duration: 4 days
         -
             to: Skopje, Macedonia
             with: bus
-            date: '2018-08-17'
+            duration: 3 days
         -
             to: Canyon Matka, Macedonia
             with: bus
-            date: '2018-08-19'
+            date: 'previous + 2 days'
             type: daytrip
         -
             to: Pristina, Kosovo
             with: bus
-            date: '2018-08-21'
+            date: 'previous + 2 days'
+            duration: 3 days
         -
             # hiking
             to: Prokletije, Albania
             with: bus
-            date: '2018-08-24'
+            duration: 3 days
         -
             to: Podgorica, Montenegro
             with: bus
-            date: '2018-08-28'
+            duration: 3 days
         -
             to: Kotor, Montenegro
             with: bus
-            date: '2018-08-28'
+            duration: 3 days
         -
             to: Dubrovnik, Croatia
             with: bus
-            date: '2018-09-01'
+            duration: 2 days
         -
             to: Split, Croatia
             with: bus
-            date: '2018-09-03'
+            duration: 3 days
         -
             to: Mostar, Bosnia
             with: bus
-            date: '2018-09-07'
+            duration: 2 days
         -
             to: Blagaj, Bosnia
             with: bus
-            date: '2018-09-09'
+            date: 'previous + 2 days'
             type: daytrip
         -
             to: Kravica Waterfall, Bosnia
             with: bus
-            date: '2018-09-10'
             type: daytrip
+            date: 'previous + 1 days'
         -
             to: Sarajevo, Bosnia
             with: bus
-            date: '2018-09-12'
+            date: 'previous + 1 days'
+            duration: 4 days
         -
             to: Belgrade, Serbia
             with: bus
-            date: '2018-09-16'
+            duration: 4 days
         -
             to: Zagreb, Croatia
             with: bus
-            date: '2018-09-20'
+            duration: 4 days
         -
             to: Northern Velebit, Croatia
             with: bus
-            date: '2018-09-22'
+            duration: 3 days
         -
             to: Zagreb, Croatia
             with: bus
-            date: '2018-09-25'
+            duration: 1 days
         -
             to: Ljubljana, Slovenia
             with: bus
-            date: '2018-09-26'
+            duration: 2 days
         -
             to: Lake Bled, Slovenia
             with: bus
-            date: '2018-09-29'
+            # same day
+            duration: 0 days
         -
             to: Vintgar Gorge, Slovenia
             with: walking
-            date: '2018-09-29'
+            # same day
+            duration: 0 days
         -
             to: Ljubljana, Slovenia
             with: bus
-            date: '2018-09-30'
+            duration: 3 days
         -
             to: Lyon, France
             with: plane
-            date: '2018-10-01'

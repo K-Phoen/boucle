@@ -85,6 +85,19 @@ boucle:
         $this->parser = new BoucleParser($this->geocoder);
     }
 
+    public function testItParsesTheExample()
+    {
+        $location = $this->createMock(Address::class);
+        $location->method('getCoordinates')->willReturn(new Coordinates(42.2, 24.4));
+
+        $geocodingResults = new AddressCollection([$location]);
+        $this->geocoder->method('geocodeQuery')->willReturn($geocodingResults);
+
+        $boucle = $this->parser->read(__DIR__.'/../../examples/boucle.yaml');
+
+        $this->assertInstanceOf(Boucle::class, $boucle);
+    }
+
     public function testItParsesAFullBoucle()
     {
         $location = $this->createMock(Address::class);
