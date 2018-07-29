@@ -167,8 +167,7 @@ boucle:
         -
             to: Sofia, Bulgaria
             with: bus
-            duration: 4 days
+            duration: 5 days
         -
             to: Lyon, France
             with: plane
-            duration: 4 days
