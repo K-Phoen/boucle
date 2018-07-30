@@ -8,7 +8,11 @@ use Boucle\Config\BoucleParser;
 use Boucle\Compiler;
 use Geocoder;
 use Http\Adapter\Guzzle6\Client as GuzzleClient;
+use Http\Client\Common\Plugin\CachePlugin;
+use Http\Client\Common\PluginClient;
+use Http\Discovery\StreamFactoryDiscovery;
 use Pimple\Container as Pimple;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 class Container extends Pimple
 {
@@ -37,7 +41,14 @@ class Container extends Pimple
     private function geocoder(): void
     {
         $this[Geocoder\Geocoder::class] = function () {
-            $httpClient = new GuzzleClient();
+            $cache = new FilesystemAdapter('', 0, sys_get_temp_dir().'/boucle-cache/geocoding');
+            $cachePlugin = new CachePlugin($cache, StreamFactoryDiscovery::find(), [
+                'respect_cache_headers' => false,
+                'default_ttl' => null,
+                'cache_lifetime' => 86400*365
+            ]);
+            $httpClient = new PluginClient(new GuzzleClient(), [$cachePlugin]);
+
             $provider = Geocoder\Provider\Nominatim\Nominatim::withOpenStreetMapServer($httpClient);
 
             return new Geocoder\StatefulGeocoder($provider);

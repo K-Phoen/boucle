@@ -27,7 +27,9 @@
         "geocoder-php/nominatim-provider": "^4.1",
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message": "^1.6",
-        "myclabs/php-enum": "^1.5"
+        "myclabs/php-enum": "^1.5",
+        "php-http/cache-plugin": "^1.5",
+        "symfony/cache": "^4.1"
     },
     "require-dev": {
         "kherge/box": "^2.7",
