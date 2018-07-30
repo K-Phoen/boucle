@@ -137,13 +137,13 @@ boucle:
             date: '2018-07-22'
             duration: 3 days
         -
-            to: Chisinau, Moldova
+            to: Chișinău, Moldova
             with: bus
             duration: 2 days
         -
             to: Bucarest, Romania
             with: train
-            duration: 4 days
+            duration: 5 days
         -
             to: Brașov, Romania
             with: bus
@@ -167,7 +167,7 @@ boucle:
         -
             to: Sofia, Bulgaria
             with: bus
-            duration: 5 days
+            duration: 4 days
         -
             to: Lyon, France
             with: plane
