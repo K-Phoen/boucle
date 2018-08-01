@@ -146,11 +146,11 @@ boucle:
             duration: 5 days
         -
             to: Brașov, Romania
-            with: bus
+            with: train
             duration: 3 days
         -
             to: Cluj-Napoca, Romania
-            with: bus
+            with: train
             duration: 3 days
         -
             to: Timișoara, Romania

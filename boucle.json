@@ -300,36 +300,6 @@
             },
             {
                 "from": {
-                    "name": "Bucarest, Romania",
-                    "lat": 44.4361414,
-                    "long": 26.1027202
-                },
-                "to": {
-                    "name": "Bra\u0219ov, Romania",
-                    "lat": 45.6523093,
-                    "long": 25.6102746
-                },
-                "path": "",
-                "arrival_date": "2018-08-01",
-                "departure_date": "2018-08-04"
-            },
-            {
-                "from": {
-                    "name": "Bra\u0219ov, Romania",
-                    "lat": 45.6523093,
-                    "long": 25.6102746
-                },
-                "to": {
-                    "name": "Cluj-Napoca, Romania",
-                    "lat": 46.7693367,
-                    "long": 23.5900604
-                },
-                "path": "",
-                "arrival_date": "2018-08-04",
-                "departure_date": "2018-08-07"
-            },
-            {
-                "from": {
                     "name": "Cluj-Napoca, Romania",
                     "lat": 46.7693367,
                     "long": 23.5900604
@@ -575,6 +545,36 @@
                 "path": "",
                 "arrival_date": "2018-07-27",
                 "departure_date": "2018-08-01"
+            },
+            {
+                "from": {
+                    "name": "Bucarest, Romania",
+                    "lat": 44.4361414,
+                    "long": 26.1027202
+                },
+                "to": {
+                    "name": "Bra\u0219ov, Romania",
+                    "lat": 45.6523093,
+                    "long": 25.6102746
+                },
+                "path": "",
+                "arrival_date": "2018-08-01",
+                "departure_date": "2018-08-04"
+            },
+            {
+                "from": {
+                    "name": "Bra\u0219ov, Romania",
+                    "lat": 45.6523093,
+                    "long": 25.6102746
+                },
+                "to": {
+                    "name": "Cluj-Napoca, Romania",
+                    "lat": 46.7693367,
+                    "long": 23.5900604
+                },
+                "path": "",
+                "arrival_date": "2018-08-04",
+                "departure_date": "2018-08-07"
             }
         ],
         "walking": [
