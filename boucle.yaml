@@ -149,12 +149,8 @@ boucle:
             with: train
             duration: 3 days
         -
-            to: Cluj-Napoca, Romania
-            with: train
-            duration: 3 days
-        -
             to: Timișoara, Romania
-            with: bus
+            with: train
             duration: 3 days
         -
             to: Belgrade, Serbia
@@ -162,6 +158,10 @@ boucle:
             duration: 4 days
         -
             to: Priština, Kosovo
+            with: bus
+            duration: 3 days
+        -
+            to: Skopje, Macedonia
             with: bus
             duration: 3 days
         -

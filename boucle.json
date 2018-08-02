@@ -300,21 +300,6 @@
             },
             {
                 "from": {
-                    "name": "Cluj-Napoca, Romania",
-                    "lat": 46.7693367,
-                    "long": 23.5900604
-                },
-                "to": {
-                    "name": "Timi\u0219oara, Romania",
-                    "lat": 45.75888845,
-                    "long": 21.2214854244305
-                },
-                "path": "",
-                "arrival_date": "2018-08-07",
-                "departure_date": "2018-08-10"
-            },
-            {
-                "from": {
                     "name": "Timi\u0219oara, Romania",
                     "lat": 45.75888845,
                     "long": 21.2214854244305
@@ -325,8 +310,8 @@
                     "long": 20.4568974
                 },
                 "path": "",
-                "arrival_date": "2018-08-10",
-                "departure_date": "2018-08-14"
+                "arrival_date": "2018-08-07",
+                "departure_date": "2018-08-11"
             },
             {
                 "from": {
@@ -338,6 +323,21 @@
                     "name": "Pri\u0161tina, Kosovo",
                     "lat": 42.6638771,
                     "long": 21.1640849
+                },
+                "path": "",
+                "arrival_date": "2018-08-11",
+                "departure_date": "2018-08-14"
+            },
+            {
+                "from": {
+                    "name": "Pri\u0161tina, Kosovo",
+                    "lat": 42.6638771,
+                    "long": 21.1640849
+                },
+                "to": {
+                    "name": "Skopje, Macedonia",
+                    "lat": 41.9960924,
+                    "long": 21.4316495
                 },
                 "path": "",
                 "arrival_date": "2018-08-14",
@@ -345,9 +345,9 @@
             },
             {
                 "from": {
-                    "name": "Pri\u0161tina, Kosovo",
-                    "lat": 42.6638771,
-                    "long": 21.1640849
+                    "name": "Skopje, Macedonia",
+                    "lat": 41.9960924,
+                    "long": 21.4316495
                 },
                 "to": {
                     "name": "Sofia, Bulgaria",
@@ -568,9 +568,9 @@
                     "long": 25.6102746
                 },
                 "to": {
-                    "name": "Cluj-Napoca, Romania",
-                    "lat": 46.7693367,
-                    "long": 23.5900604
+                    "name": "Timi\u0219oara, Romania",
+                    "lat": 45.75888845,
+                    "long": 21.2214854244305
                 },
                 "path": "",
                 "arrival_date": "2018-08-04",
