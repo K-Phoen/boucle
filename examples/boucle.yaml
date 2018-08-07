@@ -134,123 +134,42 @@ boucle:
             date: '2018-07-22'
             duration: 3 days
         -
-            to: Chisinau, Moldova
+            to: Chișinău, Moldova
             with: bus
             duration: 2 days
         -
             to: Bucarest, Romania
             with: train
-            duration: 4 days
+            duration: 5 days
         -
             to: Brașov, Romania
-            with: bus
+            with: train
             duration: 3 days
         -
-            to: Bucarest, Romania
-            with: bus
-            duration: 1 days
+            to: Brașov, Romania
+            with: walking
+            path: piatra-craiului.gpx
+            date: '2018-08-03'
+            type: hike
         -
-            to: Sofia, Bulgaria
-            with: bus
-            duration: 4 days
-        -
-            to: Thessaloniki, Greece
-            with: bus
-            duration: 4 days
-        -
-            to: Athens, Greece
-            with: bus
-            duration: 4 days
-        -
-            to: Tirana, Albania
-            with: bus
-            duration: 4 days
-        -
-            to: Skopje, Macedonia
-            with: bus
-            duration: 3 days
-        -
-            to: Canyon Matka, Macedonia
-            with: bus
-            date: 'previous + 2 days'
-            type: daytrip
-        -
-            to: Pristina, Kosovo
-            with: bus
-            date: 'previous + 2 days'
-            duration: 3 days
-        -
-            # hiking
-            to: Prokletije, Albania
-            with: bus
-            duration: 3 days
-        -
-            to: Podgorica, Montenegro
-            with: bus
-            duration: 3 days
-        -
-            to: Kotor, Montenegro
-            with: bus
-            duration: 3 days
-        -
-            to: Dubrovnik, Croatia
-            with: bus
-            duration: 2 days
-        -
-            to: Split, Croatia
-            with: bus
-            duration: 3 days
-        -
-            to: Mostar, Bosnia
-            with: bus
-            duration: 2 days
-        -
-            to: Blagaj, Bosnia
-            with: bus
-            date: 'previous + 2 days'
-            type: daytrip
-        -
-            to: Kravica Waterfall, Bosnia
-            with: bus
-            type: daytrip
-            date: 'previous + 1 days'
-        -
-            to: Sarajevo, Bosnia
-            with: bus
-            date: 'previous + 1 days'
+            to: Timișoara, Romania
+            with: train
+            date: '2018-08-04'
             duration: 4 days
         -
             to: Belgrade, Serbia
             with: bus
             duration: 4 days
         -
-            to: Zagreb, Croatia
-            with: bus
-            duration: 4 days
-        -
-            to: Northern Velebit, Croatia
+            to: Priština, Kosovo
             with: bus
             duration: 3 days
         -
-            to: Zagreb, Croatia
+            to: Skopje, Macedonia
             with: bus
-            duration: 1 days
+            duration: 3 days
         -
-            to: Ljubljana, Slovenia
-            with: bus
-            duration: 2 days
-        -
-            to: Lake Bled, Slovenia
-            with: bus
-            # same day
-            duration: 0 days
-        -
-            to: Vintgar Gorge, Slovenia
-            with: walking
-            # same day
-            duration: 0 days
-        -
-            to: Ljubljana, Slovenia
+            to: Sofia, Bulgaria
             with: bus
             duration: 3 days
         -
