@@ -90,7 +90,9 @@ class BoucleParser
 
     private function dateForStepConfig(array $stepConfig, Step $previousStep, array $previousStepConfig): \DateTimeImmutable
     {
-        if (!empty($previousStepConfig['duration']) && !empty($stepConfig['date']) && $stepConfig['type'] !== StepType::DAY_TRIP) {
+        $stepType = new StepType($stepConfig['type']);
+
+        if (!empty($previousStepConfig['duration']) && !empty($stepConfig['date']) && !StepType::isSingleDay($stepType)) {
             throw new InvalidConfiguration('Both duration and date were given for the step to '.$stepConfig['to']);
         }
 
