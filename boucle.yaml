@@ -149,9 +149,16 @@ boucle:
             with: train
             duration: 3 days
         -
+            to: Piatra Craiului, Romania
+            with: walking
+            path: data/piatra-craiului.gpx
+            date: '2018-08-03'
+            type: daytrip
+        -
             to: Timișoara, Romania
             with: train
-            duration: 3 days
+            date: '2018-08-04'
+            duration: 4 days
         -
             to: Belgrade, Serbia
             with: bus
@@ -167,7 +174,7 @@ boucle:
         -
             to: Sofia, Bulgaria
             with: bus
-            duration: 4 days
+            duration: 3 days
         -
             to: Lyon, France
             with: plane

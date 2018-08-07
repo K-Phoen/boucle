@@ -310,8 +310,8 @@
                     "long": 20.4568974
                 },
                 "path": "",
-                "arrival_date": "2018-08-07",
-                "departure_date": "2018-08-11"
+                "arrival_date": "2018-08-08",
+                "departure_date": "2018-08-12"
             },
             {
                 "from": {
@@ -325,8 +325,8 @@
                     "long": 21.1640849
                 },
                 "path": "",
-                "arrival_date": "2018-08-11",
-                "departure_date": "2018-08-14"
+                "arrival_date": "2018-08-12",
+                "departure_date": "2018-08-15"
             },
             {
                 "from": {
@@ -340,8 +340,8 @@
                     "long": 21.4316495
                 },
                 "path": "",
-                "arrival_date": "2018-08-14",
-                "departure_date": "2018-08-17"
+                "arrival_date": "2018-08-15",
+                "departure_date": "2018-08-18"
             },
             {
                 "from": {
@@ -355,7 +355,7 @@
                     "long": 23.3221789
                 },
                 "path": "",
-                "arrival_date": "2018-08-17",
+                "arrival_date": "2018-08-18",
                 "departure_date": "2018-08-21"
             }
         ],
@@ -559,7 +559,7 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-01",
-                "departure_date": "2018-08-04"
+                "departure_date": "2018-08-03"
             },
             {
                 "from": {
@@ -574,7 +574,7 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-04",
-                "departure_date": "2018-08-07"
+                "departure_date": "2018-08-08"
             }
         ],
         "walking": [
@@ -607,6 +607,36 @@
                 "path": "data\/the-saddle.gpx",
                 "arrival_date": "2018-07-09",
                 "departure_date": "2018-07-10"
+            },
+            {
+                "from": {
+                    "name": "Bra\u0219ov, Romania",
+                    "lat": 45.6523093,
+                    "long": 25.6102746
+                },
+                "to": {
+                    "name": "Piatra Craiului, Romania",
+                    "lat": 45.2690945,
+                    "long": 25.0432076
+                },
+                "path": "data\/piatra-craiului.gpx",
+                "arrival_date": "2018-08-03",
+                "departure_date": "2018-08-03"
+            },
+            {
+                "from": {
+                    "name": "Piatra Craiului, Romania",
+                    "lat": 45.2690945,
+                    "long": 25.0432076
+                },
+                "to": {
+                    "name": "Bra\u0219ov, Romania",
+                    "lat": 45.6523093,
+                    "long": 25.6102746
+                },
+                "path": "",
+                "arrival_date": "2018-08-03",
+                "departure_date": "2018-08-04"
             }
         ]
     }
