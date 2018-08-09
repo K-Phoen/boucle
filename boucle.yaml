@@ -149,11 +149,11 @@ boucle:
             with: train
             duration: 3 days
         -
-            to: Piatra Craiului, Romania
+            to: Brașov, Romania
             with: walking
             path: data/piatra-craiului.gpx
             date: '2018-08-03'
-            type: daytrip
+            type: hike
         -
             to: Timișoara, Romania
             with: train

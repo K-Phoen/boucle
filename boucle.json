@@ -615,26 +615,11 @@
                     "long": 25.6102746
                 },
                 "to": {
-                    "name": "Piatra Craiului, Romania",
-                    "lat": 45.2690945,
-                    "long": 25.0432076
-                },
-                "path": "data\/piatra-craiului.gpx",
-                "arrival_date": "2018-08-03",
-                "departure_date": "2018-08-03"
-            },
-            {
-                "from": {
-                    "name": "Piatra Craiului, Romania",
-                    "lat": 45.2690945,
-                    "long": 25.0432076
-                },
-                "to": {
                     "name": "Bra\u0219ov, Romania",
                     "lat": 45.6523093,
                     "long": 25.6102746
                 },
-                "path": "",
+                "path": "data\/piatra-craiului.gpx",
                 "arrival_date": "2018-08-03",
                 "departure_date": "2018-08-04"
             }
