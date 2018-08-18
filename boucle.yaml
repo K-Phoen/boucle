@@ -162,11 +162,11 @@ boucle:
         -
             to: Belgrade, Serbia
             with: bus
-            duration: 4 days
+            duration: 6 days
         -
-            to: Priština, Kosovo
+            to: Niš, Serbia
             with: bus
-            duration: 3 days
+            duration: 2 days
         -
             to: Skopje, Macedonia
             with: bus
@@ -174,7 +174,7 @@ boucle:
         -
             to: Sofia, Bulgaria
             with: bus
-            duration: 3 days
+            duration: 2 days
         -
             to: Lyon, France
             with: plane
