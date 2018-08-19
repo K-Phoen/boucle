@@ -291,8 +291,8 @@
                 },
                 "to": {
                     "name": "Chi\u0219in\u0103u, Moldova",
-                    "lat": 47.0122737,
-                    "long": 28.8605936
+                    "lat": 47.0244707,
+                    "long": 28.8322534
                 },
                 "path": "",
                 "arrival_date": "2018-07-25",
@@ -301,8 +301,8 @@
             {
                 "from": {
                     "name": "Timi\u0219oara, Romania",
-                    "lat": 45.75888845,
-                    "long": 21.2214854244305
+                    "lat": 45.7538355,
+                    "long": 21.2257474
                 },
                 "to": {
                     "name": "Belgrade, Serbia",
@@ -311,7 +311,7 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-08",
-                "departure_date": "2018-08-12"
+                "departure_date": "2018-08-14"
             },
             {
                 "from": {
@@ -320,19 +320,19 @@
                     "long": 20.4568974
                 },
                 "to": {
-                    "name": "Pri\u0161tina, Kosovo",
-                    "lat": 42.6638771,
-                    "long": 21.1640849
+                    "name": "Ni\u0161, Serbia",
+                    "lat": 43.321504,
+                    "long": 21.8957301
                 },
                 "path": "",
-                "arrival_date": "2018-08-12",
-                "departure_date": "2018-08-15"
+                "arrival_date": "2018-08-14",
+                "departure_date": "2018-08-16"
             },
             {
                 "from": {
-                    "name": "Pri\u0161tina, Kosovo",
-                    "lat": 42.6638771,
-                    "long": 21.1640849
+                    "name": "Ni\u0161, Serbia",
+                    "lat": 43.321504,
+                    "long": 21.8957301
                 },
                 "to": {
                     "name": "Skopje, Macedonia",
@@ -340,8 +340,8 @@
                     "long": 21.4316495
                 },
                 "path": "",
-                "arrival_date": "2018-08-15",
-                "departure_date": "2018-08-18"
+                "arrival_date": "2018-08-16",
+                "departure_date": "2018-08-19"
             },
             {
                 "from": {
@@ -355,7 +355,7 @@
                     "long": 23.3221789
                 },
                 "path": "",
-                "arrival_date": "2018-08-18",
+                "arrival_date": "2018-08-19",
                 "departure_date": "2018-08-21"
             }
         ],
@@ -534,8 +534,8 @@
             {
                 "from": {
                     "name": "Chi\u0219in\u0103u, Moldova",
-                    "lat": 47.0122737,
-                    "long": 28.8605936
+                    "lat": 47.0244707,
+                    "long": 28.8322534
                 },
                 "to": {
                     "name": "Bucarest, Romania",
@@ -569,8 +569,8 @@
                 },
                 "to": {
                     "name": "Timi\u0219oara, Romania",
-                    "lat": 45.75888845,
-                    "long": 21.2214854244305
+                    "lat": 45.7538355,
+                    "long": 21.2257474
                 },
                 "path": "",
                 "arrival_date": "2018-08-04",
