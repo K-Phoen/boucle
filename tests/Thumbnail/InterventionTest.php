@@ -9,6 +9,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Filesystem;
 use Boucle\Image;
 use Boucle\Thumbnail\Intervention;
+use Intervention\Image\Exception\ImageException;
 
 class InterventionTest extends TestCase
 {
@@ -72,6 +73,18 @@ class InterventionTest extends TestCase
         $this->fs->expects($this->once())
             ->method('mkdir')
             ->with('/dir/boucle');
+
+        $this->thumbnailer->forImage($image);
+    }
+
+    public function testItWrapsErrors(): void
+    {
+        $image = Image::fromPath('/dir/img.png');
+
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage('Could not create thumbnail for image: /dir/img.png');
+
+        $this->manager->method('make')->willThrowException(new ImageException());
 
         $this->thumbnailer->forImage($image);
     }
