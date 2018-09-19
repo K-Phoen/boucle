@@ -598,7 +598,7 @@
                     "lat": 59.9132694,
                     "long": 10.7391112
                 },
-                "path": "albums\/data\/Oslo-bergen.gpx",
+                "path": "data\/Oslo-bergen.gpx",
                 "arrival_date": "2018-05-18",
                 "departure_date": "2018-05-22",
                 "album": {
@@ -686,7 +686,7 @@
                     "lat": 60.3943034,
                     "long": 5.3258117
                 },
-                "path": "albums\/data\/Ulriken-Floyen.gpx",
+                "path": "data\/Ulriken-Floyen.gpx",
                 "arrival_date": "2018-05-17",
                 "departure_date": "2018-05-18",
                 "album": null
@@ -702,7 +702,7 @@
                     "lat": 49.2695199,
                     "long": 20.2645742
                 },
-                "path": "albums\/data\/the-saddle.gpx",
+                "path": "data\/the-saddle.gpx",
                 "arrival_date": "2018-07-09",
                 "departure_date": "2018-07-10",
                 "album": null
