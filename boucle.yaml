@@ -208,6 +208,9 @@ boucle:
               to: Brașov, Romania
               with: train
               duration: 3 days
+              album:
+                  path: albums/brasov_2018
+                  cover: P8010008.JPG
       -
               to: Brașov, Romania
               with: walking
@@ -219,10 +222,16 @@ boucle:
               with: train
               date: '2018-08-04'
               duration: 4 days
+              album:
+                  path: albums/timisoara_2018
+                  cover: IMG_20180805_064411.jpg
       -
               to: Belgrade, Serbia
               with: bus
               duration: 6 days
+              album:
+                  path: albums/belgrade_2018
+                  cover: P8090017.JPG
       -
               to: Niš, Serbia
               with: bus
@@ -231,6 +240,9 @@ boucle:
               to: Skopje, Macedonia
               with: bus
               duration: 3 days
+              album:
+                  path: albums/skopje_2018
+                  cover: P8170122.JPG
       -
               to: Sofia, Bulgaria
               with: bus

@@ -376,7 +376,10 @@
                 "path": "",
                 "arrival_date": "2018-08-08",
                 "departure_date": "2018-08-14",
-                "album": null
+                "album": {
+                    "path": ".\/albums\/belgrade_2018",
+                    "cover": ".\/albums\/belgrade_2018\/boucle\/thumb_P8090017.JPG"
+                }
             },
             {
                 "from": {
@@ -408,7 +411,10 @@
                 "path": "",
                 "arrival_date": "2018-08-16",
                 "departure_date": "2018-08-19",
-                "album": null
+                "album": {
+                    "path": ".\/albums\/skopje_2018",
+                    "cover": ".\/albums\/skopje_2018\/boucle\/thumb_P8170122.JPG"
+                }
             },
             {
                 "from": {
@@ -655,7 +661,10 @@
                 "path": "",
                 "arrival_date": "2018-08-01",
                 "departure_date": "2018-08-03",
-                "album": null
+                "album": {
+                    "path": ".\/albums\/brasov_2018",
+                    "cover": ".\/albums\/brasov_2018\/boucle\/thumb_P8010008.JPG"
+                }
             },
             {
                 "from": {
@@ -671,7 +680,10 @@
                 "path": "",
                 "arrival_date": "2018-08-04",
                 "departure_date": "2018-08-08",
-                "album": null
+                "album": {
+                    "path": ".\/albums\/timisoara_2018",
+                    "cover": ".\/albums\/timisoara_2018\/boucle\/thumb_IMG_20180805_064411.jpg"
+                }
             }
         ],
         "walking": [
