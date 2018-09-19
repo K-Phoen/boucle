@@ -26,7 +26,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-09",
-                "departure_date": "2018-05-10"
+                "departure_date": "2018-05-10",
+                "album": null
             },
             {
                 "from": {
@@ -41,7 +42,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-22",
-                "departure_date": "2018-05-24"
+                "departure_date": "2018-05-24",
+                "album": {
+                    "path": ".\/albums\/goteborg_2018",
+                    "cover": ".\/albums\/goteborg_2018\/boucle\/thumb_P5230081.JPG"
+                }
             },
             {
                 "from": {
@@ -56,7 +61,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-24",
-                "departure_date": "2018-05-31"
+                "departure_date": "2018-05-31",
+                "album": {
+                    "path": ".\/albums\/stockholm_2018",
+                    "cover": ".\/albums\/stockholm_2018\/boucle\/thumb_P5300019.JPG"
+                }
             },
             {
                 "from": {
@@ -71,7 +80,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-06-04",
-                "departure_date": "2018-06-08"
+                "departure_date": "2018-06-08",
+                "album": {
+                    "path": ".\/albums\/riga_2018",
+                    "cover": ".\/albums\/riga_2018\/boucle\/thumb_P6050038.JPG"
+                }
             },
             {
                 "from": {
@@ -86,7 +99,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-06-08",
-                "departure_date": "2018-06-12"
+                "departure_date": "2018-06-12",
+                "album": {
+                    "path": ".\/albums\/vilnius_2018",
+                    "cover": ".\/albums\/vilnius_2018\/boucle\/thumb_IMG_20180608_182502.jpg"
+                }
             },
             {
                 "from": {
@@ -101,7 +118,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-06-12",
-                "departure_date": "2018-06-16"
+                "departure_date": "2018-06-16",
+                "album": {
+                    "path": ".\/albums\/warsaw_2018",
+                    "cover": ".\/albums\/warsaw_2018\/boucle\/thumb_P6140088.JPG"
+                }
             },
             {
                 "from": {
@@ -110,19 +131,23 @@
                     "long": 21.0067265
                 },
                 "to": {
-                    "name": "Cracow, Poland",
-                    "lat": 50.0606742,
-                    "long": 19.9371393
+                    "name": "Kracow, Poland",
+                    "lat": 50.0528109,
+                    "long": 19.9495267
                 },
                 "path": "",
                 "arrival_date": "2018-06-16",
-                "departure_date": "2018-06-20"
+                "departure_date": "2018-06-20",
+                "album": {
+                    "path": ".\/albums\/krakow_2018",
+                    "cover": ".\/albums\/krakow_2018\/boucle\/thumb_P6190199.JPG"
+                }
             },
             {
                 "from": {
-                    "name": "Cracow, Poland",
-                    "lat": 50.0606742,
-                    "long": 19.9371393
+                    "name": "Kracow, Poland",
+                    "lat": 50.0528109,
+                    "long": 19.9495267
                 },
                 "to": {
                     "name": "Berlin, Germany",
@@ -131,7 +156,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-06-20",
-                "departure_date": "2018-06-25"
+                "departure_date": "2018-06-25",
+                "album": {
+                    "path": ".\/albums\/berlin_2018",
+                    "cover": ".\/albums\/berlin_2018\/boucle\/thumb_IMG_20180622_174434.jpg"
+                }
             },
             {
                 "from": {
@@ -146,7 +175,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-06-25",
-                "departure_date": "2018-06-29"
+                "departure_date": "2018-06-29",
+                "album": {
+                    "path": ".\/albums\/prague_2018",
+                    "cover": ".\/albums\/prague_2018\/boucle\/thumb_P6260013.JPG"
+                }
             },
             {
                 "from": {
@@ -161,7 +194,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-06-29",
-                "departure_date": "2018-07-02"
+                "departure_date": "2018-07-02",
+                "album": {
+                    "path": ".\/albums\/bratislava_2018",
+                    "cover": ".\/albums\/bratislava_2018\/boucle\/thumb_P7010080.JPG"
+                }
             },
             {
                 "from": {
@@ -176,7 +213,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-02",
-                "departure_date": "2018-07-07"
+                "departure_date": "2018-07-07",
+                "album": {
+                    "path": ".\/albums\/budapest_2018",
+                    "cover": ".\/albums\/budapest_2018\/boucle\/thumb_P7030007.JPG"
+                }
             },
             {
                 "from": {
@@ -191,7 +232,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-07",
-                "departure_date": "2018-07-08"
+                "departure_date": "2018-07-08",
+                "album": null
             },
             {
                 "from": {
@@ -206,7 +248,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-08",
-                "departure_date": "2018-07-09"
+                "departure_date": "2018-07-09",
+                "album": {
+                    "path": ".\/albums\/zdiar_2018",
+                    "cover": ".\/albums\/zdiar_2018\/boucle\/thumb_IMG_20180709_142507.jpg"
+                }
             },
             {
                 "from": {
@@ -221,7 +267,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-10",
-                "departure_date": "2018-07-11"
+                "departure_date": "2018-07-11",
+                "album": null
             },
             {
                 "from": {
@@ -236,7 +283,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-15",
-                "departure_date": "2018-07-18"
+                "departure_date": "2018-07-18",
+                "album": {
+                    "path": ".\/albums\/kiev_2018",
+                    "cover": ".\/albums\/kiev_2018\/boucle\/thumb_P7190037.JPG"
+                }
             },
             {
                 "from": {
@@ -251,7 +302,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-18",
-                "departure_date": "2018-07-18"
+                "departure_date": "2018-07-18",
+                "album": {
+                    "path": ".\/albums\/tchernobyl_2018",
+                    "cover": ".\/albums\/tchernobyl_2018\/boucle\/thumb_P7180050.JPG"
+                }
             },
             {
                 "from": {
@@ -266,7 +321,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-18",
-                "departure_date": "2018-07-22"
+                "departure_date": "2018-07-22",
+                "album": null
             },
             {
                 "from": {
@@ -281,7 +337,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-22",
-                "departure_date": "2018-07-25"
+                "departure_date": "2018-07-25",
+                "album": {
+                    "path": ".\/albums\/odessa_2018",
+                    "cover": ".\/albums\/odessa_2018\/boucle\/thumb_P7230212.JPG"
+                }
             },
             {
                 "from": {
@@ -296,7 +356,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-25",
-                "departure_date": "2018-07-27"
+                "departure_date": "2018-07-27",
+                "album": {
+                    "path": ".\/albums\/chisinau_2018",
+                    "cover": ".\/albums\/chisinau_2018\/boucle\/thumb_P7260012.JPG"
+                }
             },
             {
                 "from": {
@@ -311,7 +375,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-08",
-                "departure_date": "2018-08-14"
+                "departure_date": "2018-08-14",
+                "album": null
             },
             {
                 "from": {
@@ -326,7 +391,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-14",
-                "departure_date": "2018-08-16"
+                "departure_date": "2018-08-16",
+                "album": null
             },
             {
                 "from": {
@@ -341,7 +407,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-16",
-                "departure_date": "2018-08-19"
+                "departure_date": "2018-08-19",
+                "album": null
             },
             {
                 "from": {
@@ -356,7 +423,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-19",
-                "departure_date": "2018-08-21"
+                "departure_date": "2018-08-21",
+                "album": null
             }
         ],
         "car": [
@@ -373,7 +441,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-11",
-                "departure_date": "2018-05-12"
+                "departure_date": "2018-05-12",
+                "album": null
             },
             {
                 "from": {
@@ -388,7 +457,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-12",
-                "departure_date": "2018-05-12"
+                "departure_date": "2018-05-12",
+                "album": null
             },
             {
                 "from": {
@@ -403,7 +473,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-13",
-                "departure_date": "2018-05-15"
+                "departure_date": "2018-05-15",
+                "album": null
             }
         ],
         "plane": [
@@ -420,7 +491,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-10",
-                "departure_date": "2018-05-11"
+                "departure_date": "2018-05-11",
+                "album": {
+                    "path": ".\/albums\/irlande_05-2018",
+                    "cover": ".\/albums\/irlande_05-2018\/boucle\/thumb_P5120107.JPG"
+                }
             },
             {
                 "from": {
@@ -435,7 +510,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-15",
-                "departure_date": "2018-05-17"
+                "departure_date": "2018-05-17",
+                "album": {
+                    "path": ".\/albums\/bergen_2018",
+                    "cover": ".\/albums\/bergen_2018\/boucle\/thumb_P5160447.JPG"
+                }
             },
             {
                 "from": {
@@ -450,7 +529,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-31",
-                "departure_date": "2018-06-04"
+                "departure_date": "2018-06-04",
+                "album": {
+                    "path": ".\/albums\/tallinn_2018",
+                    "cover": ".\/albums\/tallinn_2018\/boucle\/thumb_IMG_20180602_145645.jpg"
+                }
             },
             {
                 "from": {
@@ -465,7 +548,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-21",
-                "departure_date": ""
+                "departure_date": "",
+                "album": null
             }
         ],
         "boat": [
@@ -482,7 +566,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-12",
-                "departure_date": "2018-05-13"
+                "departure_date": "2018-05-13",
+                "album": null
             },
             {
                 "from": {
@@ -497,7 +582,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-05-13",
-                "departure_date": "2018-05-13"
+                "departure_date": "2018-05-13",
+                "album": null
             }
         ],
         "train": [
@@ -512,9 +598,13 @@
                     "lat": 59.9132694,
                     "long": 10.7391112
                 },
-                "path": "data\/Oslo-bergen.gpx",
+                "path": "albums\/data\/Oslo-bergen.gpx",
                 "arrival_date": "2018-05-18",
-                "departure_date": "2018-05-22"
+                "departure_date": "2018-05-22",
+                "album": {
+                    "path": ".\/albums\/oslo_2018",
+                    "cover": ".\/albums\/oslo_2018\/boucle\/thumb_P5200016.JPG"
+                }
             },
             {
                 "from": {
@@ -529,7 +619,11 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-11",
-                "departure_date": "2018-07-15"
+                "departure_date": "2018-07-15",
+                "album": {
+                    "path": ".\/albums\/lviv_2018",
+                    "cover": ".\/albums\/lviv_2018\/boucle\/thumb_IMG_20180714_154906.jpg"
+                }
             },
             {
                 "from": {
@@ -544,7 +638,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-07-27",
-                "departure_date": "2018-08-01"
+                "departure_date": "2018-08-01",
+                "album": null
             },
             {
                 "from": {
@@ -559,7 +654,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-01",
-                "departure_date": "2018-08-03"
+                "departure_date": "2018-08-03",
+                "album": null
             },
             {
                 "from": {
@@ -574,7 +670,8 @@
                 },
                 "path": "",
                 "arrival_date": "2018-08-04",
-                "departure_date": "2018-08-08"
+                "departure_date": "2018-08-08",
+                "album": null
             }
         ],
         "walking": [
@@ -589,9 +686,10 @@
                     "lat": 60.3943034,
                     "long": 5.3258117
                 },
-                "path": "data\/Ulriken-Floyen.gpx",
+                "path": "albums\/data\/Ulriken-Floyen.gpx",
                 "arrival_date": "2018-05-17",
-                "departure_date": "2018-05-18"
+                "departure_date": "2018-05-18",
+                "album": null
             },
             {
                 "from": {
@@ -604,9 +702,10 @@
                     "lat": 49.2695199,
                     "long": 20.2645742
                 },
-                "path": "data\/the-saddle.gpx",
+                "path": "albums\/data\/the-saddle.gpx",
                 "arrival_date": "2018-07-09",
-                "departure_date": "2018-07-10"
+                "departure_date": "2018-07-10",
+                "album": null
             },
             {
                 "from": {
@@ -619,9 +718,10 @@
                     "lat": 45.6523093,
                     "long": 25.6102746
                 },
-                "path": "data\/piatra-craiului.gpx",
+                "path": "albums\/data\/piatra-craiului.gpx",
                 "arrival_date": "2018-08-03",
-                "departure_date": "2018-08-04"
+                "departure_date": "2018-08-04",
+                "album": null
             }
         ]
     }

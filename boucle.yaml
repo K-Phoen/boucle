@@ -1,180 +1,240 @@
 boucle:
-    title: Europe – 2018
+      title: Europe – 2018
 
-    map_provider: mapbox
-    map_api_key: pk.eyJ1Ijoiay1waG9lbiIsImEiOiJjamZmbjl0dzMzejB1MzNucm92MzhiYWlwIn0.zPborWgq1bj6PEaZgJRiEA
+      map_provider: mapbox
+      map_api_key: pk.eyJ1Ijoiay1waG9lbiIsImEiOiJjamZmbjl0dzMzejB1MzNucm92MzhiYWlwIn0.zPborWgq1bj6PEaZgJRiEA
 
-    start: Clermont-Ferrand, France
+      start: Clermont-Ferrand, France
 
-    steps:
-        -
-            to: Lyon, France
-            with: bus
-            date: '2018-05-09'
-        -
-            to: Dublin, Ireland
-            with: plane
-            date: '2018-05-10'
-        -
-            to: Galway, Ireland
-            with: car
-            date: '2018-05-11'
-        -
-            to: Rossaveel, Ireland
-            with: car
-            date: '2018-05-12'
-        -
-            to: Inis Meáin, Ireland
-            with: boat
-            date: '2018-05-12'
-        -
-            to: Rossaveel, Ireland
-            with: boat
-            date: '2018-05-13'
-        -
-            to: Dublin, Ireland
-            with: car
-            date: '2018-05-13'
-        -
-            to: Bergen, Norway
-            with: plane
-            date: '2018-05-15'
-        -
-            to: Bergen, Norway
-            with: walking
-            path: data/Ulriken-Floyen.gpx
-            date: '2018-05-17'
-        -
-            to: Oslo, Norway
-            with: train
-            path: data/Oslo-bergen.gpx
-            date: '2018-05-18'
-        -
-            to: Göteborg, Sweden
-            with: bus
-            date: '2018-05-22'
-        -
-            to: Stockholm, Sweden
-            with: bus
-            date: '2018-05-24'
-        -
-            to: Tallinn, Estonia
-            with: plane
-            date: '2018-05-31'
-        -
-            to: Riga, Latvia
-            with: bus
-            date: '2018-06-04'
-        -
-            to: Vilnius, Lithuania
-            with: bus
-            date: '2018-06-08'
-        -
-            to: Warsaw, Poland
-            with: bus
-            date: '2018-06-12'
-        -
-            to: Cracow, Poland
-            with: bus
-            date: '2018-06-16'
-        -
-            to: Berlin, Germany
-            with: bus
-            date: '2018-06-20'
-        -
-            to: Prague, Czech Republic
-            with: bus
-            date: '2018-06-25'
-        -
-            to: Bratislava, Slovakia
-            with: bus
-            date: '2018-06-29'
-        -
-            to: Budapest, Hungary
-            with: bus
-            date: '2018-07-02'
-        -
-            to: Poprad, Slovakia
-            latitude: 49.059719
-            longitude: 20.2930651
-            with: bus
-            date: '2018-07-07'
-        -
-            to: Ždiar, Slovakia
-            latitude: 49.2695199
-            longitude: 20.2645742
-            with: bus
-            date: '2018-07-08'
-        -
-            to: Ždiar, Slovakia
-            latitude: 49.2695199
-            longitude: 20.2645742
-            with: walking
-            path: data/the-saddle.gpx
-            date: '2018-07-09'
-        -
-            to: Poprad, Slovakia
-            latitude: 49.059719
-            longitude: 20.2930651
-            with: bus
-            date: '2018-07-10'
-        -
-            to: Lviv, Ukraine
-            with: train
-            date: '2018-07-11'
-        -
-            to: Kiev, Ukraine
-            with: bus
-            date: '2018-07-15'
-        -
-            to: Tchernobyl, Ukraine
-            with: bus
-            date: '2018-07-18'
-            type: daytrip
-        -
-            to: Odessa, Ukraine
-            with: bus
-            date: '2018-07-22'
-            duration: 3 days
-        -
-            to: Chișinău, Moldova
-            with: bus
-            duration: 2 days
-        -
-            to: Bucarest, Romania
-            with: train
-            duration: 5 days
-        -
-            to: Brașov, Romania
-            with: train
-            duration: 3 days
-        -
-            to: Brașov, Romania
-            with: walking
-            path: data/piatra-craiului.gpx
-            date: '2018-08-03'
-            type: hike
-        -
-            to: Timișoara, Romania
-            with: train
-            date: '2018-08-04'
-            duration: 4 days
-        -
-            to: Belgrade, Serbia
-            with: bus
-            duration: 6 days
-        -
-            to: Niš, Serbia
-            with: bus
-            duration: 2 days
-        -
-            to: Skopje, Macedonia
-            with: bus
-            duration: 3 days
-        -
-            to: Sofia, Bulgaria
-            with: bus
-            duration: 2 days
-        -
-            to: Lyon, France
-            with: plane
+      steps:
+      -
+              to: Lyon, France
+              with: bus
+              date: '2018-05-09'
+      -
+              to: Dublin, Ireland
+              with: plane
+              date: '2018-05-10'
+              album:
+                  path: albums/irlande_05-2018
+                  cover: P5120107.JPG
+      -
+              to: Galway, Ireland
+              with: car
+              date: '2018-05-11'
+      -
+              to: Rossaveel, Ireland
+              with: car
+              date: '2018-05-12'
+      -
+              to: Inis Meáin, Ireland
+              with: boat
+              date: '2018-05-12'
+      -
+              to: Rossaveel, Ireland
+              with: boat
+              date: '2018-05-13'
+      -
+              to: Dublin, Ireland
+              with: car
+              date: '2018-05-13'
+      -
+              to: Bergen, Norway
+              with: plane
+              date: '2018-05-15'
+              album:
+                  path: albums/bergen_2018
+                  cover: P5160447.JPG
+      -
+              to: Bergen, Norway
+              with: walking
+              path: albums/data/Ulriken-Floyen.gpx
+              date: '2018-05-17'
+      -
+              to: Oslo, Norway
+              with: train
+              path: albums/data/Oslo-bergen.gpx
+              date: '2018-05-18'
+              album:
+                  path: albums/oslo_2018
+                  cover: P5200016.JPG
+      -
+              to: Göteborg, Sweden
+              with: bus
+              date: '2018-05-22'
+              album:
+                  path: albums/goteborg_2018
+                  cover: P5230081.JPG
+      -
+              to: Stockholm, Sweden
+              with: bus
+              date: '2018-05-24'
+              album:
+                  path: albums/stockholm_2018
+                  cover: P5300019.JPG
+      -
+              to: Tallinn, Estonia
+              with: plane
+              date: '2018-05-31'
+              album:
+                  path: albums/tallinn_2018
+                  cover: IMG_20180602_145645.jpg
+      -
+              to: Riga, Latvia
+              with: bus
+              date: '2018-06-04'
+              album:
+                  path: albums/riga_2018
+                  cover: P6050038.JPG
+      -
+              to: Vilnius, Lithuania
+              with: bus
+              date: '2018-06-08'
+              album:
+                  path: albums/vilnius_2018
+                  cover: IMG_20180608_182502.jpg
+      -
+              to: Warsaw, Poland
+              with: bus
+              date: '2018-06-12'
+              album:
+                  path: albums/warsaw_2018
+                  cover: P6140088.JPG
+      -
+              to: Kracow, Poland
+              with: bus
+              date: '2018-06-16'
+              album:
+                  path: albums/krakow_2018
+                  cover: P6190199.JPG
+      -
+              to: Berlin, Germany
+              with: bus
+              date: '2018-06-20'
+              album:
+                  path: albums/berlin_2018
+                  cover: IMG_20180622_174434.jpg
+      -
+              to: Prague, Czech Republic
+              with: bus
+              date: '2018-06-25'
+              album:
+                  path: albums/prague_2018
+                  cover: P6260013.JPG
+      -
+              to: Bratislava, Slovakia
+              with: bus
+              date: '2018-06-29'
+              album:
+                  path: albums/bratislava_2018
+                  cover: P7010080.JPG
+      -
+              to: Budapest, Hungary
+              with: bus
+              date: '2018-07-02'
+              album:
+                  path: albums/budapest_2018
+                  cover: P7030007.JPG
+      -
+              to: Poprad, Slovakia
+              latitude: 49.059719
+              longitude: 20.2930651
+              with: bus
+              date: '2018-07-07'
+      -
+              to: Ždiar, Slovakia
+              latitude: 49.2695199
+              longitude: 20.2645742
+              with: bus
+              date: '2018-07-08'
+              album:
+                  path: albums/zdiar_2018
+                  cover: IMG_20180709_142507.jpg
+      -
+              to: Ždiar, Slovakia
+              latitude: 49.2695199
+              longitude: 20.2645742
+              with: walking
+              path: albums/data/the-saddle.gpx
+              date: '2018-07-09'
+      -
+              to: Poprad, Slovakia
+              latitude: 49.059719
+              longitude: 20.2930651
+              with: bus
+              date: '2018-07-10'
+      -
+              to: Lviv, Ukraine
+              with: train
+              date: '2018-07-11'
+              album:
+                  path: albums/lviv_2018
+                  cover: IMG_20180714_154906.jpg
+      -
+              to: Kiev, Ukraine
+              with: bus
+              date: '2018-07-15'
+              album:
+                  path: albums/kiev_2018
+                  cover: P7190037.JPG
+      -
+              to: Tchernobyl, Ukraine
+              with: bus
+              date: '2018-07-18'
+              type: daytrip
+              album:
+                  path: albums/tchernobyl_2018
+                  cover: P7180050.JPG
+      -
+              to: Odessa, Ukraine
+              with: bus
+              date: '2018-07-22'
+              duration: 3 days
+              album:
+                  path: albums/odessa_2018
+                  cover: P7230212.JPG
+      -
+              to: Chișinău, Moldova
+              with: bus
+              duration: 2 days
+              album:
+                  path: albums/chisinau_2018
+                  cover: P7260012.JPG
+      -
+              to: Bucarest, Romania
+              with: train
+              duration: 5 days
+      -
+              to: Brașov, Romania
+              with: train
+              duration: 3 days
+      -
+              to: Brașov, Romania
+              with: walking
+              path: albums/data/piatra-craiului.gpx
+              date: '2018-08-03'
+              type: hike
+      -
+              to: Timișoara, Romania
+              with: train
+              date: '2018-08-04'
+              duration: 4 days
+      -
+              to: Belgrade, Serbia
+              with: bus
+              duration: 6 days
+      -
+              to: Niš, Serbia
+              with: bus
+              duration: 2 days
+      -
+              to: Skopje, Macedonia
+              with: bus
+              duration: 3 days
+      -
+              to: Sofia, Bulgaria
+              with: bus
+              duration: 2 days
+      -
+              to: Lyon, France
+              with: plane

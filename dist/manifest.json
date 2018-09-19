@@ -1,8 +1,18 @@
 {
+  "dist/album.js": "./album.js",
   "dist/app.js": "./app.js",
+  "dist/fonts/lg.eot?n1z373": "./fonts/lg.ecff1170.eot",
+  "dist/fonts/lg.ttf?n1z373": "./fonts/lg.4fe6f9ca.ttf",
+  "dist/fonts/lg.woff?n1z373": "./fonts/lg.5fd4c338.woff",
+  "dist/gallery.css": "./gallery.css",
   "dist/images/layers-2x.png": "./images/layers-2x.4f0283c6.png",
   "dist/images/layers.png": "./images/layers.a6137456.png",
+  "dist/images/lg.svg?n1z373": "./images/lg.c066c544.svg",
+  "dist/images/loading.gif": "./images/loading.0aeca8b0.gif",
   "dist/images/marker-icon.png": "./images/marker-icon.2273e3d8.png",
   "dist/images/me-marker.png": "./images/me-marker.05d6d200.png",
+  "dist/images/video-play.png": "./images/video-play.4f03bd8d.png",
+  "dist/images/vimeo-play.png": "./images/vimeo-play.699d0051.png",
+  "dist/images/youtube-play.png": "./images/youtube-play.96bc9d7e.png",
   "dist/map.css": "./map.css"
 }
