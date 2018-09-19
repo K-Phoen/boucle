@@ -40,12 +40,24 @@ class BoucleToJson
                 $departureDate = $boucle->step($i + 1)->date()->format('Y-m-d');
             }
 
+            $albumData = null;
+
+            if ($step->hasAlbum()) {
+                $album = $step->album();
+
+                $albumData = [
+                    'path' => $album->pathRelativeTo($webRoot),
+                    'cover' => $album->cover()->relativeTo($webRoot)->thumbnailPath(),
+                ];
+            }
+
             $data['steps'][(string) $step->transport()][] = [
                 'from' => $this->compilePlace($step->from()),
                 'to' => $this->compilePlace($step->to()),
                 'path' => $step->pathFilename(),
                 'arrival_date' => $step->date()->format('Y-m-d'),
                 'departure_date' => $departureDate,
+                'album' => $albumData,
             ];
         }
 

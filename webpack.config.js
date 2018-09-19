@@ -9,11 +9,13 @@ Encore
     .setManifestKeyPrefix('dist/')
 
     .addEntry('app', './assets/js/map.js')
+    .addEntry('album', './assets/js/album.js')
 
     // allow sass/scss files to be processed
     .enableSassLoader()
 
     .addStyleEntry('map', './assets/css/map.scss')
+    .addStyleEntry('gallery', './assets/css/album.scss')
 
     .enableSourceMaps(!Encore.isProduction())
 

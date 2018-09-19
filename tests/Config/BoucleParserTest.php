@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace Tests\Boucle\Config;
 
+use Boucle\Album;
 use Boucle\Boucle;
+use Boucle\Config\AlbumBuilder;
 use Boucle\Config\BoucleParser;
 use Boucle\Config\InvalidConfiguration;
 use Boucle\Config\UnknownLocation;
+use Boucle\Image;
 use Boucle\Place;
 use Boucle\Transport;
 use Geocoder\Geocoder;
@@ -23,6 +26,9 @@ class BoucleParserTest extends TestCase
 {
     /** @var Geocoder */
     private $geocoder;
+
+    /** @var AlbumBuilder */
+    private $albumBuilder;
 
     /** @var vfsStreamDirectory */
     private $root;
@@ -81,8 +87,9 @@ boucle:
         ]);
 
         $this->geocoder = $this->createMock(Geocoder::class);
+        $this->albumBuilder = $this->createMock(AlbumBuilder::class);
 
-        $this->parser = new BoucleParser($this->geocoder);
+        $this->parser = new BoucleParser($this->geocoder, $this->albumBuilder);
     }
 
     public function testItParsesTheExample()
@@ -92,6 +99,10 @@ boucle:
 
         $geocodingResults = new AddressCollection([$location]);
         $this->geocoder->method('geocodeQuery')->willReturn($geocodingResults);
+
+        $this->albumBuilder
+            ->method('fromConfig')
+            ->willReturn(new Album('album-path', Image::fromPath('image-path'), []));
 
         $boucle = $this->parser->read(__DIR__.'/../../examples/boucle.yaml');
 

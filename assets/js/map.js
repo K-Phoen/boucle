@@ -1,6 +1,7 @@
 import L from 'leaflet';
 import xhr from 'xhr';
 import './leaflet.boucle-arrow';
+import './Leaflet.Photo';
 import {points as turfPoints} from '@turf/helpers';
 import turfBbox from '@turf/bbox';
 import omnivore from '@mapbox/leaflet-omnivore';
@@ -11,15 +12,16 @@ import me_marker_img from '../img/me-marker.png';
 class MapView {
     constructor(config = {}) {
         this.config = config;
-
-        this.map = this.mountMap();
         this.boucle = {};
+
+        this.map = this.createMap();
+        this.photoLayer = this.createPhotoLayer();
 
         this.mountLegend();
         this.loadSteps();
     }
 
-    mountMap() {
+    createMap() {
         const map = L.map(this.config.container);
 
         new L.TileLayer(this.config.tileLayerUrl, {
@@ -32,6 +34,15 @@ class MapView {
         map.setView([51.505, -0.09], 3);
 
         return map;
+    }
+
+    createPhotoLayer() {
+        return L.photo.cluster().on('click', function (evt) {
+            evt.layer.bindPopup(L.Util.template('<a href="{path}/"><img src="{url}"/><h3>{title}</h3></a><p>From {arrival_date} to {departure_date}</p>', evt.layer.photo), {
+                className: 'leaflet-popup-photo',
+                minWidth: 400
+            }).openPopup();
+        });
     }
 
     mountLegend() {
@@ -51,8 +62,6 @@ class MapView {
         };
 
         legend.addTo(this.map);
-
-        return legend;
     }
 
     mountDatePicker() {
@@ -97,10 +106,40 @@ class MapView {
 
             this.drawStart();
             this.drawSteps();
+            this.mountPhotos();
             this.centerMap();
             this.addMeMarker(new Date());
             this.mountDatePicker();
         });
+    }
+
+    mountPhotos() {
+        let photos = [];
+
+        for (let transport in this.boucle.steps) {
+            if (!this.boucle.steps.hasOwnProperty(transport)) {
+                continue;
+            }
+
+            this.boucle.steps[transport].forEach(function (step) {
+                if (step.album === null) {
+                    return;
+                }
+
+                photos.push({
+                    lat: step.to.lat,
+                    lng: step.to.long,
+                    title: step.to.name,
+                    path: step.album.path,
+                    url: step.album.cover,
+                    thumbnail: step.album.cover,
+                    arrival_date: step.arrival_date,
+                    departure_date: step.departure_date
+                });
+            });
+        }
+
+        this.photoLayer.add(photos).addTo(this.map);
     }
 
     centerMap() {

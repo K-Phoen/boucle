@@ -16,14 +16,18 @@ class Build
     /** @var Compiler\MapView */
     private $mapViewCompiler;
 
+    /** @var Compiler\GalleryView */
+    private $galleryViewCompiler;
+
     /** @var Compiler\BoucleToJson */
     private $jsonCompiler;
 
-    public function __construct(BoucleParser $boucleParser, Compiler\MapView $mapViewCompiler, Compiler\BoucleToJson $jsonCompiler)
+    public function __construct(BoucleParser $boucleParser, Compiler\MapView $mapViewCompiler, Compiler\GalleryView $galleryViewCompiler, Compiler\BoucleToJson $jsonCompiler)
     {
         $this->boucleParser = $boucleParser;
         $this->mapViewCompiler = $mapViewCompiler;
         $this->jsonCompiler = $jsonCompiler;
+        $this->galleryViewCompiler = $galleryViewCompiler;
     }
 
     public function run(OutputInterface $output, string $bouclePath, string $webRoot): void
@@ -34,10 +38,20 @@ class Build
 
         $output->writeln('<info>Compiling map view...</info>');
 
-        $this->mapViewCompiler->compile($boucle, $webRoot);
+        $this->mapViewCompiler->compile($boucle, \realpath($webRoot));
 
         $output->writeln('<info>Compiling boucle to json...</info>');
 
-        $this->jsonCompiler->compile($boucle, $webRoot);
+        $this->jsonCompiler->compile($boucle, \realpath($webRoot));
+
+        $output->writeln('<info>Compiling galleries...</info>');
+
+        foreach ($boucle->steps() as $step) {
+            if (!$step->hasAlbum()) {
+                continue;
+            }
+
+            $this->galleryViewCompiler->compile($boucle, $step, $webRoot);
+        }
     }
 }

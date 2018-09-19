@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Boucle\Compiler;
 
+use Boucle\Album;
 use Boucle\Boucle;
 use Boucle\Compiler\BoucleToJson;
 use Boucle\Coordinates;
+use Boucle\Image;
 use Boucle\Place;
 use Boucle\Step;
 use Boucle\Transport;
@@ -31,12 +33,12 @@ class BoucleToJsonTest extends TestCase
     public function testItCompilesTheBoucleToJson(): void
     {
         $boucle = new Boucle('Boucle title', Boucle::MAP_MAPBOX, 'api-key', [
-            new Step(
+            (new Step(
                 new Place('from-first', new Coordinates(1, 1)),
                 new Place('to-first', new Coordinates(1, 2)),
                 new \DateTimeImmutable('2018-05-04'),
                 new Transport('bus')
-            ),
+            ))->withAlbum(new Album('album-path', Image::fromPath('image-path'), [])),
             new Step(
                 new Place('from-second', new Coordinates(2, 1)),
                 new Place('to-second', new Coordinates(2, 2)),
@@ -83,6 +85,10 @@ class BoucleToJsonTest extends TestCase
                             'path' => '',
                             'arrival_date' => '2018-05-04',
                             'departure_date' => '2018-05-05',
+                            'album' => [
+                                'path' => 'album-path',
+                                'cover' => 'image-path',
+                            ],
                         ],
                         [
                             'from' => [
@@ -98,6 +104,7 @@ class BoucleToJsonTest extends TestCase
                             'path' => '',
                             'arrival_date' => '2018-05-06',
                             'departure_date' => '',
+                            'album' => null,
                         ],
                     ],
                     'car' => [],
@@ -118,6 +125,7 @@ class BoucleToJsonTest extends TestCase
                             'path' => 'bergen-oslo.gpx',
                             'arrival_date' => '2018-05-05',
                             'departure_date' => '2018-05-06',
+                            'album' => null,
                         ],
                     ],
                     'walking' => [],

@@ -25,6 +25,6 @@ class CopyDist
     {
         $output->writeln('<info>Copying compiled CSS and JS assets...</info>');
 
-        $this->fs->mirror($this->distDir, $webRoot.'/dist');
+        $this->fs->mirror($this->distDir, \realpath($webRoot).'/dist');
     }
 }

@@ -19,6 +19,9 @@ class BuildTest extends TestCase
     /** @var Compiler\MapView */
     private $mapViewCompiler;
 
+    /** @var Compiler\GalleryView */
+    private $galleryViewCompiler;
+
     /** @var Compiler\BoucleToJson */
     private $boucleToJsonCompiler;
 
@@ -32,15 +35,17 @@ class BuildTest extends TestCase
     {
         $this->boucleParser = $this->createMock(BoucleParser::class);
         $this->mapViewCompiler = $this->createMock(Compiler\MapView::class);
+        $this->galleryViewCompiler = $this->createMock(Compiler\GalleryView::class);
         $this->boucleToJsonCompiler = $this->createMock(Compiler\BoucleToJson::class);
         $this->output = $this->createMock(OutputInterface::class);
 
-        $this->command = new Build($this->boucleParser, $this->mapViewCompiler, $this->boucleToJsonCompiler);
+        $this->command = new Build($this->boucleParser, $this->mapViewCompiler, $this->galleryViewCompiler, $this->boucleToJsonCompiler);
     }
 
     public function testItDelegateTheWork(): void
     {
         $boucle = new Boucle('title', Boucle::MAP_MAPBOX, 'api-key', []);
+        $webRoot = __DIR__;
 
         $this->boucleParser
             ->expects($this->once())
@@ -51,13 +56,13 @@ class BuildTest extends TestCase
         $this->mapViewCompiler
             ->expects($this->once())
             ->method('compile')
-            ->with($boucle, 'web-root');
+            ->with($boucle, $webRoot);
 
         $this->boucleToJsonCompiler
             ->expects($this->once())
             ->method('compile')
-            ->with($boucle, 'web-root');
+            ->with($boucle, $webRoot);
 
-        $this->command->run($this->output, 'boucle-path', 'web-root');
+        $this->command->run($this->output, 'boucle-path', $webRoot);
     }
 }

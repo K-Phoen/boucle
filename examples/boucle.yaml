@@ -12,6 +12,9 @@ boucle:
             to: Dublin, Ireland
             with: plane
             date: '2018-05-10'
+            album:
+                path: ireland_2018
+                cover: P5120107.JPG
         -
             to: Galway, Ireland
             with: car

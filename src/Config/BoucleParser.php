@@ -22,14 +22,23 @@ class BoucleParser
     /** @var Geocoder */
     private $geocoder;
 
-    public function __construct(Geocoder $geocoder)
+    /** @var AlbumBuilder */
+    private $albumBuilder;
+
+    /** @var string */
+    private $configDir;
+
+    public function __construct(Geocoder $geocoder, AlbumBuilder $albumBuilder)
     {
         $this->geocoder = $geocoder;
+        $this->albumBuilder = $albumBuilder;
     }
 
     public function read(string $path): Boucle
     {
         $processor = new Processor();
+
+        $this->configDir = \dirname($path);
 
         try {
             $config = $processor->processConfiguration(new BoucleConfiguration(), Yaml::parseFile($path));
@@ -80,7 +89,12 @@ class BoucleParser
         $date = $this->dateForStepConfig($stepConfig, $previousStep, $previousStepConfig);
         $with = new Transport($stepConfig['with']);
 
-        yield new Step($previousStep->to(), $to, $date, $with, $stepConfig['path']);
+        $step = new Step($previousStep->to(), $to, $date, $with, $stepConfig['path']);
+        if (!empty($stepConfig['album'])) {
+            $step = $step->withAlbum($this->albumBuilder->fromConfig($this->configDir, $stepConfig['album']));
+        }
+
+        yield $step;
 
         // the current step is a daytrip so we "artificially" create the return step
         if ($stepConfig['type'] === StepType::DAY_TRIP) {

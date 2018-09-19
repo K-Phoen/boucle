@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Boucle\Cli;
 
+use Boucle\Config\AlbumBuilder;
 use Boucle\Config\BoucleParser;
 use Boucle\Compiler;
+use Boucle\Thumbnail\Intervention;
 use Geocoder;
 use Http\Adapter\Guzzle6\Client as GuzzleClient;
 use Http\Client\Common\Plugin\CachePlugin;
@@ -13,6 +15,7 @@ use Http\Client\Common\PluginClient;
 use Http\Discovery\StreamFactoryDiscovery;
 use Pimple\Container as Pimple;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
+use Symfony\Component\Filesystem\Filesystem;
 
 class Container extends Pimple
 {
@@ -33,8 +36,12 @@ class Container extends Pimple
         $this->compilers();
         $this->commands();
 
+        $this[AlbumBuilder::class] = function () {
+            return new AlbumBuilder(new Intervention());
+        };
+
         $this[BoucleParser::class] = function ($c) {
-            return new BoucleParser($c[Geocoder\Geocoder::class]);
+            return new BoucleParser($c[Geocoder\Geocoder::class], $c[AlbumBuilder::class]);
         };
     }
 
@@ -60,9 +67,18 @@ class Container extends Pimple
         $this['twig'] = function () {
             $loader = new \Twig_Loader_Filesystem($this['views_dir']);
 
-            return new \Twig_Environment($loader, [
+            $environment = new \Twig_Environment($loader, [
                 'strict_variables' => true,
             ]);
+
+            $environment->addFunction(new \Twig_Function('relative_path_between', function (string $path, string $root): string {
+                $fs = new Filesystem();
+
+
+                return rtrim($fs->makePathRelative(\realpath($root), \realpath($path)), '/');
+            }));
+
+            return $environment;
         };
     }
 
@@ -70,6 +86,10 @@ class Container extends Pimple
     {
         $this[Compiler\MapView::class] = function ($c) {
             return new Compiler\MapView($c['twig']);
+        };
+
+        $this[Compiler\GalleryView::class] = function ($c) {
+            return new Compiler\GalleryView($c['twig']);
         };
 
         $this[Compiler\BoucleToJson::class] = function () {
@@ -91,6 +111,7 @@ class Container extends Pimple
             return new Command\Build(
                 $c[BoucleParser::class],
                 $c[Compiler\MapView::class],
+                $c[Compiler\GalleryView::class],
                 $c[Compiler\BoucleToJson::class]
             );
         };

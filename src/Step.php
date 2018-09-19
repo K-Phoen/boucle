@@ -15,6 +15,9 @@ final class Step
     /** @var \DateTimeImmutable */
     private $date;
 
+    /** @var Album */
+    private $album;
+
     /** @var Transport */
     private $transport;
 
@@ -28,6 +31,14 @@ final class Step
         $this->date = $date;
         $this->transport = $transport;
         $this->pathFilename = $pathFilename;
+    }
+
+    public function withAlbum(Album $album): self
+    {
+        $step = clone $this;
+        $step->album = $album;
+
+        return $step;
     }
 
     public function from(): Place
@@ -53,5 +64,19 @@ final class Step
     public function pathFilename(): string
     {
         return $this->pathFilename;
+    }
+
+    public function hasAlbum(): bool
+    {
+        return $this->album !== null;
+    }
+
+    public function album(): Album
+    {
+        if (!$this->album) {
+            throw new \LogicException('No album for this step');
+        }
+
+        return $this->album;
     }
 }
