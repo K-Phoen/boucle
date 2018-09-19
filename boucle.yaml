@@ -16,7 +16,7 @@ boucle:
               with: plane
               date: '2018-05-10'
               album:
-                  path: albums/irlande_05-2018
+                  path: albums/ireland_2018
                   cover: P5120107.JPG
       -
               to: Galway, Ireland
