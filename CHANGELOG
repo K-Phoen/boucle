@@ -2,5 +2,11 @@
 VERSION 1  INITIAL RELEASE
 ==========================
 
+   Version 1.1 - Respect XDG specifications
+      15/10/2018 16:15  1.1.0  initial release
+         8335315 Merge pull request #3 from K-Phoen/xdg-dir
+         5ee5ead Fix style violation
+         f6b0092 Use the XDG Base Directory specification to determine where to store the cache
+
    Version 1.0 - Initial release
       20/09/2018 17:09  1.0.0  initial release
