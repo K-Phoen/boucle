@@ -14,7 +14,6 @@ use Boucle\Step;
 use Boucle\Transport;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Filesystem\Filesystem;
-use Boucle\Compiler\MapView;
 
 class GalleryViewTest extends TestCase
 {

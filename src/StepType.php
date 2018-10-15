@@ -24,7 +24,7 @@ final class StepType extends Enum
         }, static::values()));
     }
 
-    public static function isSingleDay(StepType $stepType): bool
+    public static function isSingleDay(self $stepType): bool
     {
         return \in_array($stepType->getValue(), [self::DAY_TRIP, self::HIKE], true);
     }
