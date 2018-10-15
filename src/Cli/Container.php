@@ -30,6 +30,7 @@ class Container extends Pimple
     {
         $this['views_dir'] = dirname(__DIR__, 2).'/views/';
         $this['dist_dir'] = dirname(__DIR__, 2).'/dist/';
+        $this['cache_dir'] = (new \XdgBaseDir\Xdg())->getHomeCacheDir().'/boucle/';
 
         $this->templating();
         $this->geocoder();
@@ -48,11 +49,11 @@ class Container extends Pimple
     private function geocoder(): void
     {
         $this[Geocoder\Geocoder::class] = function () {
-            $cache = new FilesystemAdapter('', 0, sys_get_temp_dir().'/boucle-cache/geocoding');
+            $cache = new FilesystemAdapter('', 0, $this['cache_dir'].'/geocoding');
             $cachePlugin = new CachePlugin($cache, StreamFactoryDiscovery::find(), [
                 'respect_cache_headers' => false,
                 'default_ttl' => null,
-                'cache_lifetime' => 86400*365
+                'cache_lifetime' => 86400 * 365,
             ]);
             $httpClient = new PluginClient(new GuzzleClient(), [$cachePlugin]);
 
@@ -73,7 +74,6 @@ class Container extends Pimple
 
             $environment->addFunction(new \Twig_Function('relative_path_between', function (string $path, string $root): string {
                 $fs = new Filesystem();
-
 
                 return rtrim($fs->makePathRelative(\realpath($root), \realpath($path)), '/');
             }));
