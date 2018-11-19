@@ -214,7 +214,7 @@ boucle:
       -
               to: Brașov, Romania
               with: walking
-              path: albums/data/piatra-craiului.gpx
+              path: data/piatra-craiului.gpx
               date: '2018-08-03'
               type: hike
       -

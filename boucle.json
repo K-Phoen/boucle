@@ -32,8 +32,8 @@
             {
                 "from": {
                     "name": "Oslo, Norway",
-                    "lat": 59.9132694,
-                    "long": 10.7391112
+                    "lat": 59.9133301,
+                    "long": 10.7389701
                 },
                 "to": {
                     "name": "G\u00f6teborg, Sweden",
@@ -332,8 +332,8 @@
                 },
                 "to": {
                     "name": "Odessa, Ukraine",
-                    "lat": 46.4846583,
-                    "long": 30.732564
+                    "lat": 46.4852419,
+                    "long": 30.7433894
                 },
                 "path": "",
                 "arrival_date": "2018-07-22",
@@ -346,8 +346,8 @@
             {
                 "from": {
                     "name": "Odessa, Ukraine",
-                    "lat": 46.4846583,
-                    "long": 30.732564
+                    "lat": 46.4852419,
+                    "long": 30.7433894
                 },
                 "to": {
                     "name": "Chi\u0219in\u0103u, Moldova",
@@ -601,8 +601,8 @@
                 },
                 "to": {
                     "name": "Oslo, Norway",
-                    "lat": 59.9132694,
-                    "long": 10.7391112
+                    "lat": 59.9133301,
+                    "long": 10.7389701
                 },
                 "path": "data\/Oslo-bergen.gpx",
                 "arrival_date": "2018-05-18",
@@ -730,7 +730,7 @@
                     "lat": 45.6523093,
                     "long": 25.6102746
                 },
-                "path": "albums\/data\/piatra-craiului.gpx",
+                "path": "data\/piatra-craiului.gpx",
                 "arrival_date": "2018-08-03",
                 "departure_date": "2018-08-04",
                 "album": null
